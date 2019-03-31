@@ -1,0 +1,86 @@
+CREATE TABLE cdms.flavour_category
+(
+    flavr_cd varchar(10),
+    flavr_name varchar(50),
+    flavr_added_dt timestamp NOT NULL,
+    falvr_added_by varchar(50) NOT NULL,
+    CONSTRAINT flavour_category_pk PRIMARY KEY (flavr_cd)
+)
+TABLESPACE pg_default;
+
+ALTER TABLE cdms.flavour_category
+    OWNER to postgres;
+    
+    
+ CREATE TABLE cdms.packing_name_category
+(
+    packing_name_cd varchar(10),
+    packing_name varchar(20) NOT NULL,
+    paking_added__dt timestamp NOT NULL,
+    paking_added_by varchar(50) NOT NULL,
+    CONSTRAINT packing_name_category_pk PRIMARY KEY (packing_name_cd)
+)
+TABLESPACE pg_default;
+
+
+
+
+
+ALTER TABLE cdms.packing_name_category
+    OWNER to postgres;
+COMMENT ON TABLE cdms.packing_name_category
+    IS 'glass,can,minican,tropicana,frooti,slice,water,pet';
+    
+CREATE TABLE cdms.filling_qty_category
+(
+    filling_qty_cd varchar(10),
+    filling_qty_ml varchar(20) NOT NULL,
+    filling_qty_added_dt timestamp NOT NULL,
+    filling_qty_added_by varchar(50) NOT NULL,
+    CONSTRAINT filling_qty_category_pk PRIMARY KEY (filling_qty_cd)
+)
+TABLESPACE pg_default;
+ALTER TABLE cdms.filling_qty_category
+    OWNER to postgres;
+    
+
+
+CREATE TABLE cdms.packing_qty_category
+(
+    packing_qty_cd varchar(10),
+    packing_quantity numeric NOT NULL,
+    packing_qty_added_dt timestamp NOT NULL,
+    packing_qty_added_by varchar(50) NOT NULL,
+    CONSTRAINT packing_qty_category_pk PRIMARY KEY (packing_qty_cd)
+)
+TABLESPACE pg_default;
+
+ALTER TABLE cdms.packing_qty_category
+    OWNER to postgres;
+    
+CREATE TABLE cdms.beverage_product_category
+(
+    product_cd varchar(10),
+    flavr_cd varchar(10) NOT NULL,
+    filling_qty_cd varchar(10) NOT NULL,
+    packing_name_cd varchar(10) NOT NULL,
+    packing_qty_cd varchar(10) NOT NULL,
+    product_added_dt timestamp,
+    product_added_by varchar(50) NOT NULL,
+    CONSTRAINT beverage_product_category_pk PRIMARY KEY (product_cd)
+)
+TABLESPACE pg_default;
+ALTER TABLE cdms.beverage_product_category
+    OWNER to postgres;    
+
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    

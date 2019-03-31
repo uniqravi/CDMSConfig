@@ -1,0 +1,327 @@
+2018-04-24 15:15:20 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-04-24 15:15:20 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-04-24 15:15:20 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-04-24 15:15:20 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-04-24 15:15:20 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-04-24 15:15:21 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-04-24 15:15:21 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-04-24 15:15:22 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-04-24 15:15:22 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-04-24 15:15:22 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-04-24 15:15:22 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-04-24 15:15:23 INFO  MLog:92 - MLog clients using log4j logging.
+2018-04-24 15:15:25 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-04-24 15:15:26 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@5c8b14cb [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@37d3cd4f [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9u1wjnbmt18j4p5m|3c8b9e25, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@21446d54 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9u1wjnbmt18j4p5m|339af2b2, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9u1wjnbmt18j4p5m|6159488b, numHelperThreads -> 3 ]
+2018-04-24 15:15:31 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-04-24 15:15:31 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-04-24 15:15:32 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-04-24 15:15:32 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-24 15:15:33 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-04-24 15:15:37 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-04-24 15:15:37 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-04-24 15:16:12 INFO  PurchaseTaxDetailController:235 - purchaseSummeryLst :: bigin
+2018-04-24 15:16:12 INFO  PurchaseTaxDetailController:238 - purchaseSummeryLst :: From Date ### 01-04-2018
+2018-04-24 15:16:12 INFO  PurchaseTaxDetailController:239 - purchaseSummeryLst :: To Date ### 24-04-2018
+2018-04-24 15:16:12 INFO  ProductServiceImpl:741 - viewPurchaseSummeryByDt :: Begin
+2018-04-24 15:16:12 INFO  ProductDaoImpl:122 - viewPurchaseSummeryByDt :: begin
+2018-04-24 15:16:13 INFO  ProductDaoImpl:128 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@2ef165f6, [Ljava.lang.Object;@77a6979c, [Ljava.lang.Object;@3edb70ea, [Ljava.lang.Object;@928475c, [Ljava.lang.Object;@2cd35d5a, [Ljava.lang.Object;@6f8a252b, [Ljava.lang.Object;@ab34410, [Ljava.lang.Object;@416ae0bd, [Ljava.lang.Object;@77655c47]
+2018-04-24 15:16:13 INFO  ProductDaoImpl:129 - viewPurchaseSummeryByDt :: End
+2018-04-24 15:16:13 INFO  ProductServiceImpl:771 - viewPurchaseSummeryByDt :: End
+2018-04-24 15:16:13 INFO  PurchaseTaxDetailController:254 - fecthingPurchsLstTask :: completed
+2018-04-24 15:17:30 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-04-24 15:17:30 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020781752
+2018-04-24 15:17:30 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-04-24 15:17:30 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-04-24 15:17:30 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020781752
+2018-04-24 15:17:30 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-04-24 15:17:30 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020781752
+2018-04-24 15:17:30 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-04-24 15:17:30 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-04-24 15:17:30 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-04-24 15:17:30 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020781752
+2018-04-24 15:17:30 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-04-24 15:17:30 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@197e1e33]
+2018-04-24 15:17:30 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-04-24 15:17:30 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@22444c5b, [Ljava.lang.Object;@44b3dac1]
+2018-04-24 15:17:30 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-04-24 15:17:30 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-04-24 15:17:30 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-04-24 15:17:30 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-04-24 15:17:30 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-04-24 15:17:31 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@1c86f341
+2018-04-24 15:17:31 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-04-24 15:17:31 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-04-24 15:17:31 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-04-24 15:17:31 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-04-24 15:19:22 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### RJ0020781752
+2018-04-24 15:19:22 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:22 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020781752
+2018-04-24 15:19:22 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:22 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@5af2269f
+2018-04-24 15:19:22 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-04-24 15:19:22 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-04-24 15:19:22 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-04-24 15:19:22 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-04-24 15:19:25 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### RJ0020781752
+2018-04-24 15:19:25 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:25 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020781752
+2018-04-24 15:19:25 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:25 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@c4b117e
+2018-04-24 15:19:25 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-04-24 15:19:25 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-04-24 15:19:25 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-04-24 15:19:25 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-04-24 15:19:26 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### RJ0020781752
+2018-04-24 15:19:26 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:26 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020781752
+2018-04-24 15:19:26 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:26 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@3ec89ae
+2018-04-24 15:19:26 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-04-24 15:19:26 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-04-24 15:19:26 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-04-24 15:19:26 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-04-24 15:19:26 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### RJ0020781752
+2018-04-24 15:19:26 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:26 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020781752
+2018-04-24 15:19:26 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:26 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@60af3be
+2018-04-24 15:19:26 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-04-24 15:19:26 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-04-24 15:19:26 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-04-24 15:19:26 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-04-24 15:19:26 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### RJ0020781752
+2018-04-24 15:19:26 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:26 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020781752
+2018-04-24 15:19:26 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-04-24 15:19:26 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@12f1bc2d
+2018-04-24 15:19:26 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-04-24 15:19:26 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-04-24 15:19:26 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-04-24 15:19:26 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-04-24 15:22:08 INFO  SideNavigationController:198 - updatePaymentDetail :: Inside Update Action
+2018-04-24 15:22:08 INFO  SideNavigationController:241 - updatePurchasepayDtlTask :: start
+2018-04-24 15:22:08 INFO  ProductServiceImpl:831 - updatePurchasePaymentDtl :: begin
+2018-04-24 15:22:08 INFO  ProductServiceImpl:832 - updatePurchasePaymentDtl :: purchaseSeq ### BUY0000072
+2018-04-24 15:22:08 INFO  ProductServiceImpl:833 - updatePurchasePaymentDtl :: paidAmt ### 260000.0
+2018-04-24 15:22:08 INFO  ProductServiceImpl:834 - updatePurchasePaymentDtl :: payMethod ### CHEQUE
+2018-04-24 15:22:08 INFO  ProductServiceImpl:835 - updatePurchasePaymentDtl :: payDate  ### 10-04-2018
+2018-04-24 15:22:08 INFO  ProductServiceImpl:836 - updatePurchasePaymentDtl :: pay Id  ### 457763
+2018-04-24 15:22:08 INFO  SideNavigationController:255 - updatePurchasepayDtlTask :: completed
+2018-04-24 15:22:19 INFO  SideNavigationController:198 - updatePaymentDetail :: Inside Update Action
+2018-04-24 15:22:19 INFO  SideNavigationController:241 - updatePurchasepayDtlTask :: start
+2018-04-24 15:22:19 INFO  ProductServiceImpl:831 - updatePurchasePaymentDtl :: begin
+2018-04-24 15:22:19 INFO  ProductServiceImpl:832 - updatePurchasePaymentDtl :: purchaseSeq ### BUY0000072
+2018-04-24 15:22:19 INFO  ProductServiceImpl:833 - updatePurchasePaymentDtl :: paidAmt ### 260000.0
+2018-04-24 15:22:19 INFO  ProductServiceImpl:834 - updatePurchasePaymentDtl :: payMethod ### CHEQUE
+2018-04-24 15:22:19 INFO  ProductServiceImpl:835 - updatePurchasePaymentDtl :: payDate  ### 10-04-2018
+2018-04-24 15:22:19 INFO  ProductServiceImpl:836 - updatePurchasePaymentDtl :: pay Id  ### 457763
+2018-04-24 15:22:19 INFO  SideNavigationController:255 - updatePurchasepayDtlTask :: completed
+2018-04-24 15:22:54 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 15:22:54 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 15:22:54 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 15:32:11 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 15:32:11 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-04-24 15:32:11 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 15:32:11 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 15:32:11 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 15:32:11 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 15:32:11 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 15:32:11 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 15:32:12 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 15:32:12 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 15:32:12 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 15:32:19 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 15:32:19 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 15:32:19 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 15:40:13 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-04-24 15:40:13 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-04-24 15:40:13 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-04-24 15:40:13 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-04-24 15:40:13 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-04-24 15:40:13 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-04-24 15:40:13 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-04-24 15:40:14 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-04-24 15:40:14 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-04-24 15:40:14 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-04-24 15:40:14 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-04-24 15:40:14 INFO  MLog:92 - MLog clients using log4j logging.
+2018-04-24 15:40:15 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-04-24 15:40:15 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@5751ef79 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e83cb061 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9u1wkjaaltopoav|206fa8b8, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@b3e63295 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9u1wkjaaltopoav|423dea95, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9u1wkjaaltopoav|7c6a7d54, numHelperThreads -> 3 ]
+2018-04-24 15:40:16 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-04-24 15:40:16 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-04-24 15:40:16 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-04-24 15:40:16 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-24 15:40:16 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-04-24 15:40:19 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-04-24 15:40:19 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-04-24 15:40:31 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 15:40:32 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 15:40:32 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 15:40:33 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 15:40:33 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 15:40:33 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 15:53:18 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 15:53:18 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-04-24 15:53:18 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 15:53:18 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 15:53:18 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 15:53:18 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 15:53:18 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 15:53:18 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 15:53:18 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 15:53:18 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 15:53:18 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 15:53:26 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 15:53:27 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 15:53:27 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 15:59:56 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 15:59:56 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-04-24 15:59:56 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 15:59:56 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 15:59:56 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 15:59:56 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 15:59:56 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 15:59:56 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 15:59:56 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 15:59:56 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 15:59:56 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 16:00:04 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 16:00:04 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 16:00:04 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 16:03:56 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 16:03:56 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-04-24 16:03:56 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 16:03:56 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 16:03:56 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 16:03:56 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 16:03:56 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 16:03:56 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 16:03:56 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 16:03:56 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 16:03:56 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 16:04:08 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 16:04:08 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 16:04:08 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 16:18:04 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 16:18:04 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-04-24 16:18:04 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 16:18:04 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 16:18:04 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 16:18:04 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 16:18:04 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 16:18:04 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 16:18:04 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 16:18:04 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 16:18:04 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 16:18:17 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 16:18:17 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 16:18:17 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 16:41:07 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 16:41:07 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-04-24 16:41:07 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 16:41:07 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 16:41:07 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 16:41:07 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 16:41:07 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 16:41:07 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 16:41:07 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 16:41:07 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 16:41:07 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 16:41:13 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 16:41:13 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 16:41:13 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 16:48:08 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 16:48:08 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-04-24 16:48:08 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 16:48:08 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 16:48:08 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 16:48:08 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 16:48:08 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 16:48:08 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 16:48:08 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 16:48:08 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 16:48:08 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 16:48:47 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 16:48:47 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 16:48:47 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 17:00:00 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 17:00:00 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-04-24 17:00:00 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 17:00:00 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 17:00:00 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 17:00:00 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 17:00:00 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 17:00:00 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 17:00:00 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 17:00:00 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 17:00:00 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 17:01:10 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 17:01:10 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 17:01:10 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 17:07:57 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 17:07:57 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-04-24 17:07:57 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 17:07:57 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 17:07:57 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 17:07:57 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 17:07:57 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 17:07:57 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 17:07:57 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 17:07:57 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 17:07:57 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 17:08:13 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 17:08:13 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 17:08:13 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 17:19:50 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 17:19:50 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-04-24 17:19:50 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 17:19:50 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 17:19:50 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 17:19:50 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 17:19:50 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 17:19:50 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 17:19:50 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 17:19:50 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 17:19:50 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 17:20:00 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 17:20:00 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 17:20:00 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 17:28:16 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 17:28:16 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-04-24 17:28:16 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 17:28:16 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 17:28:16 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 17:28:16 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 17:28:16 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 17:28:16 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 17:28:16 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 17:28:16 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 17:28:16 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 17:28:26 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 17:28:26 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 17:28:26 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 17:32:51 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 17:32:51 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-04-24 17:32:51 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 17:32:51 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 17:32:51 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 17:32:51 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 17:32:51 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 17:32:51 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 17:32:51 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 17:32:51 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 17:32:51 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-04-24 17:32:58 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-04-24 17:32:58 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-04-24 17:32:58 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-04-24 17:43:48 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-24 17:43:48 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-04-24 17:43:48 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-24 17:43:48 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-24 17:43:48 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-24 17:43:48 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-24 17:43:48 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-24 17:43:48 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-24 17:43:48 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-24 17:43:48 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-24 17:43:48 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully

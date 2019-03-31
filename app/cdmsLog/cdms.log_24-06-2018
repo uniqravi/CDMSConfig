@@ -1,0 +1,136 @@
+2018-06-24 15:10:50 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-06-24 15:10:50 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-06-24 15:10:50 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-06-24 15:10:50 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-06-24 15:10:50 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-06-24 15:10:51 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-06-24 15:10:51 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-06-24 15:10:51 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-06-24 15:10:51 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-06-24 15:10:51 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-06-24 15:10:51 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-06-24 15:10:51 INFO  MLog:92 - MLog clients using log4j logging.
+2018-06-24 15:10:53 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-06-24 15:10:53 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@1d8e78b5 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@80fde80a [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9wdn4cyx1vahlet|4a7c79a7, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@35609fbd [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9wdn4cyx1vahlet|347aa862, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9wdn4cyx1vahlet|41ee635a, numHelperThreads -> 3 ]
+2018-06-24 15:10:53 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-24 15:10:53 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-06-24 15:10:54 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-06-24 15:10:54 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-06-24 15:10:54 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-06-24 15:10:56 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-06-24 15:10:56 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-06-24 15:11:04 INFO  ProductServiceImpl:278 - ProductServiceImpl :: productList :: begin
+2018-06-24 15:11:04 INFO  ProductServiceImpl:287 - ProductServiceImpl :: productList :: product List count ### 51
+2018-06-24 15:11:04 INFO  ProductServiceImpl:288 - ProductServiceImpl :: productList :: end
+2018-06-24 15:11:41 INFO  ProductServiceImpl:744 - viewPurchaseSummeryByDt :: Begin
+2018-06-24 15:11:41 INFO  ProductDaoImpl:131 - viewPurchaseSummeryByDt :: begin
+2018-06-24 15:11:41 INFO  ProductDaoImpl:145 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@6cdaf693, [Ljava.lang.Object;@350c6326, [Ljava.lang.Object;@58f4c13b, [Ljava.lang.Object;@609c585b, [Ljava.lang.Object;@5bc944b5, [Ljava.lang.Object;@d0a19b9, [Ljava.lang.Object;@7389fc3a, [Ljava.lang.Object;@71d52c90, [Ljava.lang.Object;@60a822f3, [Ljava.lang.Object;@3d32288e]
+2018-06-24 15:11:41 INFO  ProductDaoImpl:146 - viewPurchaseSummeryByDt :: End
+2018-06-24 15:11:41 INFO  ProductServiceImpl:774 - viewPurchaseSummeryByDt :: End
+2018-06-24 15:12:10 INFO  ProductPriceSchemeController:63 - ProductPriceSchemeController :: intialization start
+2018-06-24 15:12:10 INFO  ProductServiceImpl:473 - ProductServiceImpl :: getAllGroupNm :: begin
+2018-06-24 15:12:10 INFO  ProductServiceImpl:474 - ProductServiceImpl :: getAllGroupNm :: db activity start
+2018-06-24 15:12:10 INFO  ProductServiceImpl:481 - ProductServiceImpl :: getAllGroupNm :: all group list count ### 18
+2018-06-24 15:12:10 INFO  ProductServiceImpl:483 - ProductServiceImpl :: getAllGroupNm :: end
+2018-06-24 15:12:10 INFO  ProductPriceSchemeController:78 - ProductPriceSchemeController :: intialization end
+2018-06-24 15:12:13 INFO  ProductServiceImpl:355 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:13 INFO  ProductServiceImpl:358 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2018-06-24 15:12:13 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:13 INFO  ProductDaoImpl:71 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2018-06-24 15:12:13 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@505ff704, [Ljava.lang.Object;@47d405db, [Ljava.lang.Object;@5e56b75f, [Ljava.lang.Object;@5e43c2ce]
+2018-06-24 15:12:13 INFO  ProductDaoImpl:77 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2018-06-24 15:12:13 INFO  ProductServiceImpl:361 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 4
+2018-06-24 15:12:13 INFO  ProductServiceImpl:457 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2018-06-24 15:12:13 INFO  ProductServiceImpl:467 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:18 INFO  ProductServiceImpl:355 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:18 INFO  ProductServiceImpl:358 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2018-06-24 15:12:18 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:18 INFO  ProductDaoImpl:71 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2018-06-24 15:12:18 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@60e0d8c8, [Ljava.lang.Object;@596e001, [Ljava.lang.Object;@7e2c5d27, [Ljava.lang.Object;@56e6dbce, [Ljava.lang.Object;@30a66f42]
+2018-06-24 15:12:18 INFO  ProductDaoImpl:77 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2018-06-24 15:12:18 INFO  ProductServiceImpl:361 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 5
+2018-06-24 15:12:18 INFO  ProductServiceImpl:457 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2018-06-24 15:12:18 INFO  ProductServiceImpl:467 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:22 INFO  ProductServiceImpl:355 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:22 INFO  ProductServiceImpl:358 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2018-06-24 15:12:22 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:22 INFO  ProductDaoImpl:71 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2018-06-24 15:12:22 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@4c2a0efe, [Ljava.lang.Object;@1f6147d0, [Ljava.lang.Object;@7e9e1db6, [Ljava.lang.Object;@1016c27c]
+2018-06-24 15:12:22 INFO  ProductDaoImpl:77 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2018-06-24 15:12:22 INFO  ProductServiceImpl:361 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 4
+2018-06-24 15:12:22 INFO  ProductServiceImpl:457 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2018-06-24 15:12:22 INFO  ProductServiceImpl:467 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:28 INFO  ProductServiceImpl:355 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:28 INFO  ProductServiceImpl:358 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2018-06-24 15:12:28 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:28 INFO  ProductDaoImpl:71 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2018-06-24 15:12:28 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@1a87b847, [Ljava.lang.Object;@547dd49c, [Ljava.lang.Object;@7d41e934, [Ljava.lang.Object;@33387c87, [Ljava.lang.Object;@145abf27, [Ljava.lang.Object;@2e395004]
+2018-06-24 15:12:28 INFO  ProductDaoImpl:77 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2018-06-24 15:12:28 INFO  ProductServiceImpl:361 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 6
+2018-06-24 15:12:28 INFO  ProductServiceImpl:457 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2018-06-24 15:12:28 INFO  ProductServiceImpl:467 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:31 INFO  ProductServiceImpl:355 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:31 INFO  ProductServiceImpl:358 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2018-06-24 15:12:31 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:12:31 INFO  ProductDaoImpl:71 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2018-06-24 15:12:31 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@321028e7, [Ljava.lang.Object;@147d7eea, [Ljava.lang.Object;@689797ef, [Ljava.lang.Object;@763cab2c, [Ljava.lang.Object;@4558f21c, [Ljava.lang.Object;@3aad4e73]
+2018-06-24 15:12:31 INFO  ProductDaoImpl:77 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2018-06-24 15:12:31 INFO  ProductServiceImpl:361 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 6
+2018-06-24 15:12:31 INFO  ProductServiceImpl:457 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2018-06-24 15:12:31 INFO  ProductServiceImpl:467 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:19:08 INFO  ProductServiceImpl:355 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:19:08 INFO  ProductServiceImpl:358 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2018-06-24 15:19:08 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:19:08 INFO  ProductDaoImpl:71 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2018-06-24 15:19:08 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@687c8ed]
+2018-06-24 15:19:08 INFO  ProductDaoImpl:77 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2018-06-24 15:19:08 INFO  ProductServiceImpl:361 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 1
+2018-06-24 15:19:08 INFO  ProductServiceImpl:457 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2018-06-24 15:19:08 INFO  ProductServiceImpl:467 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:19:13 INFO  ProductServiceImpl:355 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:19:13 INFO  ProductServiceImpl:358 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2018-06-24 15:19:13 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:19:13 INFO  ProductDaoImpl:71 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2018-06-24 15:19:13 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@4568d1c, [Ljava.lang.Object;@f4cd757, [Ljava.lang.Object;@c762bb1]
+2018-06-24 15:19:13 INFO  ProductDaoImpl:77 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2018-06-24 15:19:13 INFO  ProductServiceImpl:361 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 3
+2018-06-24 15:19:13 INFO  ProductServiceImpl:457 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2018-06-24 15:19:13 INFO  ProductServiceImpl:467 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2018-06-24 15:19:20 INFO  ProductController:115 - ProductController :: Initialization Start ###
+2018-06-24 15:19:20 INFO  ProductServiceImpl:109 - ProductServiceImpl :: fillingQtyList :: begin
+2018-06-24 15:19:20 INFO  ProductServiceImpl:118 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 12
+2018-06-24 15:19:20 INFO  ProductServiceImpl:119 - ProductServiceImpl :: fillingQtyList :: end
+2018-06-24 15:19:20 INFO  ProductServiceImpl:125 - ProductServiceImpl :: flavrList :: begin
+2018-06-24 15:19:20 INFO  ProductServiceImpl:134 - ProductServiceImpl :: flavrList :: flavour Name List count ### 17
+2018-06-24 15:19:20 INFO  ProductServiceImpl:135 - ProductServiceImpl :: flavrList :: end
+2018-06-24 15:19:20 INFO  ProductServiceImpl:141 - ProductServiceImpl :: packingtypeList :: begin
+2018-06-24 15:19:20 INFO  ProductServiceImpl:150 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-06-24 15:19:20 INFO  ProductServiceImpl:151 - ProductServiceImpl :: packingtypeList :: end
+2018-06-24 15:19:20 INFO  ProductServiceImpl:157 - ProductServiceImpl :: packingQtyList :: begin
+2018-06-24 15:19:20 INFO  ProductServiceImpl:166 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 4
+2018-06-24 15:19:20 INFO  ProductServiceImpl:167 - ProductServiceImpl :: packingQtyList :: end
+2018-06-24 15:19:20 INFO  ProductController:219 - ProductController :: Initialization end
+2018-06-24 15:19:24 INFO  ProductServiceImpl:834 - getAllChallanDetail :: begin
+2018-06-24 15:19:24 INFO  ProductServiceImpl:844 - getAllChallanDetail :: starting to get PurchaseDtl bean
+2018-06-24 15:19:24 INFO  ProductServiceImpl:849 - getAllChallanDetail :: End to get PurchaseDtl bean
+2018-06-24 15:19:24 INFO  ProductServiceImpl:860 - getAllChallanDetail :: End
+2018-06-24 15:19:35 INFO  ProductServiceImpl:278 - ProductServiceImpl :: productList :: begin
+2018-06-24 15:19:35 INFO  ProductServiceImpl:287 - ProductServiceImpl :: productList :: product List count ### 51
+2018-06-24 15:19:35 INFO  ProductServiceImpl:288 - ProductServiceImpl :: productList :: end
+2018-06-24 15:19:35 INFO  CustomerServiceImpl:72 - CustomerServiceImpl :: getAllCustomers :: begin
+2018-06-24 15:19:35 INFO  CustomerServiceImpl:73 - CustomerServiceImpl :: getAllCustomers :: db activity start
+2018-06-24 15:19:36 INFO  CustomerServiceImpl:76 - CustomerServiceImpl :: getAllCustomers :: db activity end
+2018-06-24 15:19:36 INFO  CustomerServiceImpl:81 - CustomerServiceImpl :: getAllCustomers :: customer list count ### 1
+2018-06-24 15:19:36 INFO  CustomerServiceImpl:83 - CustomerServiceImpl :: getAllCustomers :: end
+2018-06-24 15:19:36 INFO  ProductServiceImpl:594 - ProductServiceImpl :: latestAllSchemePrice :: begin
+2018-06-24 15:19:36 INFO  ProductServiceImpl:597 - ProductServiceImpl :: latestAllSchemePrice :: db activity start
+2018-06-24 15:19:36 INFO  ProductDaoImpl:101 - ProductDaoImpl :: latestAllSchemePrice :: begin
+2018-06-24 15:19:36 INFO  ProductDaoImpl:105 - ProductDaoImpl :: latestAllSchemePrice :: defined price list retrieved ### [application.cdms.db.entities.PrdctCurrPriceScheme@982c743, application.cdms.db.entities.PrdctCurrPriceScheme@6c8e73fc, application.cdms.db.entities.PrdctCurrPriceScheme@2f17b77, application.cdms.db.entities.PrdctCurrPriceScheme@302bf08c, application.cdms.db.entities.PrdctCurrPriceScheme@2f0c9115, application.cdms.db.entities.PrdctCurrPriceScheme@3002069b, application.cdms.db.entities.PrdctCurrPriceScheme@5661c107, application.cdms.db.entities.PrdctCurrPriceScheme@1d2e76e7]
+2018-06-24 15:19:36 INFO  ProductDaoImpl:106 - ProductDaoImpl :: latestAllSchemePrice :: End
+2018-06-24 15:19:36 INFO  ProductServiceImpl:600 - ProductServiceImpl :: latestAllSchemePrice :: db response recieved
+2018-06-24 15:19:36 INFO  ProductServiceImpl:605 - ProductServiceImpl :: latestAllSchemePrice :: price scheme list size ### 8
+2018-06-24 15:19:36 INFO  ProductServiceImpl:647 - ProductServiceImpl :: latestAllSchemePrice :: db activity end
+2018-06-24 15:19:36 INFO  ProductServiceImpl:657 - ProductServiceImpl :: latestAllSchemePrice :: end
+2018-06-24 15:19:36 INFO  ProductServiceImpl:489 - ProductServiceImpl :: getAllProductGroup :: begin
+2018-06-24 15:19:36 INFO  ProductServiceImpl:490 - ProductServiceImpl :: getAllProductGroup :: db activity start
+2018-06-24 15:19:36 INFO  ProductServiceImpl:497 - ProductServiceImpl :: getAllProductGroup :: all product group count ### 18

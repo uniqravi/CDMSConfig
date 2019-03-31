@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- <!DOCTYPE hibernate-mapping SYSTEM "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"> -->
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">org.postgresql.Driver</property>
+		<property name="connection.url">jdbc:postgresql://localhost:5432/cdms</property>
+		<property name="connection.username">postgres</property>
+		<property name="connection.password">post</property>
+		<!-- JDBC connection pool (use the built-in) -->
+		<!--<property name="connection.pool_size">30</property>-->
+		
+		<!-- c3p0 config http://www.hibernate.org/214.html -->
+		<!-- jars : go to options/c3p0/  -->
+        <property name="connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>        
+        <property name="hibernate.c3p0.acquire_increment">1</property>
+        <property name="hibernate.c3p0.idle_test_period">60</property>
+        <property name="hibernate.c3p0.min_size">1</property>
+        <property name="hibernate.c3p0.max_size">2</property>
+        <property name="hibernate.c3p0.max_statements">50</property>
+        <property name="hibernate.c3p0.timeout">0</property>
+        <property name="hibernate.c3p0.acquireRetryAttempts">1</property>
+        <property name="hibernate.c3p0.acquireRetryDelay">250</property>
+		
+		<!-- SQL dialect -->
+		<property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<!-- Enable Hibernate's automatic session context management -->
+		<property name="current_session_context_class">thread</property>
+		<!-- Disable the second-level cache -->
+		<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+		<property name="hibernate.connection.release_mode">auto</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="show_sql">true</property>
+		<!-- Drop and re-create the database schema on startup -->
+		<property name="hbm2ddl.auto">none</property>
+		
+		
+		<mapping class="application.cdms.db.entities.FillingQtyCategory"/>
+		<mapping class="application.cdms.db.entities.Serialnogenerator"/>
+		<mapping class="application.cdms.db.entities.FlavourCategory"/>
+		<mapping class="application.cdms.db.entities.PackingQtyCategory"/>
+		<mapping class="application.cdms.db.entities.PackingNameCategory"/>
+		<mapping class="application.cdms.db.entities.BeverageProductGroupDtl"/>
+		<mapping class="application.cdms.db.entities.BeverageProductCategory"/>
+		<mapping class="application.cdms.db.entities.HsnTaxStructure"/>
+		
+		
+		<mapping class="application.cdms.db.entities.PurchaseDtl"/>
+		<mapping class="application.cdms.db.entities.PurchasePrdctDtl"/>
+		<mapping class="application.cdms.db.entities.PrdctBreakageDtl"/>
+		<mapping class="application.cdms.db.entities.PrdctCurrPriceScheme"/>
+		
+		<mapping class="application.cdms.db.entities.ProductInstantStockDtl"/>
+		
+		<mapping class="application.cdms.db.entities.CstmrDtl"/>
+		<mapping class="application.cdms.db.entities.TerritoryAreaDtl"/>
+		<mapping class="application.cdms.db.entities.CstmrLedgerCategory"/>
+		<mapping class="application.cdms.db.entities.CstmrAcntsDtl"/>
+		
+		<mapping class="application.cdms.db.entities.SaleDtl"/>
+		<mapping class="application.cdms.db.entities.SaleBreakageDtl"/>
+		<mapping class="application.cdms.db.entities.SaleInvoicesPrdctDtl"/>
+		<mapping class="application.cdms.db.entities.SalePrdctDtl"/>
+		<mapping class="application.cdms.db.entities.SalePrdctSchemeDtl"/>
+		<mapping class="application.cdms.db.entities.SupplyRecord"/>
+		<mapping class="application.cdms.db.entities.RouteMapDtl"/>
+		<mapping class="application.cdms.db.entities.SupplyVehicleDtl"/>
+		<mapping class="application.cdms.db.entities.SupplyPrdctDtl"/>
+		<mapping class="application.cdms.db.entities.ApplicationUser"/>
+		<mapping class="application.cdms.db.entities.ClaimHeader"/>
+		<mapping class="application.cdms.db.entities.ClaimBreakagePrdctDtl"/>
+		<mapping class="application.cdms.db.entities.FirmOrSellerDtl"/>
+		<mapping class="application.cdms.db.entities.NonBeverageProductCatergory"/>
+		<mapping class="application.cdms.db.entities.PurchaseNonBeveragePrdctDtl"/>
+		<mapping class="application.cdms.db.entities.NonBeverageSaleDtl"/>
+		<mapping class="application.cdms.db.entities.NonBeveragePrdctSaleDtl"/>
+		
+	</session-factory>
+</hibernate-configuration>

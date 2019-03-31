@@ -1,0 +1,14 @@
+To ensure that the build target is removed before a new build, add the clean target.
+
+mvn clean install
+
+
+By default, Maven checks online if the dependencies have been changed. If you want to use your local repository, you can use the -o to tell Maven to work offline.
+
+
+
+mvn -o clean install
+
+
+to create clone of branch of remote location follow the below command
+git clone http://github.com/uniqravi/CDMS.git

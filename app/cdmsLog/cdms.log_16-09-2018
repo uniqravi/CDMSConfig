@@ -1,0 +1,96 @@
+2018-09-16 16:19:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-09-16 16:19:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-09-16 16:19:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-09-16 16:19:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-09-16 16:19:25 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-09-16 16:19:26 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-09-16 16:19:26 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-09-16 16:19:27 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-09-16 16:19:27 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-09-16 16:19:27 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-09-16 16:19:27 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-09-16 16:19:27 INFO  MLog:92 - MLog clients using log4j logging.
+2018-09-16 16:19:28 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-09-16 16:19:28 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@758a4200 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@a72b1e42 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9x1qpg2l9srvlev|7044153e, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@24bc4dbd [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9x1qpg2l9srvlev|50d94ec6, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9x1qpg2l9srvlev|7125b237, numHelperThreads -> 3 ]
+2018-09-16 16:19:30 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-09-16 16:19:30 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-09-16 16:19:30 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-09-16 16:19:30 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-09-16 16:19:30 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-09-16 16:19:32 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-09-16 16:19:32 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-09-16 16:20:31 INFO  PurchaseTaxDetailController:105 - purchaseSummeryLst :: bigin
+2018-09-16 16:20:31 INFO  PurchaseTaxDetailController:108 - purchaseSummeryLst :: From Date ### 01-08-2018
+2018-09-16 16:20:31 INFO  PurchaseTaxDetailController:109 - purchaseSummeryLst :: To Date ### 31-08-2018
+2018-09-16 16:20:31 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxByDt[,01-08-2018,31-08-2018]:: getCDMSDataList :: begin
+2018-09-16 16:20:31 INFO  CDMSDataProviderDaoImpl:53 - 3
+2018-09-16 16:20:31 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxByDt[,01-08-2018,31-08-2018]:: getCDMSDataList :: End
+2018-09-16 16:20:31 INFO  PurchaseTaxDetailController:134 - fecthingPurchsLstTask :: completed
+2018-09-16 16:26:01 INFO  PurchaseTaxDetailController:105 - purchaseSummeryLst :: bigin
+2018-09-16 16:26:01 INFO  PurchaseTaxDetailController:108 - purchaseSummeryLst :: From Date ### 01-08-2018
+2018-09-16 16:26:01 INFO  PurchaseTaxDetailController:109 - purchaseSummeryLst :: To Date ### 31-08-2018
+2018-09-16 16:26:01 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxByDt[,01-08-2018,31-08-2018]:: getCDMSDataList :: begin
+2018-09-16 16:26:01 INFO  CDMSDataProviderDaoImpl:53 - 3
+2018-09-16 16:26:01 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxByDt[,01-08-2018,31-08-2018]:: getCDMSDataList :: End
+2018-09-16 16:26:01 INFO  PurchaseTaxDetailController:134 - fecthingPurchsLstTask :: completed
+2018-09-16 16:28:14 INFO  PurchaseTaxDetailController:105 - purchaseSummeryLst :: bigin
+2018-09-16 16:28:14 INFO  PurchaseTaxDetailController:108 - purchaseSummeryLst :: From Date ### 01-08-2018
+2018-09-16 16:28:14 INFO  PurchaseTaxDetailController:109 - purchaseSummeryLst :: To Date ### 31-08-2018
+2018-09-16 16:28:14 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxByDtWithGroupByFirm[,01-08-2018,31-08-2018]:: getCDMSDataList :: begin
+2018-09-16 16:28:14 INFO  CDMSDataProviderDaoImpl:53 - 4
+2018-09-16 16:28:14 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxByDtWithGroupByFirm[,01-08-2018,31-08-2018]:: getCDMSDataList :: End
+2018-09-16 16:28:14 INFO  PurchaseTaxDetailController:134 - fecthingPurchsLstTask :: completed
+2018-09-16 16:29:16 INFO  ProductServiceImpl:762 - viewPurchaseSummeryByDt :: Begin
+2018-09-16 16:29:16 INFO  ProductDaoImpl:142 - viewPurchaseSummeryByDt :: begin
+2018-09-16 16:29:16 INFO  ProductDaoImpl:156 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@7c0bd191, [Ljava.lang.Object;@674f6701, [Ljava.lang.Object;@2740c2f, [Ljava.lang.Object;@9d5291c, [Ljava.lang.Object;@2b70f6ee, [Ljava.lang.Object;@371bebee, [Ljava.lang.Object;@15ac8c56, [Ljava.lang.Object;@3591ca36, [Ljava.lang.Object;@19fa8dec, [Ljava.lang.Object;@715641a6]
+2018-09-16 16:29:16 INFO  ProductDaoImpl:157 - viewPurchaseSummeryByDt :: End
+2018-09-16 16:29:16 INFO  ProductServiceImpl:792 - viewPurchaseSummeryByDt :: End
+2018-09-16 16:29:42 INFO  PurchaseTaxDetailController:247 - purchaseSummeryLst :: bigin
+2018-09-16 16:29:42 INFO  PurchaseTaxDetailController:250 - purchaseSummeryLst :: From Date ### 01-08-2018
+2018-09-16 16:29:42 INFO  PurchaseTaxDetailController:251 - purchaseSummeryLst :: To Date ### 31-08-2018
+2018-09-16 16:29:42 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseSummeryByDt[,01-08-2018,31-08-2018]:: getCDMSDataList :: begin
+2018-09-16 16:29:42 INFO  CDMSDataProviderDaoImpl:53 - 26
+2018-09-16 16:29:42 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseSummeryByDt[,01-08-2018,31-08-2018]:: getCDMSDataList :: End
+2018-09-16 16:29:42 INFO  PurchaseTaxDetailController:267 - fecthingPurchsLstTask :: completed
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### 688
+2018-09-16 16:48:50 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,688]:: getCDMSDataList :: begin
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### 688
+2018-09-16 16:48:50 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2018-09-16 16:48:50 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 688
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### 688
+2018-09-16 16:48:50 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,688]:: getCDMSDataList :: begin
+2018-09-16 16:48:50 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-09-16 16:48:50 INFO  CDMSDataProviderDaoImpl:53 - 1
+2018-09-16 16:48:50 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,688]:: getCDMSDataList :: End
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2018-09-16 16:48:50 INFO  CDMSDataProviderDaoImpl:53 - 1
+2018-09-16 16:48:50 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,688]:: getCDMSDataList :: End
+2018-09-16 16:48:50 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@5e8cc89d
+2018-09-16 16:48:50 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2018-09-16 16:48:50 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-09-16 16:48:50 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-09-16 16:48:50 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### 691
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### 691
+2018-09-16 16:50:07 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,691]:: getCDMSDataList :: begin
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### 691
+2018-09-16 16:50:07 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-09-16 16:50:07 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,691]:: getCDMSDataList :: begin
+2018-09-16 16:50:07 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 691
+2018-09-16 16:50:07 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-09-16 16:50:07 INFO  CDMSDataProviderDaoImpl:53 - 1
+2018-09-16 16:50:07 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,691]:: getCDMSDataList :: End
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2018-09-16 16:50:07 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@5ff0f824
+2018-09-16 16:50:07 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-09-16 16:50:07 INFO  CDMSDataProviderDaoImpl:53 - 1
+2018-09-16 16:50:07 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,691]:: getCDMSDataList :: End
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2018-09-16 16:50:07 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-09-16 16:50:07 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-09-16 16:50:07 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed

@@ -1,0 +1,11 @@
+2018-04-29 00:14:34 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-04-29 00:14:34 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-04-29 00:14:34 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-04-29 00:14:34 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-04-29 00:14:34 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-04-29 00:14:34 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-04-29 00:14:34 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-04-29 00:14:34 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-04-29 00:14:34 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-04-29 00:14:34 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-04-29 00:14:34 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully

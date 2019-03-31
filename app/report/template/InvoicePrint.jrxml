@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InvoicePrint" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Empty" uuid="cc29f516-361b-4896-bfe1-b24df8e4324c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="saleInvoiceNo" class="java.lang.String">
+		<fieldDescription><![CDATA[saleInvoiceNo]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="190" y="0" width="210" height="23" uuid="9d40294b-7a29-4208-a84e-030770fd8aef"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Khandelwal Cold Drinks, Jurehra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="23" width="100" height="20" uuid="bb147b0f-8625-4245-bbde-b52dcd47c05a"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[sale Invoice No :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="23" width="100" height="20" uuid="b9847448-557c-4597-8be0-fd4e3a8595c9"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{saleInvoiceNo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

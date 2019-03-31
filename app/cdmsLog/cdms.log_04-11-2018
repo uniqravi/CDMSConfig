@@ -1,0 +1,760 @@
+2018-11-04 18:27:28 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-11-04 18:27:29 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-11-04 18:27:29 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-11-04 18:27:29 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-11-04 18:27:29 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-11-04 18:27:31 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-11-04 18:27:31 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-11-04 18:27:32 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-11-04 18:27:32 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-11-04 18:27:32 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-11-04 18:27:32 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-11-04 18:27:33 INFO  MLog:92 - MLog clients using log4j logging.
+2018-11-04 18:27:36 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-11-04 18:27:37 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f1320671 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@edd50862 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9y1pthhk1n4si7v|3886f889, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@af48c9 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9y1pthhk1n4si7v|700ce6d6, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9y1pthhk1n4si7v|2de9a1d5, numHelperThreads -> 3 ]
+2018-11-04 18:27:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-11-04 18:27:41 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-11-04 18:27:42 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-11-04 18:27:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-04 18:27:42 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-11-04 18:27:48 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-11-04 18:27:48 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-11-04 18:28:31 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:28:31 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08006
+2018-11-04 18:28:31 ERROR SqlExceptionHelper:146 - An I/O error occurred while sending to the backend.
+2018-11-04 18:28:31 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:28:33 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7d50a054 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-11-04 18:28:33 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@57bf2c6f is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-11-04 18:28:39 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@c909108 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-11-04 18:28:39 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@57bf2c6f is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-11-04 18:28:39 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@188ab1f8 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-11-04 18:28:39 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@57bf2c6f is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-11-04 18:28:51 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:28:51 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:28:51 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:28:51 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:28:51 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:28:51 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:28:53 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:28:53 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:28:53 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:28:53 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:28:53 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:28:53 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:03 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:03 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:03 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:03 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:03 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:03 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:08 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:08 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:08 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:08 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:08 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:08 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:08 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:08 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:08 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:08 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:08 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:08 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:08 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:08 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:08 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:08 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:08 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:08 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:09 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:09 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:09 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:09 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:09 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:09 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:09 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:09 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:09 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:09 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:09 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:09 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:09 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:09 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:09 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:09 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:09 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:09 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:10 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:10 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:10 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:10 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:10 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:10 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:10 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:10 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:10 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:10 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:10 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:10 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:10 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:10 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:10 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:10 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:10 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:10 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:11 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:11 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:11 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:11 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:11 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:11 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:12 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:12 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:12 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:12 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:12 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:12 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:12 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:12 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:12 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:12 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:12 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:12 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:12 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:12 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:12 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:12 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:12 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:12 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:12 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:12 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:12 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:12 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:12 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:12 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:12 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:12 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:12 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:12 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:12 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:12 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:13 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:13 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:13 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:13 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:13 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:13 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:13 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:13 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:13 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:13 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:13 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:13 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:13 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:13 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:13 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:13 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:13 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:13 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:13 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:13 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:13 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:13 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:13 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:13 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:13 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:13 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:13 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:13 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:13 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:13 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:14 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:14 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:14 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:14 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:14 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:14 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:14 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:14 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:14 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:14 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:14 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:14 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:14 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:14 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:14 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:14 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:14 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:14 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:14 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:14 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:14 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:14 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:14 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:14 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:15 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:15 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:15 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:15 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:15 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:15 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:15 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:15 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:15 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:15 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:15 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:15 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:15 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:15 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:15 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:15 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:15 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:15 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:16 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:16 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:16 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:16 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:16 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:16 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:16 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:16 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:16 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:16 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:16 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:16 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:29:23 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:29:23 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2018-11-04 18:29:23 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: This connection has been closed. ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: This connection has been closed.
+	at org.postgresql.jdbc.PgConnection.checkClosed(PgConnection.java:766)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:1577)
+	at org.postgresql.jdbc.PgConnection.prepareStatement(PgConnection.java:372)
+	at sun.reflect.GeneratedMethodAccessor22.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.mchange.v2.c3p0.stmt.GooGooStatementCache$1StmtAcquireTask.run(GooGooStatementCache.java:546)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+2018-11-04 18:29:23 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 08003
+2018-11-04 18:29:23 ERROR SqlExceptionHelper:146 - This connection has been closed.
+2018-11-04 18:29:23 FATAL ScreenTransitionController:148 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-11-04 18:30:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-11-04 18:30:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-11-04 18:30:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-11-04 18:30:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-11-04 18:30:58 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-11-04 18:30:58 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-11-04 18:30:58 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-11-04 18:30:58 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-11-04 18:30:58 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-11-04 18:30:58 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-11-04 18:30:58 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-11-04 18:30:58 INFO  MLog:92 - MLog clients using log4j logging.
+2018-11-04 18:30:58 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-11-04 18:30:58 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2aa2656e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@cb5a42aa [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9y1ptlvv6hwxomt|542ce009, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@269396a7 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9y1ptlvv6hwxomt|7bce9201, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9y1ptlvv6hwxomt|6da5e24e, numHelperThreads -> 3 ]
+2018-11-04 18:30:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-11-04 18:30:59 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-11-04 18:30:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-11-04 18:30:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-11-04 18:30:59 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-11-04 18:31:00 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-11-04 18:31:00 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-11-04 18:31:10 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2018-11-04 18:31:10 INFO  ProductServiceImpl:295 - ProductServiceImpl :: productList :: product List count ### 51
+2018-11-04 18:31:10 INFO  ProductServiceImpl:296 - ProductServiceImpl :: productList :: end
+2018-11-04 18:31:10 INFO  ProductServiceImpl:1082 - ProductServiceImpl :: nonBproductList :: begin
+2018-11-04 18:31:10 INFO  ProductServiceImpl:1092 - ProductServiceImpl :: nonBproductList :: product List count ### 2
+2018-11-04 18:31:10 INFO  ProductServiceImpl:1093 - ProductServiceImpl :: nonBproductList :: end
+2018-11-04 18:31:10 INFO  CDMSDataProviderDaoImpl:35 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: begin
+2018-11-04 18:31:10 INFO  CDMSDataProviderDaoImpl:53 - 2
+2018-11-04 18:31:10 INFO  CDMSDataProviderDaoImpl:54 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: End
+2018-11-04 18:35:38 INFO  AddPurchasedProductConstroller:1112 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-11-04 18:35:38 INFO  AddPurchasedProductConstroller:1134 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2018-11-04 18:35:38 INFO  AddPurchasedProductConstroller:1135 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-11-04 18:35:38 INFO  ProductServiceImpl:302 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-11-04 18:35:38 INFO  ProductServiceImpl:330 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-11-04 18:35:38 INFO  ProductServiceImpl:331 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-11-04 18:35:38 INFO  ProductServiceImpl:334 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-11-04 18:35:38 INFO  ProductServiceImpl:335 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-11-04 18:35:38 INFO  ProductServiceImpl:357 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-11-04 18:35:38 INFO  ProductServiceImpl:367 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-11-04 18:35:38 INFO  AddPurchasedProductConstroller:1137 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2018-11-04 18:35:59 INFO  ProductServiceImpl:1130 - getAllChallanDtlsForForRtnEmpty :: begin
+2018-11-04 18:35:59 INFO  ProductServiceImpl:1145 - getAllChallanDtlsForForRtnEmpty :: starting to get PurchaseDtl bean
+2018-11-04 18:35:59 INFO  ProductServiceImpl:1150 - getAllChallanDtlsForForRtnEmpty :: End to get PurchaseDtl bean
+2018-11-04 18:35:59 INFO  ProductServiceImpl:1161 - getAllChallanDtlsForForRtnEmpty :: End
+2018-11-04 18:36:06 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:06 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:06 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:06 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:06 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@73566025
+2018-11-04 18:36:06 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:06 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:06 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:06 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:16 INFO  CDMSDataProviderDaoImpl:35 - viewNonBeveragePurchaseDtlByInvoice[,1072]:: getCDMSDataList :: begin
+2018-11-04 18:36:16 INFO  CDMSDataProviderDaoImpl:53 - 2
+2018-11-04 18:36:16 INFO  CDMSDataProviderDaoImpl:54 - viewNonBeveragePurchaseDtlByInvoice[,1072]:: getCDMSDataList :: End
+2018-11-04 18:36:24 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:24 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:24 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:24 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:24 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@7df7c22c
+2018-11-04 18:36:24 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:24 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:24 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:24 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:24 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:24 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:24 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:24 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:24 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@2b9ba832
+2018-11-04 18:36:24 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:24 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:24 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:24 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:25 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:25 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@17e3a2d1
+2018-11-04 18:36:25 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:25 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:25 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@100b0f32
+2018-11-04 18:36:25 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:25 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:25 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@28de027d
+2018-11-04 18:36:25 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:25 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:25 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:25 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@a5db97b
+2018-11-04 18:36:25 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:25 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:25 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:26 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:26 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:26 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:26 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:26 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@4bd42867
+2018-11-04 18:36:26 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:26 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:26 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:26 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:36:38 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### 1072
+2018-11-04 18:36:38 INFO  ProductServiceImpl:828 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:38 INFO  ProductServiceImpl:829 - getChallanDetailByInvoice :: Invoice Number ### 1072
+2018-11-04 18:36:38 INFO  ProductDaoImpl:186 - getChallanDetailByInvoice :: begin
+2018-11-04 18:36:38 INFO  ProductDaoImpl:190 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@7ade55df
+2018-11-04 18:36:38 INFO  ProductServiceImpl:834 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-11-04 18:36:38 INFO  ProductServiceImpl:836 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-11-04 18:36:38 INFO  ProductServiceImpl:846 - getChallanDetailByInvoice :: End
+2018-11-04 18:36:38 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2018-11-04 18:37:09 INFO  CDMSDataProviderDaoImpl:35 - viewNonBeveragePurchaseDtlByInvoice[,1072]:: getCDMSDataList :: begin
+2018-11-04 18:37:09 INFO  CDMSDataProviderDaoImpl:53 - 2
+2018-11-04 18:37:09 INFO  CDMSDataProviderDaoImpl:54 - viewNonBeveragePurchaseDtlByInvoice[,1072]:: getCDMSDataList :: End
+2018-11-04 18:37:36 INFO  ProductServiceImpl:1099 - ProductServiceImpl :: returnEmptyInvoice :: begin
+2018-11-04 18:37:36 INFO  ProductServiceImpl:1102 - ProductServiceImpl :: returnEmptyInvoice :: non beverage sale saving start
+2018-11-04 18:37:36 INFO  ProductServiceImpl:1107 - ProductServiceImpl :: returnEmptyInvoice :: non beverage sale saving End
+2018-11-04 18:37:36 INFO  ProductServiceImpl:1122 - ProductServiceImpl :: updateRtnPurchaseInvoiceNumber :: begin
+2018-11-04 18:37:36 INFO  ProductServiceImpl:1124 - ProductServiceImpl :: updateRtnPurchaseInvoiceNumber :: db Activity Start
+2018-11-04 18:37:36 INFO  ProductDaoImpl:257 - ProductDaoImpl :: updateRtnEmtpyInvoiceNumber :: begin
+2018-11-04 18:37:36 INFO  ProductDaoImpl:263 - ProductDaoImpl :: updateRtnEmtpyInvoiceNumber :: updated Row count ### 1

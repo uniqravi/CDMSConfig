@@ -1,0 +1,1243 @@
+2017-10-15 19:41:25 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 19:41:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-15 19:41:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-15 19:41:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-15 19:41:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-15 19:41:25 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-15 19:41:25 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-15 19:41:25 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-15 19:41:26 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-15 19:41:26 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-15 19:41:26 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-15 19:41:26 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-15 19:41:26 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-15 19:41:27 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-15 19:41:27 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@922399e8 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8eee0327 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9im9r8zdx8rp6v4df|3155561e, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@69f5fb43 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r8zdx8rp6v4df|aeca43b, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r8zdx8rp6v4df|600d3238, numHelperThreads -> 3 ]
+2017-10-15 19:41:27 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-15 19:41:27 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-15 19:41:28 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-15 19:41:28 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-15 19:41:28 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-15 19:41:30 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 19:41:30 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 19:42:13 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 19:42:13 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 19:42:13 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 19:42:13 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 19:42:13 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 19:42:13 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@589d32b6, [Ljava.lang.Object;@5380f6cd, [Ljava.lang.Object;@9a36410, [Ljava.lang.Object;@123893e2]
+2017-10-15 19:42:13 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:42:13 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:42:22 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:22 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 19:42:22 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:22 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:22 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@4b84228a]
+2017-10-15 19:42:22 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:22 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:22 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:24 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:24 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 19:42:24 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:24 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:24 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@69d30757]
+2017-10-15 19:42:24 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:24 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:24 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:25 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:25 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956239
+2017-10-15 19:42:25 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:25 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:25 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@39bd8750, [Ljava.lang.Object;@6f04d7cf]
+2017-10-15 19:42:25 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:25 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:25 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:30 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:30 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 19:42:30 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:30 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:30 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@5e46294e, [Ljava.lang.Object;@7da8360f]
+2017-10-15 19:42:30 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:30 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:30 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:32 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:32 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956239
+2017-10-15 19:42:32 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:32 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:32 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@46becd3a, [Ljava.lang.Object;@3325a377]
+2017-10-15 19:42:32 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:32 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:32 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:33 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:33 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956239
+2017-10-15 19:42:33 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:33 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:33 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@20298f0e, [Ljava.lang.Object;@4277f3c6]
+2017-10-15 19:42:33 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:33 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:33 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:34 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:34 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 19:42:34 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:34 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:34 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@72087672]
+2017-10-15 19:42:34 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:34 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:34 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:36 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:36 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 19:42:36 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:36 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:36 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@491495f]
+2017-10-15 19:42:36 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:36 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:36 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:42:37 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:42:37 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 19:42:37 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:42:37 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:42:37 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@593d5acf, [Ljava.lang.Object;@7228d87f]
+2017-10-15 19:42:37 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:42:37 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:42:37 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:43:11 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 19:43:11 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 19:43:11 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 30-09-2017
+2017-10-15 19:43:11 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 19:43:11 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 19:43:11 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@6719af9c, [Ljava.lang.Object;@156f07d6, [Ljava.lang.Object;@6b41ce77]
+2017-10-15 19:43:11 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:43:11 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:43:25 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 19:43:25 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 19:43:25 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 19:43:25 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 19:43:25 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 19:43:25 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@33215c6b, [Ljava.lang.Object;@7a7587a8, [Ljava.lang.Object;@6813c129, [Ljava.lang.Object;@11de574b]
+2017-10-15 19:43:25 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:43:25 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:43:52 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:43:52 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 19:43:52 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:43:52 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:43:52 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@67825a4]
+2017-10-15 19:43:52 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:43:52 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:43:52 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:43:57 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:43:57 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 19:43:57 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:43:57 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:43:57 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@4f773a3b]
+2017-10-15 19:43:57 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:43:57 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:43:57 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:43:59 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:43:59 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 19:43:59 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:43:59 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:43:59 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@5f45c05b]
+2017-10-15 19:43:59 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:43:59 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:43:59 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:44:00 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:44:00 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 19:44:00 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:44:00 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:44:00 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@794762c7]
+2017-10-15 19:44:00 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:44:00 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:44:00 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:44:01 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:44:01 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956239
+2017-10-15 19:44:01 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:44:01 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:44:01 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@3d818a1c, [Ljava.lang.Object;@a844c65]
+2017-10-15 19:44:01 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:44:01 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:44:01 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:44:03 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:44:03 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 19:44:03 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:44:03 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:44:03 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@1857310b, [Ljava.lang.Object;@12c0f107]
+2017-10-15 19:44:03 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:44:03 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:44:03 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:44:30 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2017-10-15 19:44:30 INFO  ProductServiceImpl:77 - ProductServiceImpl :: fillingQtyList :: begin
+2017-10-15 19:44:30 INFO  ProductServiceImpl:85 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 7
+2017-10-15 19:44:30 INFO  ProductServiceImpl:86 - ProductServiceImpl :: fillingQtyList :: end
+2017-10-15 19:44:30 INFO  ProductServiceImpl:92 - ProductServiceImpl :: flavrList :: begin
+2017-10-15 19:44:30 INFO  ProductServiceImpl:100 - ProductServiceImpl :: flavrList :: flavour Name List count ### 6
+2017-10-15 19:44:30 INFO  ProductServiceImpl:101 - ProductServiceImpl :: flavrList :: end
+2017-10-15 19:44:30 INFO  ProductServiceImpl:107 - ProductServiceImpl :: packingtypeList :: begin
+2017-10-15 19:44:30 INFO  ProductServiceImpl:115 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 3
+2017-10-15 19:44:30 INFO  ProductServiceImpl:116 - ProductServiceImpl :: packingtypeList :: end
+2017-10-15 19:44:30 INFO  ProductServiceImpl:122 - ProductServiceImpl :: packingQtyList :: begin
+2017-10-15 19:44:30 INFO  ProductServiceImpl:130 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2017-10-15 19:44:30 INFO  ProductServiceImpl:131 - ProductServiceImpl :: packingQtyList :: end
+2017-10-15 19:44:30 INFO  ProductController:216 - ProductController :: Initialization end
+2017-10-15 19:44:33 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 19:44:34 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 19:44:34 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 19:44:58 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 19:44:58 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 19:44:58 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 19:44:58 INFO  CustomerServiceImpl:68 - CustomerServiceImpl :: getAllCustomers :: begin
+2017-10-15 19:44:58 INFO  CustomerServiceImpl:69 - CustomerServiceImpl :: getAllCustomers :: db activity start
+2017-10-15 19:44:58 INFO  CustomerServiceImpl:72 - CustomerServiceImpl :: getAllCustomers :: db activity end
+2017-10-15 19:44:58 INFO  CustomerServiceImpl:77 - CustomerServiceImpl :: getAllCustomers :: customer list count ### 0
+2017-10-15 19:44:58 INFO  CustomerServiceImpl:79 - CustomerServiceImpl :: getAllCustomers :: end
+2017-10-15 19:44:58 INFO  ProductServiceImpl:527 - ProductServiceImpl :: latestAllSchemePrice :: begin
+2017-10-15 19:44:58 INFO  ProductServiceImpl:530 - ProductServiceImpl :: latestAllSchemePrice :: db activity start
+2017-10-15 19:44:58 INFO  ProductDaoImpl:99 - ProductDaoImpl :: latestAllSchemePrice :: begin
+2017-10-15 19:44:58 INFO  ProductDaoImpl:103 - ProductDaoImpl :: latestAllSchemePrice :: defined price list retrieved ### []
+2017-10-15 19:44:58 INFO  ProductDaoImpl:104 - ProductDaoImpl :: latestAllSchemePrice :: End
+2017-10-15 19:44:58 INFO  ProductServiceImpl:533 - ProductServiceImpl :: latestAllSchemePrice :: db response recieved
+2017-10-15 19:44:58 INFO  ProductServiceImpl:589 - ProductServiceImpl :: latestAllSchemePrice :: end
+2017-10-15 19:44:58 INFO  ProductServiceImpl:426 - ProductServiceImpl :: getAllProductGroup :: begin
+2017-10-15 19:44:58 INFO  ProductServiceImpl:427 - ProductServiceImpl :: getAllProductGroup :: db activity start
+2017-10-15 19:44:59 INFO  ProductServiceImpl:434 - ProductServiceImpl :: getAllProductGroup :: all product group count ### 8
+2017-10-15 19:45:12 INFO  ProductServiceImpl:441 - ProductServiceImpl :: productLstByParams :: begin
+2017-10-15 19:45:12 INFO  ProductDaoImpl:82 - ProductDaoImpl :: getProductListByParams :: begin
+2017-10-15 19:45:12 INFO  ProductDaoImpl:87 - ProductDaoImpl :: getProductListByParams :: Executed Query ### select * from cdms.beverage_product_category where group_name='300_GLASS_24' 
+2017-10-15 19:45:12 INFO  ProductDaoImpl:91 - ProductDaoImpl :: getProductListByParams :: Product list ### [application.cdms.db.entities.BeverageProductCategory@7c10e5f3, application.cdms.db.entities.BeverageProductCategory@2be14073, application.cdms.db.entities.BeverageProductCategory@3ed7077, application.cdms.db.entities.BeverageProductCategory@5edae6e0]
+2017-10-15 19:45:12 INFO  ProductDaoImpl:92 - ProductDaoImpl :: getProductListByParams :: End
+2017-10-15 19:45:12 INFO  ProductServiceImpl:447 - ProductServiceImpl :: productLstByParams :: db response recieved
+2017-10-15 19:45:12 INFO  ProductServiceImpl:454 - ProductServiceImpl :: productLstByParams :: product list upon search parameter ### 4
+2017-10-15 19:45:12 INFO  ProductServiceImpl:463 - ProductServiceImpl :: productLstByParams :: end
+2017-10-15 19:46:48 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 19:46:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-15 19:46:48 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-15 19:46:48 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-15 19:46:48 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-15 19:46:48 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-15 19:46:48 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-15 19:46:48 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-15 19:46:48 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-15 19:46:48 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-15 19:46:48 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-15 19:46:48 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-15 19:46:48 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-15 19:46:49 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-15 19:46:49 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@dda6555e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ce6c1ec [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9im9r8zktzmo39vrk|7dfe4635, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@261a86cf [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r8zktzmo39vrk|1aa44f91, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r8zktzmo39vrk|b91f132, numHelperThreads -> 3 ]
+2017-10-15 19:46:49 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-15 19:46:49 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-15 19:46:49 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-15 19:46:49 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-15 19:46:49 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-15 19:46:50 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 19:46:50 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 19:46:51 INFO  CustomerServiceImpl:68 - CustomerServiceImpl :: getAllCustomers :: begin
+2017-10-15 19:46:51 INFO  CustomerServiceImpl:69 - CustomerServiceImpl :: getAllCustomers :: db activity start
+2017-10-15 19:46:51 INFO  CustomerServiceImpl:72 - CustomerServiceImpl :: getAllCustomers :: db activity end
+2017-10-15 19:46:51 INFO  CustomerServiceImpl:77 - CustomerServiceImpl :: getAllCustomers :: customer list count ### 0
+2017-10-15 19:46:51 INFO  CustomerServiceImpl:79 - CustomerServiceImpl :: getAllCustomers :: end
+2017-10-15 19:46:51 INFO  ProductServiceImpl:527 - ProductServiceImpl :: latestAllSchemePrice :: begin
+2017-10-15 19:46:51 INFO  ProductServiceImpl:530 - ProductServiceImpl :: latestAllSchemePrice :: db activity start
+2017-10-15 19:46:51 INFO  ProductDaoImpl:99 - ProductDaoImpl :: latestAllSchemePrice :: begin
+2017-10-15 19:46:51 INFO  ProductDaoImpl:103 - ProductDaoImpl :: latestAllSchemePrice :: defined price list retrieved ### []
+2017-10-15 19:46:51 INFO  ProductDaoImpl:104 - ProductDaoImpl :: latestAllSchemePrice :: End
+2017-10-15 19:46:51 INFO  ProductServiceImpl:533 - ProductServiceImpl :: latestAllSchemePrice :: db response recieved
+2017-10-15 19:46:51 INFO  ProductServiceImpl:589 - ProductServiceImpl :: latestAllSchemePrice :: end
+2017-10-15 19:46:51 INFO  ProductServiceImpl:426 - ProductServiceImpl :: getAllProductGroup :: begin
+2017-10-15 19:46:51 INFO  ProductServiceImpl:427 - ProductServiceImpl :: getAllProductGroup :: db activity start
+2017-10-15 19:46:51 INFO  ProductServiceImpl:434 - ProductServiceImpl :: getAllProductGroup :: all product group count ### 8
+2017-10-15 19:46:57 INFO  ProductServiceImpl:441 - ProductServiceImpl :: productLstByParams :: begin
+2017-10-15 19:46:57 INFO  ProductDaoImpl:82 - ProductDaoImpl :: getProductListByParams :: begin
+2017-10-15 19:46:57 INFO  ProductDaoImpl:87 - ProductDaoImpl :: getProductListByParams :: Executed Query ### select * from cdms.beverage_product_category where group_name='300_GLASS_24' 
+2017-10-15 19:46:57 INFO  ProductDaoImpl:91 - ProductDaoImpl :: getProductListByParams :: Product list ### [application.cdms.db.entities.BeverageProductCategory@6e72cd27, application.cdms.db.entities.BeverageProductCategory@29a92ef9, application.cdms.db.entities.BeverageProductCategory@2177b1fe, application.cdms.db.entities.BeverageProductCategory@65a298a8]
+2017-10-15 19:46:57 INFO  ProductDaoImpl:92 - ProductDaoImpl :: getProductListByParams :: End
+2017-10-15 19:46:57 INFO  ProductServiceImpl:447 - ProductServiceImpl :: productLstByParams :: db response recieved
+2017-10-15 19:46:57 INFO  ProductServiceImpl:454 - ProductServiceImpl :: productLstByParams :: product list upon search parameter ### 4
+2017-10-15 19:46:57 INFO  ProductServiceImpl:463 - ProductServiceImpl :: productLstByParams :: end
+2017-10-15 19:47:10 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 19:47:10 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 19:47:10 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 19:47:27 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 19:47:27 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 19:47:27 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 19:47:27 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 19:47:27 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 19:47:27 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@43d955f6, [Ljava.lang.Object;@2f5fe7ee, [Ljava.lang.Object;@6ae09562, [Ljava.lang.Object;@7d720301]
+2017-10-15 19:47:27 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:47:27 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:47:37 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:47:37 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 19:47:37 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:47:37 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:47:37 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@603802cd]
+2017-10-15 19:47:37 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:47:37 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:47:37 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:47:38 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:47:38 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 19:47:38 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:47:38 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:47:38 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@5b71ec53]
+2017-10-15 19:47:38 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:47:38 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:47:38 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:47:39 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:47:39 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956239
+2017-10-15 19:47:39 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:47:39 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:47:39 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@1798607d, [Ljava.lang.Object;@6bc1162a]
+2017-10-15 19:47:39 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:47:39 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:47:39 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:47:40 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:47:40 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 19:47:40 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:47:40 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:47:40 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@7420555f, [Ljava.lang.Object;@5dad7b8d]
+2017-10-15 19:47:40 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:47:40 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:47:40 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:48:09 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:48:09 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 19:48:09 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:48:09 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:48:09 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@79aebdde]
+2017-10-15 19:48:09 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:48:09 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:48:09 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:48:14 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2017-10-15 19:48:14 INFO  ProductServiceImpl:77 - ProductServiceImpl :: fillingQtyList :: begin
+2017-10-15 19:48:14 INFO  ProductServiceImpl:85 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 7
+2017-10-15 19:48:14 INFO  ProductServiceImpl:86 - ProductServiceImpl :: fillingQtyList :: end
+2017-10-15 19:48:14 INFO  ProductServiceImpl:92 - ProductServiceImpl :: flavrList :: begin
+2017-10-15 19:48:14 INFO  ProductServiceImpl:100 - ProductServiceImpl :: flavrList :: flavour Name List count ### 6
+2017-10-15 19:48:14 INFO  ProductServiceImpl:101 - ProductServiceImpl :: flavrList :: end
+2017-10-15 19:48:14 INFO  ProductServiceImpl:107 - ProductServiceImpl :: packingtypeList :: begin
+2017-10-15 19:48:14 INFO  ProductServiceImpl:115 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 3
+2017-10-15 19:48:14 INFO  ProductServiceImpl:116 - ProductServiceImpl :: packingtypeList :: end
+2017-10-15 19:48:14 INFO  ProductServiceImpl:122 - ProductServiceImpl :: packingQtyList :: begin
+2017-10-15 19:48:14 INFO  ProductServiceImpl:130 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2017-10-15 19:48:14 INFO  ProductServiceImpl:131 - ProductServiceImpl :: packingQtyList :: end
+2017-10-15 19:48:14 INFO  ProductController:216 - ProductController :: Initialization end
+2017-10-15 19:48:19 INFO  ProductPriceSchemeController:63 - ProductPriceSchemeController :: intialization start
+2017-10-15 19:48:19 INFO  ProductServiceImpl:410 - ProductServiceImpl :: getAllGroupNm :: begin
+2017-10-15 19:48:19 INFO  ProductServiceImpl:411 - ProductServiceImpl :: getAllGroupNm :: db activity start
+2017-10-15 19:48:19 INFO  ProductServiceImpl:418 - ProductServiceImpl :: getAllGroupNm :: all group list count ### 8
+2017-10-15 19:48:19 INFO  ProductServiceImpl:420 - ProductServiceImpl :: getAllGroupNm :: end
+2017-10-15 19:48:19 INFO  ProductPriceSchemeController:78 - ProductPriceSchemeController :: intialization end
+2017-10-15 19:48:22 INFO  ProductServiceImpl:294 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2017-10-15 19:48:22 INFO  ProductServiceImpl:297 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2017-10-15 19:48:22 INFO  ProductDaoImpl:69 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2017-10-15 19:48:22 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2017-10-15 19:48:22 INFO  ProductDaoImpl:75 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@2624901b, [Ljava.lang.Object;@3b0cd68e, [Ljava.lang.Object;@36b9f5b3]
+2017-10-15 19:48:22 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2017-10-15 19:48:22 INFO  ProductServiceImpl:300 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 3
+2017-10-15 19:48:22 INFO  ProductServiceImpl:395 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2017-10-15 19:48:22 INFO  ProductServiceImpl:404 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2017-10-15 19:48:24 INFO  ProductServiceImpl:294 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2017-10-15 19:48:24 INFO  ProductServiceImpl:297 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity start
+2017-10-15 19:48:24 INFO  ProductDaoImpl:69 - ProductDaoImpl :: getPrdctSchemePriceDtl :: begin
+2017-10-15 19:48:24 INFO  ProductDaoImpl:70 - ProductDaoImpl :: getPrdctSchemePriceDtl :: Group Name ### :: groupNm
+2017-10-15 19:48:24 INFO  ProductDaoImpl:75 - ProductDaoImpl :: getPrdctSchemePriceDtl :: price Scheme List ### [[Ljava.lang.Object;@1a2b0219, [Ljava.lang.Object;@12ef971a, [Ljava.lang.Object;@5b1f8254, [Ljava.lang.Object;@58786a90]
+2017-10-15 19:48:24 INFO  ProductDaoImpl:76 - ProductDaoImpl :: getPrdctSchemePriceDtl :: End
+2017-10-15 19:48:24 INFO  ProductServiceImpl:300 - ProductServiceImpl :: getPrdctSchemePriceDtl :: price scheme list size ### 4
+2017-10-15 19:48:24 INFO  ProductServiceImpl:395 - ProductServiceImpl :: getPrdctSchemePriceDtl :: db activity end
+2017-10-15 19:48:24 INFO  ProductServiceImpl:404 - ProductServiceImpl :: getPrdctSchemePriceDtl :: begin
+2017-10-15 19:48:25 INFO  ProductServiceImpl:441 - ProductServiceImpl :: productLstByParams :: begin
+2017-10-15 19:48:25 INFO  ProductDaoImpl:82 - ProductDaoImpl :: getProductListByParams :: begin
+2017-10-15 19:48:25 INFO  ProductDaoImpl:87 - ProductDaoImpl :: getProductListByParams :: Executed Query ### select * from cdms.beverage_product_category where group_name='300_GLASS_24' 
+2017-10-15 19:48:25 INFO  ProductDaoImpl:91 - ProductDaoImpl :: getProductListByParams :: Product list ### [application.cdms.db.entities.BeverageProductCategory@5f7e0d4a, application.cdms.db.entities.BeverageProductCategory@62311710, application.cdms.db.entities.BeverageProductCategory@10f4d273, application.cdms.db.entities.BeverageProductCategory@2dc8b44d]
+2017-10-15 19:48:25 INFO  ProductDaoImpl:92 - ProductDaoImpl :: getProductListByParams :: End
+2017-10-15 19:48:25 INFO  ProductServiceImpl:447 - ProductServiceImpl :: productLstByParams :: db response recieved
+2017-10-15 19:48:25 INFO  ProductServiceImpl:454 - ProductServiceImpl :: productLstByParams :: product list upon search parameter ### 4
+2017-10-15 19:48:25 INFO  ProductServiceImpl:463 - ProductServiceImpl :: productLstByParams :: end
+2017-10-15 19:48:46 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 19:48:46 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 19:48:46 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 19:48:46 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 19:48:46 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 19:48:46 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@2dcf7ff3, [Ljava.lang.Object;@5f75a1ea, [Ljava.lang.Object;@5a7c3091, [Ljava.lang.Object;@f55335d]
+2017-10-15 19:48:46 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:48:46 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:48:48 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:48:48 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 19:48:48 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:48:48 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:48:48 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@7128e29d, [Ljava.lang.Object;@65cb584d]
+2017-10-15 19:48:48 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:48:48 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:48:48 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:50:13 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 19:50:13 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 19:50:13 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 19:50:13 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 19:50:13 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 19:50:14 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-15 19:50:14 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-15 19:50:14 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-15 19:50:14 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-15 19:50:14 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-15 19:50:14 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-15 19:50:14 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-15 19:50:14 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-15 19:50:14 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-15 19:50:14 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-15 19:50:14 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-15 19:50:14 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-15 19:50:14 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-15 19:50:14 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2a5c348b [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@962b0eff [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9r8zp8qz1taav9k|30db0287, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@daeb0ce8 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9r8zp8qz1taav9k|1cf7ec4f, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9r8zp8qz1taav9k|5e288f9e, numHelperThreads -> 3 ]
+2017-10-15 19:50:15 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-15 19:50:15 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-15 19:50:15 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-15 19:50:15 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-15 19:50:15 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-15 19:50:16 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@25b81c94, [Ljava.lang.Object;@3603eea2, [Ljava.lang.Object;@7f00bf2c, [Ljava.lang.Object;@73df3e50]
+2017-10-15 19:50:16 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:50:16 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 19:50:18 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 19:50:18 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 19:50:18 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 19:50:18 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 19:50:18 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@2275e912, [Ljava.lang.Object;@269f7cb5]
+2017-10-15 19:50:18 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 19:50:18 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 19:50:18 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 19:50:23 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 19:50:23 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 19:50:23 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 21:22:40 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 21:22:40 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 21:22:40 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 30-09-2017
+2017-10-15 21:22:40 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 21:22:40 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 21:22:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-15 21:22:40 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-15 21:22:40 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-15 21:22:40 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-15 21:22:40 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-15 21:22:40 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-15 21:22:40 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-15 21:22:41 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-15 21:22:41 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-15 21:22:41 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-15 21:22:41 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-15 21:22:41 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-15 21:22:41 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-15 21:22:41 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@dbe4b904 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@11552bf2 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9im9r9304k31ao89ph|33ed0bd5, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@255343fa [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r9304k31ao89ph|55977256, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r9304k31ao89ph|18cf4659, numHelperThreads -> 3 ]
+2017-10-15 21:22:42 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-15 21:22:42 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-15 21:22:42 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-15 21:22:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-15 21:22:42 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-15 21:22:43 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@6e0ae23d, [Ljava.lang.Object;@3164c884, [Ljava.lang.Object;@449907ec]
+2017-10-15 21:22:43 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:22:43 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:22:55 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 21:22:55 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 21:22:55 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 21:22:55 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 21:22:55 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 21:22:55 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@331988dd, [Ljava.lang.Object;@e458e3f, [Ljava.lang.Object;@7c0be65f, [Ljava.lang.Object;@573d86c3]
+2017-10-15 21:22:55 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:22:55 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:23:10 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:23:10 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 21:23:10 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:23:10 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:23:10 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@4e5f7f79]
+2017-10-15 21:23:10 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:23:10 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:23:10 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:23:11 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:23:11 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 21:23:11 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:23:11 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:23:11 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@7a37f97f]
+2017-10-15 21:23:11 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:23:11 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:23:11 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:23:20 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:23:20 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 21:23:20 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:23:20 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:23:20 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@36755de7]
+2017-10-15 21:23:20 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:23:20 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:23:20 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:23:21 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:23:21 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 21:23:21 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:23:21 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:23:21 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@4caa0f9a]
+2017-10-15 21:23:21 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:23:21 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:23:21 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:23:23 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:23:23 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017955911
+2017-10-15 21:23:23 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:23:23 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:23:23 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@3ec0f928]
+2017-10-15 21:23:23 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:23:23 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:23:23 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:23:24 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:23:24 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956111
+2017-10-15 21:23:24 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:23:24 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:23:24 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@3cb00754]
+2017-10-15 21:23:24 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:23:24 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:23:24 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:23:31 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:23:31 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956239
+2017-10-15 21:23:31 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:23:31 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:23:31 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@2e484a9d, [Ljava.lang.Object;@10063475]
+2017-10-15 21:23:31 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:23:31 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:23:31 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:24:06 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:24:06 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 21:24:06 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:24:06 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:24:06 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@1b00892, [Ljava.lang.Object;@45d3c435]
+2017-10-15 21:24:06 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:24:06 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:24:06 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:24:52 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 21:24:52 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-10-2017
+2017-10-15 21:24:52 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 21:24:52 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 21:24:52 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 21:24:52 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@23eeba31]
+2017-10-15 21:24:52 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:24:52 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:25:03 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 21:25:03 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 21:25:03 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 30-09-2017
+2017-10-15 21:25:03 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 21:25:03 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 21:25:03 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@210a461b, [Ljava.lang.Object;@6937c2e6, [Ljava.lang.Object;@2be2168b]
+2017-10-15 21:25:03 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:25:03 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:25:18 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 21:25:18 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 21:25:18 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 21:25:18 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 21:25:18 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 21:25:18 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@286c1aff, [Ljava.lang.Object;@46d9c0b3, [Ljava.lang.Object;@3325b80f, [Ljava.lang.Object;@645183a5]
+2017-10-15 21:25:18 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:25:18 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:25:21 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:25:21 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956289
+2017-10-15 21:25:21 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:25:21 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:25:21 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@605fc27c, [Ljava.lang.Object;@51efe76b]
+2017-10-15 21:25:21 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:25:21 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:25:21 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:25:22 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 21:25:22 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956239
+2017-10-15 21:25:22 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 21:25:22 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 21:25:22 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@211d7d80, [Ljava.lang.Object;@35d7cb94]
+2017-10-15 21:25:22 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 21:25:22 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 21:25:22 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 21:26:39 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 21:26:39 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 21:26:39 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 21:29:06 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 21:29:06 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 21:29:06 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 30-09-2017
+2017-10-15 21:29:06 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 21:29:06 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 21:29:06 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@48ae473d, [Ljava.lang.Object;@351ae0c0, [Ljava.lang.Object;@59d866f9]
+2017-10-15 21:29:06 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:29:06 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:29:31 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 21:29:31 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 21:29:31 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 21:38:59 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 21:39:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-15 21:39:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-15 21:39:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-15 21:39:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-15 21:39:00 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-15 21:39:00 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-15 21:39:00 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-15 21:39:00 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-15 21:39:00 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-15 21:39:00 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-15 21:39:00 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-15 21:39:00 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-15 21:39:00 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-15 21:39:00 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@1aba74f4 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@695e1e25 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9im9r93l40afn6maj|50009646, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f6bfb679 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r93l40afn6maj|4440ba6a, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r93l40afn6maj|69680cc6, numHelperThreads -> 3 ]
+2017-10-15 21:39:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-15 21:39:00 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-15 21:39:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-15 21:39:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-15 21:39:01 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-15 21:39:02 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 21:39:02 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 21:40:02 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 21:40:02 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 21:40:02 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 30-09-2017
+2017-10-15 21:40:02 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 21:40:02 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 21:40:02 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@34465902, [Ljava.lang.Object;@12c6bc6b, [Ljava.lang.Object;@7ff912ed]
+2017-10-15 21:40:02 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:40:02 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 21:40:14 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 21:40:14 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-15 21:40:14 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 21:46:16 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2017-10-15 21:46:16 INFO  ProductServiceImpl:77 - ProductServiceImpl :: fillingQtyList :: begin
+2017-10-15 21:46:16 INFO  ProductServiceImpl:85 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 7
+2017-10-15 21:46:16 INFO  ProductServiceImpl:86 - ProductServiceImpl :: fillingQtyList :: end
+2017-10-15 21:46:16 INFO  ProductServiceImpl:92 - ProductServiceImpl :: flavrList :: begin
+2017-10-15 21:46:16 INFO  ProductServiceImpl:100 - ProductServiceImpl :: flavrList :: flavour Name List count ### 6
+2017-10-15 21:46:16 INFO  ProductServiceImpl:101 - ProductServiceImpl :: flavrList :: end
+2017-10-15 21:46:16 INFO  ProductServiceImpl:107 - ProductServiceImpl :: packingtypeList :: begin
+2017-10-15 21:46:16 INFO  ProductServiceImpl:115 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 3
+2017-10-15 21:46:16 INFO  ProductServiceImpl:116 - ProductServiceImpl :: packingtypeList :: end
+2017-10-15 21:46:16 INFO  ProductServiceImpl:122 - ProductServiceImpl :: packingQtyList :: begin
+2017-10-15 21:46:16 INFO  ProductServiceImpl:130 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2017-10-15 21:46:16 INFO  ProductServiceImpl:131 - ProductServiceImpl :: packingQtyList :: end
+2017-10-15 21:46:16 INFO  ProductController:216 - ProductController :: Initialization end
+2017-10-15 21:48:12 INFO  ProductController:221 - addNewProduct :: product addition start
+2017-10-15 21:48:12 INFO  ProductController:241 - addNewProduct :: validation start
+2017-10-15 21:48:12 INFO  ProductController:342 - addNewProduct :: validation end
+2017-10-15 21:48:12 INFO  ProductController:377 - addNewProduct :: begin to new product saving ### 200_SLICE_TETRA_24
+2017-10-15 21:48:12 INFO  ProductServiceImpl:139 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2017-10-15 21:48:12 INFO  ProductServiceImpl:141 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2017-10-15 21:48:12 INFO  ProductServiceImpl:158 - ProductServiceImpl :: addNewBeverageProduct ::  new Packing Type 
+2017-10-15 21:48:12 INFO  ProductServiceImpl:172 - ProductServiceImpl :: addNewBeverageProduct ::  new Group Name 
+2017-10-15 21:48:13 INFO  ProductServiceImpl:182 - ProductServiceImpl :: addNewBeverageProduct :: db activity end
+2017-10-15 21:48:13 INFO  ProductServiceImpl:183 - ProductServiceImpl :: addNewBeverageProduct :: new product creation
+2017-10-15 21:48:13 INFO  ProductController:379 - addNewProduct :: new product has been saved succesfully ### 200_SLICE_TETRA_24
+2017-10-15 21:48:46 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2017-10-15 21:48:46 INFO  ProductServiceImpl:77 - ProductServiceImpl :: fillingQtyList :: begin
+2017-10-15 21:48:46 INFO  ProductServiceImpl:85 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 7
+2017-10-15 21:48:46 INFO  ProductServiceImpl:86 - ProductServiceImpl :: fillingQtyList :: end
+2017-10-15 21:48:46 INFO  ProductServiceImpl:92 - ProductServiceImpl :: flavrList :: begin
+2017-10-15 21:48:46 INFO  ProductServiceImpl:100 - ProductServiceImpl :: flavrList :: flavour Name List count ### 6
+2017-10-15 21:48:46 INFO  ProductServiceImpl:101 - ProductServiceImpl :: flavrList :: end
+2017-10-15 21:48:46 INFO  ProductServiceImpl:107 - ProductServiceImpl :: packingtypeList :: begin
+2017-10-15 21:48:46 INFO  ProductServiceImpl:115 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2017-10-15 21:48:46 INFO  ProductServiceImpl:116 - ProductServiceImpl :: packingtypeList :: end
+2017-10-15 21:48:46 INFO  ProductServiceImpl:122 - ProductServiceImpl :: packingQtyList :: begin
+2017-10-15 21:48:46 INFO  ProductServiceImpl:130 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2017-10-15 21:48:46 INFO  ProductServiceImpl:131 - ProductServiceImpl :: packingQtyList :: end
+2017-10-15 21:48:46 INFO  ProductController:216 - ProductController :: Initialization end
+2017-10-15 21:49:06 INFO  ProductServiceImpl:200 - ProductServiceImpl :: groupNmLstByParameters :: begin
+2017-10-15 21:49:06 INFO  ProductDaoImpl:34 - ProductDaoImpl :: groupNmLstByParameters :: begin
+2017-10-15 21:49:06 INFO  ProductDaoImpl:35 - ProductDaoImpl :: groupNmLstByParameters :: ml Qty ### ML00000005
+2017-10-15 21:49:06 INFO  ProductDaoImpl:36 - ProductDaoImpl :: groupNmLstByParameters :: packingn cd ### TYPE000003
+2017-10-15 21:49:06 INFO  ProductDaoImpl:37 - ProductDaoImpl :: groupNmLstByParameters :: packingQty Cd ### PQTY000001
+2017-10-15 21:49:06 INFO  ProductDaoImpl:45 - ProductDaoImpl :: groupNmLstByParameters :: group name list [250_CAN_24]
+2017-10-15 21:49:06 INFO  ProductDaoImpl:46 - ProductDaoImpl :: groupNmLstByParameters :: End
+2017-10-15 21:49:06 INFO  ProductServiceImpl:203 - ProductServiceImpl :: groupNmLstByParameters :: response recieved from db
+2017-10-15 21:49:06 INFO  ProductServiceImpl:212 - ProductServiceImpl :: groupNmLstByParameters :: end
+2017-10-15 21:49:29 INFO  ProductController:221 - addNewProduct :: product addition start
+2017-10-15 21:49:29 INFO  ProductController:241 - addNewProduct :: validation start
+2017-10-15 21:49:29 INFO  ProductController:342 - addNewProduct :: validation end
+2017-10-15 21:49:29 INFO  ProductController:377 - addNewProduct :: begin to new product saving ### 250_MIRINDA_CAN_24
+2017-10-15 21:49:29 INFO  ProductServiceImpl:139 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2017-10-15 21:49:29 INFO  ProductServiceImpl:141 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2017-10-15 21:49:29 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 23505
+2017-10-15 21:49:29 ERROR SqlExceptionHelper:146 - ERROR: duplicate key value violates unique constraint "beverage_product_uniq"
+  Detail: Key (flavr_cd, filling_qty_cd, packing_name_cd, packing_qty_cd)=(FLVR000003, ML00000005, TYPE000003, PQTY000001) already exists.
+2017-10-15 21:49:29 INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+2017-10-15 21:49:29 FATAL ProductServiceImpl:187 - ProductServiceImpl :: addNewBeverageProduct :: Exception :: could not execute statement
+2017-10-15 21:49:29 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2017-10-15 21:49:29 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2125)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:297)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:136)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:147)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:187)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:349)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1222)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at application.cdms.hibernate.utility.HibernateUtils.CloseCustomeTransationManager(HibernateUtils.java:54)
+	at application.cdms.service.impl.ProductServiceImpl.addNewBeverageProduct(ProductServiceImpl.java:191)
+	at application.cdms.controllers.ProductController.addNewProduct(ProductController.java:378)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "beverage_product_uniq"
+  Detail: Key (flavr_cd, filling_qty_cd, packing_name_cd, packing_qty_cd)=(FLVR000003, ML00000005, TYPE000003, PQTY000001) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2125)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:297)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:136)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:147)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:187)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:349)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1222)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at application.cdms.hibernate.utility.HibernateUtils.CloseCustomeTransationManager(HibernateUtils.java:54)
+	at application.cdms.service.impl.ProductServiceImpl.addNewBeverageProduct(ProductServiceImpl.java:181)
+	... 71 more
+2017-10-15 21:49:29 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 25P02
+2017-10-15 21:49:29 ERROR SqlExceptionHelper:146 - ERROR: current transaction is aborted, commands ignored until end of transaction block
+2017-10-15 21:49:29 INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+2017-10-15 21:49:29 FATAL ProductController:399 - addNewProduct :: exception ### could not execute statement
+2017-10-15 21:49:55 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 21:49:55 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2017-10-15 21:49:55 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2125)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:297)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:136)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:147)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:187)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:349)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:67)
+	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1191)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1675)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:380)
+	at application.cdms.service.impl.GenericServiceImpl.findAllEntity(GenericServiceImpl.java:37)
+	at application.cdms.service.impl.ProductServiceImpl.productList(ProductServiceImpl.java:220)
+	at application.cdms.controllers.AddPurchasedProductConstroller.<init>(AddPurchasedProductConstroller.java:202)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at sun.reflect.misc.ReflectUtil.newInstance(Unknown Source)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:927)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:971)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:220)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:744)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at application.cdms.controllers.ScreenTransitionController.loadScreenIntoRoot(ScreenTransitionController.java:107)
+	at application.cdms.controllers.SideNavigationController.displayAddPurchasedQty(SideNavigationController.java:148)
+	at application.cdms.controllers.SideNavigationController.lambda$1(SideNavigationController.java:82)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3470)
+	at javafx.scene.Scene$ClickGenerator.access$8100(Scene.java:3398)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3766)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "beverage_product_uniq"
+  Detail: Key (flavr_cd, filling_qty_cd, packing_name_cd, packing_qty_cd)=(FLVR000003, ML00000005, TYPE000003, PQTY000001) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2125)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:297)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:136)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:147)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:187)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:349)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1222)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at application.cdms.hibernate.utility.HibernateUtils.CloseCustomeTransationManager(HibernateUtils.java:54)
+	at application.cdms.service.impl.ProductServiceImpl.addNewBeverageProduct(ProductServiceImpl.java:181)
+	at application.cdms.controllers.ProductController.addNewProduct(ProductController.java:378)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	... 14 more
+2017-10-15 21:49:55 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 25P02
+2017-10-15 21:49:55 ERROR SqlExceptionHelper:146 - ERROR: current transaction is aborted, commands ignored until end of transaction block
+2017-10-15 21:49:55 INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+2017-10-15 21:50:02 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 21:50:02 WARN  NewPooledConnection:546 - [c3p0] A PooledConnection that has already signalled a Connection error is still in use!
+2017-10-15 21:50:02 WARN  NewPooledConnection:547 - [c3p0] Another error has occurred [ org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block ] which will not be reported to listeners!
+org.postgresql.util.PSQLException: ERROR: current transaction is aborted, commands ignored until end of transaction block
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2125)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:297)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:136)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:147)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:187)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:349)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultAutoFlushEventListener.onAutoFlush(DefaultAutoFlushEventListener.java:67)
+	at org.hibernate.internal.SessionImpl.autoFlushIfRequired(SessionImpl.java:1191)
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1675)
+	at org.hibernate.internal.CriteriaImpl.list(CriteriaImpl.java:380)
+	at application.cdms.service.impl.GenericServiceImpl.findAllEntity(GenericServiceImpl.java:37)
+	at application.cdms.service.impl.ProductServiceImpl.productList(ProductServiceImpl.java:220)
+	at application.cdms.controllers.AddPurchasedProductConstroller.<init>(AddPurchasedProductConstroller.java:202)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at sun.reflect.misc.ReflectUtil.newInstance(Unknown Source)
+	at javafx.fxml.FXMLLoader$ValueElement.processAttribute(FXMLLoader.java:927)
+	at javafx.fxml.FXMLLoader$InstanceDeclarationElement.processAttribute(FXMLLoader.java:971)
+	at javafx.fxml.FXMLLoader$Element.processStartElement(FXMLLoader.java:220)
+	at javafx.fxml.FXMLLoader$ValueElement.processStartElement(FXMLLoader.java:744)
+	at javafx.fxml.FXMLLoader.processStartElement(FXMLLoader.java:2707)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2527)
+	at javafx.fxml.FXMLLoader.loadImpl(FXMLLoader.java:2441)
+	at javafx.fxml.FXMLLoader.load(FXMLLoader.java:2409)
+	at application.cdms.controllers.ScreenTransitionController.loadScreenIntoRoot(ScreenTransitionController.java:107)
+	at application.cdms.controllers.SideNavigationController.displayAddPurchasedQty(SideNavigationController.java:148)
+	at application.cdms.controllers.SideNavigationController.lambda$1(SideNavigationController.java:82)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$ClickGenerator.postProcess(Scene.java:3470)
+	at javafx.scene.Scene$ClickGenerator.access$8100(Scene.java:3398)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3766)
+	at javafx.scene.Scene$MouseHandler.access$1500(Scene.java:3485)
+	at javafx.scene.Scene.impl_processMouseEvent(Scene.java:1762)
+	at javafx.scene.Scene$ScenePeerListener.mouseEvent(Scene.java:2494)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:381)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler$MouseEventNotification.run(GlassViewEventHandler.java:295)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.lambda$handleMouseEvent$354(GlassViewEventHandler.java:417)
+	at com.sun.javafx.tk.quantum.QuantumToolkit.runWithoutRenderLock(QuantumToolkit.java:389)
+	at com.sun.javafx.tk.quantum.GlassViewEventHandler.handleMouseEvent(GlassViewEventHandler.java:416)
+	at com.sun.glass.ui.View.handleMouseEvent(View.java:555)
+	at com.sun.glass.ui.View.notifyMouse(View.java:937)
+	at com.sun.glass.ui.win.WinApplication._runLoop(Native Method)
+	at com.sun.glass.ui.win.WinApplication.lambda$null$148(WinApplication.java:191)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "beverage_product_uniq"
+  Detail: Key (flavr_cd, filling_qty_cd, packing_name_cd, packing_qty_cd)=(FLVR000003, ML00000005, TYPE000003, PQTY000001) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2412)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2125)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:297)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:428)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:354)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:169)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:136)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.executeUpdate(NewProxyPreparedStatement.java:147)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:187)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:62)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3124)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:3581)
+	at org.hibernate.action.internal.EntityInsertAction.execute(EntityInsertAction.java:104)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:463)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:349)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:350)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.flush(SessionImpl.java:1222)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:425)
+	at org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction.beforeTransactionCommit(JdbcTransaction.java:101)
+	at org.hibernate.engine.transaction.spi.AbstractTransactionImpl.commit(AbstractTransactionImpl.java:177)
+	at application.cdms.hibernate.utility.HibernateUtils.CloseCustomeTransationManager(HibernateUtils.java:54)
+	at application.cdms.service.impl.ProductServiceImpl.addNewBeverageProduct(ProductServiceImpl.java:181)
+	at application.cdms.controllers.ProductController.addNewProduct(ProductController.java:378)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.Trampoline.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at sun.reflect.misc.MethodUtil.invoke(Unknown Source)
+	at javafx.fxml.FXMLLoader$MethodHandler.invoke(FXMLLoader.java:1769)
+	at javafx.fxml.FXMLLoader$ControllerMethodEventHandler.handle(FXMLLoader.java:1657)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:86)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:49)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Node.fireEvent(Node.java:8413)
+	at javafx.scene.control.Button.fire(Button.java:185)
+	at com.sun.javafx.scene.control.behavior.ButtonBehavior.mouseReleased(ButtonBehavior.java:182)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:96)
+	at com.sun.javafx.scene.control.skin.BehaviorSkinBase$1.handle(BehaviorSkinBase.java:89)
+	at com.sun.javafx.event.CompositeEventHandler$NormalEventHandlerRecord.handleBubblingEvent(CompositeEventHandler.java:218)
+	at com.sun.javafx.event.CompositeEventHandler.dispatchBubblingEvent(CompositeEventHandler.java:80)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:238)
+	at com.sun.javafx.event.EventHandlerManager.dispatchBubblingEvent(EventHandlerManager.java:191)
+	at com.sun.javafx.event.CompositeEventDispatcher.dispatchBubblingEvent(CompositeEventDispatcher.java:59)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:58)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.BasicEventDispatcher.dispatchEvent(BasicEventDispatcher.java:56)
+	at com.sun.javafx.event.EventDispatchChainImpl.dispatchEvent(EventDispatchChainImpl.java:114)
+	at com.sun.javafx.event.EventUtil.fireEventImpl(EventUtil.java:74)
+	at com.sun.javafx.event.EventUtil.fireEvent(EventUtil.java:54)
+	at javafx.event.Event.fireEvent(Event.java:198)
+	at javafx.scene.Scene$MouseHandler.process(Scene.java:3757)
+	... 14 more
+2017-10-15 21:50:02 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: 25P02
+2017-10-15 21:50:02 ERROR SqlExceptionHelper:146 - ERROR: current transaction is aborted, commands ignored until end of transaction block
+2017-10-15 21:50:02 INFO  AbstractBatchImpl:208 - HHH000010: On release of batch it still contained JDBC statements
+2017-10-15 21:53:25 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 21:53:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-15 21:53:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-15 21:53:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-15 21:53:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-15 21:53:25 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-15 21:53:25 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-15 21:53:25 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-15 21:53:25 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-15 21:53:25 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-15 21:53:25 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-15 21:53:25 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-15 21:53:25 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-15 21:53:26 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-15 21:53:26 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@3ca79143 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@8b4b3a74 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9im9r943nui142gdpz|50009646, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@18acd2c8 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r943nui142gdpz|4440ba6a, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge9im9r943nui142gdpz|69680cc6, numHelperThreads -> 3 ]
+2017-10-15 21:53:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-15 21:53:26 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-15 21:53:26 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-15 21:53:26 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-15 21:53:26 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-15 21:53:27 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 23
+2017-10-15 21:53:27 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 22:02:21 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2017-10-15 22:02:21 INFO  ProductServiceImpl:77 - ProductServiceImpl :: fillingQtyList :: begin
+2017-10-15 22:02:21 INFO  ProductServiceImpl:85 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 7
+2017-10-15 22:02:21 INFO  ProductServiceImpl:86 - ProductServiceImpl :: fillingQtyList :: end
+2017-10-15 22:02:21 INFO  ProductServiceImpl:92 - ProductServiceImpl :: flavrList :: begin
+2017-10-15 22:02:21 INFO  ProductServiceImpl:100 - ProductServiceImpl :: flavrList :: flavour Name List count ### 6
+2017-10-15 22:02:21 INFO  ProductServiceImpl:101 - ProductServiceImpl :: flavrList :: end
+2017-10-15 22:02:21 INFO  ProductServiceImpl:107 - ProductServiceImpl :: packingtypeList :: begin
+2017-10-15 22:02:21 INFO  ProductServiceImpl:115 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2017-10-15 22:02:21 INFO  ProductServiceImpl:116 - ProductServiceImpl :: packingtypeList :: end
+2017-10-15 22:02:21 INFO  ProductServiceImpl:122 - ProductServiceImpl :: packingQtyList :: begin
+2017-10-15 22:02:21 INFO  ProductServiceImpl:130 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2017-10-15 22:02:21 INFO  ProductServiceImpl:131 - ProductServiceImpl :: packingQtyList :: end
+2017-10-15 22:02:21 INFO  ProductController:216 - ProductController :: Initialization end
+2017-10-15 22:03:10 INFO  ProductServiceImpl:200 - ProductServiceImpl :: groupNmLstByParameters :: begin
+2017-10-15 22:03:10 INFO  ProductDaoImpl:34 - ProductDaoImpl :: groupNmLstByParameters :: begin
+2017-10-15 22:03:10 INFO  ProductDaoImpl:35 - ProductDaoImpl :: groupNmLstByParameters :: ml Qty ### ML00000005
+2017-10-15 22:03:10 INFO  ProductDaoImpl:36 - ProductDaoImpl :: groupNmLstByParameters :: packingn cd ### TYPE000003
+2017-10-15 22:03:10 INFO  ProductDaoImpl:37 - ProductDaoImpl :: groupNmLstByParameters :: packingQty Cd ### PQTY000001
+2017-10-15 22:03:10 INFO  ProductDaoImpl:45 - ProductDaoImpl :: groupNmLstByParameters :: group name list [250_CAN_24]
+2017-10-15 22:03:10 INFO  ProductDaoImpl:46 - ProductDaoImpl :: groupNmLstByParameters :: End
+2017-10-15 22:03:10 INFO  ProductServiceImpl:203 - ProductServiceImpl :: groupNmLstByParameters :: response recieved from db
+2017-10-15 22:03:10 INFO  ProductServiceImpl:212 - ProductServiceImpl :: groupNmLstByParameters :: end
+2017-10-15 22:03:17 INFO  ProductController:221 - addNewProduct :: product addition start
+2017-10-15 22:03:17 INFO  ProductController:241 - addNewProduct :: validation start
+2017-10-15 22:03:17 INFO  ProductController:342 - addNewProduct :: validation end
+2017-10-15 22:03:17 INFO  ProductController:377 - addNewProduct :: begin to new product saving ### 250_PEPSI_CAN_24
+2017-10-15 22:03:17 INFO  ProductServiceImpl:139 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2017-10-15 22:03:17 INFO  ProductServiceImpl:141 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2017-10-15 22:03:18 INFO  ProductServiceImpl:182 - ProductServiceImpl :: addNewBeverageProduct :: db activity end
+2017-10-15 22:03:18 INFO  ProductServiceImpl:183 - ProductServiceImpl :: addNewBeverageProduct :: new product creation
+2017-10-15 22:03:18 INFO  ProductController:379 - addNewProduct :: new product has been saved succesfully ### 250_PEPSI_CAN_24
+2017-10-15 22:03:22 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 22:03:23 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 24
+2017-10-15 22:03:23 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 22:13:59 INFO  AddPurchasedProductConstroller:879 - AddPurchasedProductConstroller :: addPurchaseddtls :: start of saving purchase details
+2017-10-15 22:13:59 INFO  AddPurchasedProductConstroller:965 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2017-10-15 22:13:59 INFO  AddPurchasedProductConstroller:980 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2017-10-15 22:13:59 INFO  AddPurchasedProductConstroller:981 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2017-10-15 22:13:59 INFO  ProductServiceImpl:233 - ProductServiceImpl :: addPurchaseDtls :: begin
+2017-10-15 22:13:59 INFO  ProductServiceImpl:253 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2017-10-15 22:13:59 INFO  ProductServiceImpl:254 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2017-10-15 22:13:59 INFO  ProductServiceImpl:258 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2017-10-15 22:13:59 INFO  ProductServiceImpl:259 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2017-10-15 22:13:59 INFO  ProductServiceImpl:278 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2017-10-15 22:13:59 INFO  ProductServiceImpl:288 - ProductServiceImpl :: addPurchaseDtls :: end
+2017-10-15 22:13:59 INFO  AddPurchasedProductConstroller:983 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2017-10-15 22:14:29 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 22:14:29 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 22:14:29 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 31-10-2017
+2017-10-15 22:14:29 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 22:14:29 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 22:14:29 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@7f66fbbd, [Ljava.lang.Object;@6667298b, [Ljava.lang.Object;@2cb1db8c, [Ljava.lang.Object;@3cc85921, [Ljava.lang.Object;@743be616]
+2017-10-15 22:14:29 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 22:14:29 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 22:15:20 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 22:15:20 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956438
+2017-10-15 22:15:20 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 22:15:20 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 22:15:20 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@123cec3e, [Ljava.lang.Object;@e0657f8]
+2017-10-15 22:15:20 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 22:15:20 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 22:15:20 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 22:16:13 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 22:16:13 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956438
+2017-10-15 22:16:13 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 22:16:13 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 22:16:13 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@40e2248c, [Ljava.lang.Object;@320bf8b4]
+2017-10-15 22:16:13 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 22:16:13 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 22:16:13 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 22:16:15 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 22:16:15 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956438
+2017-10-15 22:16:15 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 22:16:15 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 22:16:15 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@1ea9a83d, [Ljava.lang.Object;@23a02821]
+2017-10-15 22:16:15 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 22:16:15 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 22:16:15 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed
+2017-10-15 22:17:06 INFO  ProductServiceImpl:218 - ProductServiceImpl :: productList :: begin
+2017-10-15 22:17:06 INFO  ProductServiceImpl:226 - ProductServiceImpl :: productList :: product List count ### 24
+2017-10-15 22:17:06 INFO  ProductServiceImpl:227 - ProductServiceImpl :: productList :: end
+2017-10-15 22:22:18 INFO  AddPurchasedProductConstroller:879 - AddPurchasedProductConstroller :: addPurchaseddtls :: start of saving purchase details
+2017-10-15 22:22:18 INFO  AddPurchasedProductConstroller:965 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2017-10-15 22:22:18 INFO  AddPurchasedProductConstroller:980 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2017-10-15 22:22:18 INFO  AddPurchasedProductConstroller:981 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2017-10-15 22:22:18 INFO  ProductServiceImpl:233 - ProductServiceImpl :: addPurchaseDtls :: begin
+2017-10-15 22:22:18 INFO  ProductServiceImpl:253 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2017-10-15 22:22:18 INFO  ProductServiceImpl:254 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2017-10-15 22:22:18 INFO  ProductServiceImpl:258 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2017-10-15 22:22:18 INFO  ProductServiceImpl:259 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2017-10-15 22:22:18 INFO  ProductServiceImpl:278 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2017-10-15 22:22:18 INFO  ProductServiceImpl:288 - ProductServiceImpl :: addPurchaseDtls :: end
+2017-10-15 22:22:18 INFO  AddPurchasedProductConstroller:983 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2017-10-15 22:22:43 INFO  PurchaseTaxDetailController:194 - purchaseSummeryLst :: bigin
+2017-10-15 22:22:43 INFO  PurchaseTaxDetailController:197 - purchaseSummeryLst :: From Date ### 01-09-2017
+2017-10-15 22:22:43 INFO  PurchaseTaxDetailController:198 - purchaseSummeryLst :: To Date ### 30-09-2017
+2017-10-15 22:22:43 INFO  ProductServiceImpl:671 - viewPurchaseSummeryByDt :: Begin
+2017-10-15 22:22:43 INFO  ProductDaoImpl:120 - viewPurchaseSummeryByDt :: begin
+2017-10-15 22:22:43 INFO  ProductDaoImpl:126 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@4ea41ee6, [Ljava.lang.Object;@280a32f9, [Ljava.lang.Object;@78c38c67, [Ljava.lang.Object;@3b1d694e, [Ljava.lang.Object;@55a013e5]
+2017-10-15 22:22:43 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt :: End
+2017-10-15 22:22:43 INFO  ProductServiceImpl:700 - viewPurchaseSummeryByDt :: End
+2017-10-15 22:22:53 INFO  PurchaseTaxDetailController:245 - fectchTaxCompntTask :: start
+2017-10-15 22:22:53 INFO  PurchaseTaxDetailController:246 - fectchTaxCompntTask :: invoice number ### RJ0017956587
+2017-10-15 22:22:53 INFO  ProductServiceImpl:705 - viewPurchaseTaxCompntByInvoice :: Begin
+2017-10-15 22:22:53 INFO  ProductDaoImpl:142 - viewPurchsTaxCmpontByInvoice :: begin
+2017-10-15 22:22:53 INFO  ProductDaoImpl:147 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@7a5a1aa2]
+2017-10-15 22:22:53 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice :: End
+2017-10-15 22:22:53 INFO  ProductServiceImpl:729 - viewPurchaseTaxCompntByInvoice :: End
+2017-10-15 22:22:53 INFO  PurchaseTaxDetailController:255 - fectchTaxCompntTask :: completed

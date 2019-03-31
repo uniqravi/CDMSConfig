@@ -1,0 +1,9 @@
+2018-05-09 16:54:19 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-05-09 16:54:19 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-05-09 16:54:19 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-05-09 16:54:19 INFO  BreakageClaimFormGeneratorController:146 - loaded BreakageClaimSubmitController
+2018-05-09 17:15:26 INFO  ProductServiceImpl:898 - ProductServiceImpl :: storeBreakageClaimDetails :: begin
+2018-05-09 17:15:26 INFO  ProductServiceImpl:945 - ProductServiceImpl :: storeBreakageClaimDetails :: Db Activity Start
+2018-05-09 17:15:26 INFO  ProductServiceImpl:947 - ProductServiceImpl :: storeBreakageClaimDetails :: sale Entity Saved with Invoice Number ### 0000000000023
+2018-05-09 17:15:26 INFO  ProductServiceImpl:959 - ProductServiceImpl :: storeBreakageClaimDetails :: Breakage Claim Entity saved
+2018-05-09 17:15:26 INFO  ProductServiceImpl:962 - ProductServiceImpl :: storeBreakageClaimDetails :: Db Activity end

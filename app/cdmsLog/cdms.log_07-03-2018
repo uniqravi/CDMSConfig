@@ -1,0 +1,204 @@
+2018-03-07 15:16:02 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 15:16:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-03-07 15:16:03 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-03-07 15:16:03 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-03-07 15:16:03 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-03-07 15:16:03 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-03-07 15:16:03 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-03-07 15:16:03 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-03-07 15:16:04 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-03-07 15:16:04 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-03-07 15:16:04 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-03-07 15:16:04 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-03-07 15:16:04 INFO  MLog:92 - MLog clients using log4j logging.
+2018-03-07 15:16:06 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-03-07 15:16:06 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9f0f5037 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@1d12a98d [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9t1yzndpld3m6gk|373b04a, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@64003549 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1yzndpld3m6gk|49c6e5c9, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1yzndpld3m6gk|51df12c4, numHelperThreads -> 3 ]
+2018-03-07 15:16:09 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-07 15:16:09 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-07 15:16:11 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-03-07 15:16:11 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-07 15:16:11 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-03-07 15:16:13 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 15:16:13 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 15:16:15 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 15:16:15 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 15:16:15 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 15:18:44 INFO  PurchaseTaxDetailController:235 - purchaseSummeryLst :: bigin
+2018-03-07 15:18:44 INFO  PurchaseTaxDetailController:238 - purchaseSummeryLst :: From Date ### 01-02-2018
+2018-03-07 15:18:44 INFO  PurchaseTaxDetailController:239 - purchaseSummeryLst :: To Date ### 07-03-2018
+2018-03-07 15:18:44 INFO  ProductServiceImpl:683 - viewPurchaseSummeryByDt :: Begin
+2018-03-07 15:18:44 INFO  ProductDaoImpl:121 - viewPurchaseSummeryByDt :: begin
+2018-03-07 15:18:44 INFO  ProductDaoImpl:127 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@5065cfa3, [Ljava.lang.Object;@233a6a77, [Ljava.lang.Object;@143766, [Ljava.lang.Object;@73e2427d, [Ljava.lang.Object;@d048375, [Ljava.lang.Object;@7d9d2970, [Ljava.lang.Object;@5c138ea2, [Ljava.lang.Object;@3d83def7, [Ljava.lang.Object;@1435ed19, [Ljava.lang.Object;@778046, [Ljava.lang.Object;@40d17874, [Ljava.lang.Object;@638672ff, [Ljava.lang.Object;@58e016b3, [Ljava.lang.Object;@6429c859]
+2018-03-07 15:18:44 INFO  ProductDaoImpl:128 - viewPurchaseSummeryByDt :: End
+2018-03-07 15:18:44 INFO  ProductServiceImpl:712 - viewPurchaseSummeryByDt :: End
+2018-03-07 15:18:44 INFO  PurchaseTaxDetailController:254 - fecthingPurchsLstTask :: completed
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### 129
+2018-03-07 15:19:27 INFO  ProductServiceImpl:717 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-03-07 15:19:27 INFO  ProductDaoImpl:143 - viewPurchsTaxCmpontByInvoice :: begin
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### 129
+2018-03-07 15:19:27 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 15:19:27 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 15:19:27 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### 129
+2018-03-07 15:19:27 INFO  ProductServiceImpl:795 - viewPurchaseBreakByInvoice :: Begin
+2018-03-07 15:19:27 INFO  ProductDaoImpl:179 - GETPurchaseBreakLstByInvoice :: begin
+2018-03-07 15:19:27 INFO  ProductDaoImpl:148 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@45d63975]
+2018-03-07 15:19:27 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice :: End
+2018-03-07 15:19:27 INFO  ProductServiceImpl:741 - viewPurchaseTaxCompntByInvoice :: End
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-03-07 15:19:27 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@35270b9a
+2018-03-07 15:19:27 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 15:19:27 INFO  ProductDaoImpl:184 - GETPurchaseBreakLstByInvoice :: list retrieved ### []
+2018-03-07 15:19:27 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: End
+2018-03-07 15:19:27 INFO  ProductServiceImpl:818 - viewPurchaseBreakByInvoice :: End
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-03-07 15:19:27 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 15:19:27 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 15:19:27 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-03-07 15:22:21 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 15:22:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-03-07 15:22:22 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-03-07 15:22:22 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-03-07 15:22:22 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-03-07 15:22:22 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-03-07 15:22:22 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-03-07 15:22:22 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-03-07 15:22:22 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-03-07 15:22:22 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-03-07 15:22:22 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-03-07 15:22:22 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-03-07 15:22:22 INFO  MLog:92 - MLog clients using log4j logging.
+2018-03-07 15:22:22 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-03-07 15:22:22 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@b98a28af [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d684ed6d [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9t1yzvgqfjifia5|3ba30139, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@8431eceb [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1yzvgqfjifia5|2b8619d8, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1yzvgqfjifia5|5f47f8, numHelperThreads -> 3 ]
+2018-03-07 15:22:23 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-07 15:22:23 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-07 15:22:23 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-03-07 15:22:23 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-07 15:22:23 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-03-07 15:22:24 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 15:22:24 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 15:22:25 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 15:22:25 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 15:22:25 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 15:22:25 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 15:22:25 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 15:22:25 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 15:22:26 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 15:22:26 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 15:22:26 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 15:43:39 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 15:43:39 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 15:43:39 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 16:01:11 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 129
+2018-03-07 16:01:11 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:11 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 16:01:11 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:11 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@67ede6b5
+2018-03-07 16:01:11 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:01:11 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:01:11 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:01:11 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:01:32 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 129
+2018-03-07 16:01:32 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:32 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 16:01:32 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:32 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@76768ded
+2018-03-07 16:01:32 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:01:32 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:01:32 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:01:32 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:01:34 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 129
+2018-03-07 16:01:34 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:34 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 16:01:34 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:34 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@543ca67e
+2018-03-07 16:01:34 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:01:34 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:01:34 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:01:34 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:01:34 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 129
+2018-03-07 16:01:34 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:34 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 16:01:34 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:01:34 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@556d912
+2018-03-07 16:01:34 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:01:34 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:01:34 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:01:34 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:02:21 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 134
+2018-03-07 16:02:21 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:02:21 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 134
+2018-03-07 16:02:21 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:02:21 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@3014323
+2018-03-07 16:02:21 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:02:21 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:02:21 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:02:21 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:03:32 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 129
+2018-03-07 16:03:32 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:03:32 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 16:03:32 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:03:32 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@9236f57
+2018-03-07 16:03:32 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:03:32 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:03:32 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:03:32 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:08:46 INFO  SideNavigationController:198 - updatePaymentDetail :: Inside Update Action
+2018-03-07 16:08:46 INFO  SideNavigationController:241 - updatePurchasepayDtlTask :: start
+2018-03-07 16:08:46 INFO  ProductServiceImpl:767 - updatePurchasePaymentDtl :: begin
+2018-03-07 16:08:46 INFO  ProductServiceImpl:768 - updatePurchasePaymentDtl :: purchaseSeq ### BUY0000033
+2018-03-07 16:08:46 INFO  ProductServiceImpl:769 - updatePurchasePaymentDtl :: paidAmt ### 600000.0
+2018-03-07 16:08:46 INFO  ProductServiceImpl:770 - updatePurchasePaymentDtl :: payMethod ### RTGS
+2018-03-07 16:08:46 INFO  ProductServiceImpl:771 - updatePurchasePaymentDtl :: payDate  ### 07-03-2018
+2018-03-07 16:08:46 INFO  ProductServiceImpl:772 - updatePurchasePaymentDtl :: pay Id  ### PUNBR52018030710575212
+2018-03-07 16:08:46 INFO  SideNavigationController:255 - updatePurchasepayDtlTask :: completed
+2018-03-07 16:09:02 INFO  SideNavigationController:198 - updatePaymentDetail :: Inside Update Action
+2018-03-07 16:09:02 INFO  SideNavigationController:241 - updatePurchasepayDtlTask :: start
+2018-03-07 16:09:02 INFO  ProductServiceImpl:767 - updatePurchasePaymentDtl :: begin
+2018-03-07 16:09:02 INFO  ProductServiceImpl:768 - updatePurchasePaymentDtl :: purchaseSeq ### BUY0000033
+2018-03-07 16:09:02 INFO  ProductServiceImpl:769 - updatePurchasePaymentDtl :: paidAmt ### 600000.0
+2018-03-07 16:09:02 INFO  ProductServiceImpl:770 - updatePurchasePaymentDtl :: payMethod ### RTGS
+2018-03-07 16:09:02 INFO  ProductServiceImpl:771 - updatePurchasePaymentDtl :: payDate  ### 07-03-2018
+2018-03-07 16:09:02 INFO  ProductServiceImpl:772 - updatePurchasePaymentDtl :: pay Id  ### PUNBR52018030710575212
+2018-03-07 16:09:02 INFO  SideNavigationController:255 - updatePurchasepayDtlTask :: completed
+2018-03-07 16:09:38 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 129
+2018-03-07 16:09:38 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:09:38 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 16:09:38 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:09:38 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@25d4f276
+2018-03-07 16:09:38 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:09:38 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:09:38 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:09:38 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:09:58 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 134
+2018-03-07 16:09:58 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:09:58 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 134
+2018-03-07 16:09:58 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:09:58 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@295249ef
+2018-03-07 16:09:58 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:09:58 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:09:58 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:09:58 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:10:06 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 134
+2018-03-07 16:10:06 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:10:06 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 134
+2018-03-07 16:10:06 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:10:06 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@49d90550
+2018-03-07 16:10:06 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:10:06 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:10:06 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:10:06 INFO  SideNavigationController:135 - getChallanInfoTask :: completed
+2018-03-07 16:10:34 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-07 16:10:34 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-07 16:10:34 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-07 16:20:17 INFO  SideNavigationController:126 - getChallanInfoTask :: start with invoice ### 129
+2018-03-07 16:20:17 INFO  ProductServiceImpl:747 - getChallanDetailByInvoice :: begin
+2018-03-07 16:20:17 INFO  ProductServiceImpl:748 - getChallanDetailByInvoice :: Invoice Number ### 129
+2018-03-07 16:20:17 INFO  ProductDaoImpl:157 - getChallanDetailByInvoice :: begin
+2018-03-07 16:20:17 INFO  ProductDaoImpl:161 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@7deae32c
+2018-03-07 16:20:17 INFO  ProductServiceImpl:753 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-03-07 16:20:17 INFO  ProductServiceImpl:755 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-03-07 16:20:17 INFO  ProductServiceImpl:761 - getChallanDetailByInvoice :: End
+2018-03-07 16:20:17 INFO  SideNavigationController:135 - getChallanInfoTask :: completed

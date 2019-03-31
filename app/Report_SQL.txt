@@ -1,0 +1,23 @@
+----------------------Purchase Product Breakage Report-----------------------------
+select 
+prdct.product_name,
+purBreakage.open_mouth_bs,purBreakage.shortage_bs,purBreakage.seal_pack_shortage_bs,
+purPrdct.mrp,
+basePur.challan_no,basePur.challan_invoice_no,basePur.challan_dt
+from cdms.prdct_breakage_dtl purBreakage 
+inner join cdms.beverage_product_category prdct on prdct.product_cd=purBreakage.product_cd
+inner join cdms.purchase_prdct_dtl purPrdct on purPrdct.purchase_breakage_seq=purBreakage.breakage_seq
+inner join cdms.purchase_dtl basePur on basePur.purchase_seq_no=purPrdct.purchase_seq_no
+
+
+------------------------Yearly Balance Sheet with Payment,discount,Empty--------------------
+
+select challan_dt as Challan_Date,challan_no as Challan_No,challan_invoice_no as Challan_Invoice_No,
+total_challan_amount as Challan_Amount,
+total_discount_amount as Discount_Amount,Payment_method as Payment_Method,
+Payment_id as Payment_Id,paid_amount as Paid_Amount,total_prdct_qty as total_load,
+firm_name as Firm_Name,firm_gstn_number as Firm_Gstn,
+return_invoice_no return_invoice_no,total_purchase_bottle_qty as Purchase_Bottle_Qty,
+total_return_bottle_qty as Return_Bottle_Qty,total_purchase_cell_qty as Purchase_Cell_Qty,
+total_return_cell_qty as Return_Cell_Qty
+from cdms.purchase_dtl order by challan_dt

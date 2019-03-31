@@ -1,0 +1,190 @@
+2018-02-17 20:05:42 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-02-17 20:05:42 INFO  ProductServiceImpl:80 - ProductServiceImpl :: fillingQtyList :: begin
+2018-02-17 20:05:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-02-17 20:05:43 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-02-17 20:05:43 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-02-17 20:05:43 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-02-17 20:05:43 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-02-17 20:05:43 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-02-17 20:05:43 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-02-17 20:05:44 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-02-17 20:05:44 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-02-17 20:05:44 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-02-17 20:05:44 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-02-17 20:05:44 INFO  MLog:92 - MLog clients using log4j logging.
+2018-02-17 20:05:45 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-02-17 20:05:45 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@512448dd [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e99795d4 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9t19k2jqq1v6knhj|49455bf9, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@8595da68 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9t19k2jqq1v6knhj|5cb1c7bc, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9t19k2jqq1v6knhj|636dffc5, numHelperThreads -> 3 ]
+2018-02-17 20:05:46 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-02-17 20:05:46 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-02-17 20:05:47 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-02-17 20:05:47 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-02-17 20:05:47 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-02-17 20:05:49 INFO  ProductServiceImpl:88 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 10
+2018-02-17 20:05:49 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: end
+2018-02-17 20:05:49 INFO  ProductServiceImpl:95 - ProductServiceImpl :: flavrList :: begin
+2018-02-17 20:05:49 INFO  ProductServiceImpl:103 - ProductServiceImpl :: flavrList :: flavour Name List count ### 9
+2018-02-17 20:05:49 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: end
+2018-02-17 20:05:49 INFO  ProductServiceImpl:110 - ProductServiceImpl :: packingtypeList :: begin
+2018-02-17 20:05:49 INFO  ProductServiceImpl:118 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-02-17 20:05:49 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: end
+2018-02-17 20:05:49 INFO  ProductServiceImpl:125 - ProductServiceImpl :: packingQtyList :: begin
+2018-02-17 20:05:49 INFO  ProductServiceImpl:133 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-02-17 20:05:49 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: end
+2018-02-17 20:05:49 INFO  ProductController:216 - ProductController :: Initialization end
+2018-02-17 20:05:49 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-02-17 20:05:49 INFO  ProductServiceImpl:80 - ProductServiceImpl :: fillingQtyList :: begin
+2018-02-17 20:05:49 INFO  ProductServiceImpl:88 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 10
+2018-02-17 20:05:49 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: end
+2018-02-17 20:05:49 INFO  ProductServiceImpl:95 - ProductServiceImpl :: flavrList :: begin
+2018-02-17 20:05:49 INFO  ProductServiceImpl:103 - ProductServiceImpl :: flavrList :: flavour Name List count ### 9
+2018-02-17 20:05:49 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: end
+2018-02-17 20:05:49 INFO  ProductServiceImpl:110 - ProductServiceImpl :: packingtypeList :: begin
+2018-02-17 20:05:49 INFO  ProductServiceImpl:118 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-02-17 20:05:49 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: end
+2018-02-17 20:05:49 INFO  ProductServiceImpl:125 - ProductServiceImpl :: packingQtyList :: begin
+2018-02-17 20:05:49 INFO  ProductServiceImpl:133 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-02-17 20:05:49 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: end
+2018-02-17 20:05:49 INFO  ProductController:216 - ProductController :: Initialization end
+2018-02-17 20:06:01 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: begin
+2018-02-17 20:06:01 INFO  ProductServiceImpl:229 - ProductServiceImpl :: productList :: product List count ### 33
+2018-02-17 20:06:01 INFO  ProductServiceImpl:230 - ProductServiceImpl :: productList :: end
+2018-02-17 20:06:02 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: begin
+2018-02-17 20:06:02 INFO  ProductServiceImpl:229 - ProductServiceImpl :: productList :: product List count ### 33
+2018-02-17 20:06:02 INFO  ProductServiceImpl:230 - ProductServiceImpl :: productList :: end
+2018-02-17 20:06:02 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: begin
+2018-02-17 20:06:02 INFO  ProductServiceImpl:229 - ProductServiceImpl :: productList :: product List count ### 33
+2018-02-17 20:06:02 INFO  ProductServiceImpl:230 - ProductServiceImpl :: productList :: end
+2018-02-17 20:07:39 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-02-17 20:07:39 INFO  ProductServiceImpl:80 - ProductServiceImpl :: fillingQtyList :: begin
+2018-02-17 20:07:40 INFO  ProductServiceImpl:88 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 10
+2018-02-17 20:07:40 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: end
+2018-02-17 20:07:40 INFO  ProductServiceImpl:95 - ProductServiceImpl :: flavrList :: begin
+2018-02-17 20:07:40 INFO  ProductServiceImpl:103 - ProductServiceImpl :: flavrList :: flavour Name List count ### 9
+2018-02-17 20:07:40 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: end
+2018-02-17 20:07:40 INFO  ProductServiceImpl:110 - ProductServiceImpl :: packingtypeList :: begin
+2018-02-17 20:07:40 INFO  ProductServiceImpl:118 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-02-17 20:07:40 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: end
+2018-02-17 20:07:40 INFO  ProductServiceImpl:125 - ProductServiceImpl :: packingQtyList :: begin
+2018-02-17 20:07:40 INFO  ProductServiceImpl:133 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-02-17 20:07:40 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: end
+2018-02-17 20:07:40 INFO  ProductController:216 - ProductController :: Initialization end
+2018-02-17 20:09:34 INFO  ProductServiceImpl:203 - ProductServiceImpl :: groupNmLstByParameters :: begin
+2018-02-17 20:09:34 INFO  ProductDaoImpl:35 - ProductDaoImpl :: groupNmLstByParameters :: begin
+2018-02-17 20:09:34 INFO  ProductDaoImpl:36 - ProductDaoImpl :: groupNmLstByParameters :: ml Qty ### ML00000010
+2018-02-17 20:09:34 INFO  ProductDaoImpl:37 - ProductDaoImpl :: groupNmLstByParameters :: packingn cd ### TYPE000002
+2018-02-17 20:09:34 INFO  ProductDaoImpl:38 - ProductDaoImpl :: groupNmLstByParameters :: packingQty Cd ### PQTY000001
+2018-02-17 20:09:34 INFO  ProductDaoImpl:46 - ProductDaoImpl :: groupNmLstByParameters :: group name list [350_PET_24]
+2018-02-17 20:09:34 INFO  ProductDaoImpl:47 - ProductDaoImpl :: groupNmLstByParameters :: End
+2018-02-17 20:09:34 INFO  ProductServiceImpl:206 - ProductServiceImpl :: groupNmLstByParameters :: response recieved from db
+2018-02-17 20:09:34 INFO  ProductServiceImpl:215 - ProductServiceImpl :: groupNmLstByParameters :: end
+2018-02-17 20:09:55 INFO  ProductController:221 - addNewProduct :: product addition start
+2018-02-17 20:09:55 INFO  ProductController:241 - addNewProduct :: validation start
+2018-02-17 20:09:55 INFO  ProductController:342 - addNewProduct :: validation end
+2018-02-17 20:09:55 INFO  ProductController:377 - addNewProduct :: begin to new product saving ### 350_TROPICANA SLICE_PET_24
+2018-02-17 20:09:55 INFO  ProductServiceImpl:142 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2018-02-17 20:09:55 INFO  ProductServiceImpl:144 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2018-02-17 20:09:55 INFO  ProductServiceImpl:154 - ProductServiceImpl :: addNewBeverageProduct ::  new flavour 
+2018-02-17 20:09:55 INFO  ProductServiceImpl:185 - ProductServiceImpl :: addNewBeverageProduct :: db activity end
+2018-02-17 20:09:55 INFO  ProductServiceImpl:186 - ProductServiceImpl :: addNewBeverageProduct :: new product creation
+2018-02-17 20:09:55 INFO  ProductController:379 - addNewProduct :: new product has been saved succesfully ### 350_TROPICANA SLICE_PET_24
+2018-02-17 20:10:22 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: begin
+2018-02-17 20:10:23 INFO  ProductServiceImpl:229 - ProductServiceImpl :: productList :: product List count ### 34
+2018-02-17 20:10:23 INFO  ProductServiceImpl:230 - ProductServiceImpl :: productList :: end
+2018-02-17 20:10:56 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: begin
+2018-02-17 20:10:56 INFO  ProductServiceImpl:229 - ProductServiceImpl :: productList :: product List count ### 34
+2018-02-17 20:10:56 INFO  ProductServiceImpl:230 - ProductServiceImpl :: productList :: end
+2018-02-17 20:11:05 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-02-17 20:11:05 INFO  ProductServiceImpl:80 - ProductServiceImpl :: fillingQtyList :: begin
+2018-02-17 20:11:05 INFO  ProductServiceImpl:88 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 10
+2018-02-17 20:11:05 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: end
+2018-02-17 20:11:05 INFO  ProductServiceImpl:95 - ProductServiceImpl :: flavrList :: begin
+2018-02-17 20:11:05 INFO  ProductServiceImpl:103 - ProductServiceImpl :: flavrList :: flavour Name List count ### 10
+2018-02-17 20:11:05 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: end
+2018-02-17 20:11:05 INFO  ProductServiceImpl:110 - ProductServiceImpl :: packingtypeList :: begin
+2018-02-17 20:11:05 INFO  ProductServiceImpl:118 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-02-17 20:11:05 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: end
+2018-02-17 20:11:05 INFO  ProductServiceImpl:125 - ProductServiceImpl :: packingQtyList :: begin
+2018-02-17 20:11:05 INFO  ProductServiceImpl:133 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-02-17 20:11:05 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: end
+2018-02-17 20:11:05 INFO  ProductController:216 - ProductController :: Initialization end
+2018-02-17 20:12:38 INFO  ProductController:221 - addNewProduct :: product addition start
+2018-02-17 20:12:38 INFO  ProductController:241 - addNewProduct :: validation start
+2018-02-17 20:12:38 INFO  ProductController:342 - addNewProduct :: validation end
+2018-02-17 20:12:38 INFO  ProductController:377 - addNewProduct :: begin to new product saving ### 330_DEW_PET_24
+2018-02-17 20:12:38 INFO  ProductServiceImpl:142 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2018-02-17 20:12:38 INFO  ProductServiceImpl:144 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2018-02-17 20:12:38 INFO  ProductServiceImpl:147 - ProductServiceImpl :: addNewBeverageProduct ::  new filling 
+2018-02-17 20:12:38 INFO  ProductServiceImpl:175 - ProductServiceImpl :: addNewBeverageProduct ::  new Group Name 
+2018-02-17 20:12:38 INFO  ProductServiceImpl:185 - ProductServiceImpl :: addNewBeverageProduct :: db activity end
+2018-02-17 20:12:38 INFO  ProductServiceImpl:186 - ProductServiceImpl :: addNewBeverageProduct :: new product creation
+2018-02-17 20:12:38 INFO  ProductController:379 - addNewProduct :: new product has been saved succesfully ### 330_DEW_PET_24
+2018-02-17 20:12:54 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-02-17 20:12:54 INFO  ProductServiceImpl:80 - ProductServiceImpl :: fillingQtyList :: begin
+2018-02-17 20:12:54 INFO  ProductServiceImpl:88 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 11
+2018-02-17 20:12:54 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: end
+2018-02-17 20:12:54 INFO  ProductServiceImpl:95 - ProductServiceImpl :: flavrList :: begin
+2018-02-17 20:12:54 INFO  ProductServiceImpl:103 - ProductServiceImpl :: flavrList :: flavour Name List count ### 10
+2018-02-17 20:12:54 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: end
+2018-02-17 20:12:54 INFO  ProductServiceImpl:110 - ProductServiceImpl :: packingtypeList :: begin
+2018-02-17 20:12:54 INFO  ProductServiceImpl:118 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-02-17 20:12:54 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: end
+2018-02-17 20:12:54 INFO  ProductServiceImpl:125 - ProductServiceImpl :: packingQtyList :: begin
+2018-02-17 20:12:54 INFO  ProductServiceImpl:133 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-02-17 20:12:54 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: end
+2018-02-17 20:12:54 INFO  ProductController:216 - ProductController :: Initialization end
+2018-02-17 20:13:29 INFO  ProductServiceImpl:203 - ProductServiceImpl :: groupNmLstByParameters :: begin
+2018-02-17 20:13:29 INFO  ProductDaoImpl:35 - ProductDaoImpl :: groupNmLstByParameters :: begin
+2018-02-17 20:13:29 INFO  ProductDaoImpl:36 - ProductDaoImpl :: groupNmLstByParameters :: ml Qty ### ML00000011
+2018-02-17 20:13:29 INFO  ProductDaoImpl:37 - ProductDaoImpl :: groupNmLstByParameters :: packingn cd ### TYPE000002
+2018-02-17 20:13:29 INFO  ProductDaoImpl:38 - ProductDaoImpl :: groupNmLstByParameters :: packingQty Cd ### PQTY000001
+2018-02-17 20:13:29 INFO  ProductDaoImpl:46 - ProductDaoImpl :: groupNmLstByParameters :: group name list [330_PET_24]
+2018-02-17 20:13:29 INFO  ProductDaoImpl:47 - ProductDaoImpl :: groupNmLstByParameters :: End
+2018-02-17 20:13:29 INFO  ProductServiceImpl:206 - ProductServiceImpl :: groupNmLstByParameters :: response recieved from db
+2018-02-17 20:13:29 INFO  ProductServiceImpl:215 - ProductServiceImpl :: groupNmLstByParameters :: end
+2018-02-17 20:13:59 INFO  ProductController:221 - addNewProduct :: product addition start
+2018-02-17 20:13:59 INFO  ProductController:241 - addNewProduct :: validation start
+2018-02-17 20:13:59 INFO  ProductController:342 - addNewProduct :: validation end
+2018-02-17 20:13:59 INFO  ProductController:377 - addNewProduct :: begin to new product saving ### 330_MIRINDA_PET_24
+2018-02-17 20:13:59 INFO  ProductServiceImpl:142 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2018-02-17 20:13:59 INFO  ProductServiceImpl:144 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2018-02-17 20:13:59 INFO  ProductServiceImpl:185 - ProductServiceImpl :: addNewBeverageProduct :: db activity end
+2018-02-17 20:13:59 INFO  ProductServiceImpl:186 - ProductServiceImpl :: addNewBeverageProduct :: new product creation
+2018-02-17 20:13:59 INFO  ProductController:379 - addNewProduct :: new product has been saved succesfully ### 330_MIRINDA_PET_24
+2018-02-17 20:14:06 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-02-17 20:14:06 INFO  ProductServiceImpl:80 - ProductServiceImpl :: fillingQtyList :: begin
+2018-02-17 20:14:06 INFO  ProductServiceImpl:88 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 11
+2018-02-17 20:14:06 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: end
+2018-02-17 20:14:06 INFO  ProductServiceImpl:95 - ProductServiceImpl :: flavrList :: begin
+2018-02-17 20:14:06 INFO  ProductServiceImpl:103 - ProductServiceImpl :: flavrList :: flavour Name List count ### 10
+2018-02-17 20:14:06 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: end
+2018-02-17 20:14:06 INFO  ProductServiceImpl:110 - ProductServiceImpl :: packingtypeList :: begin
+2018-02-17 20:14:06 INFO  ProductServiceImpl:118 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-02-17 20:14:06 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: end
+2018-02-17 20:14:06 INFO  ProductServiceImpl:125 - ProductServiceImpl :: packingQtyList :: begin
+2018-02-17 20:14:06 INFO  ProductServiceImpl:133 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-02-17 20:14:06 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: end
+2018-02-17 20:14:06 INFO  ProductController:216 - ProductController :: Initialization end
+2018-02-17 20:14:36 INFO  ProductServiceImpl:203 - ProductServiceImpl :: groupNmLstByParameters :: begin
+2018-02-17 20:14:36 INFO  ProductDaoImpl:35 - ProductDaoImpl :: groupNmLstByParameters :: begin
+2018-02-17 20:14:36 INFO  ProductDaoImpl:36 - ProductDaoImpl :: groupNmLstByParameters :: ml Qty ### ML00000011
+2018-02-17 20:14:36 INFO  ProductDaoImpl:37 - ProductDaoImpl :: groupNmLstByParameters :: packingn cd ### TYPE000002
+2018-02-17 20:14:36 INFO  ProductDaoImpl:38 - ProductDaoImpl :: groupNmLstByParameters :: packingQty Cd ### PQTY000001
+2018-02-17 20:14:36 INFO  ProductDaoImpl:46 - ProductDaoImpl :: groupNmLstByParameters :: group name list [330_PET_24]
+2018-02-17 20:14:36 INFO  ProductDaoImpl:47 - ProductDaoImpl :: groupNmLstByParameters :: End
+2018-02-17 20:14:36 INFO  ProductServiceImpl:206 - ProductServiceImpl :: groupNmLstByParameters :: response recieved from db
+2018-02-17 20:14:36 INFO  ProductServiceImpl:215 - ProductServiceImpl :: groupNmLstByParameters :: end
+2018-02-17 20:14:44 INFO  ProductController:221 - addNewProduct :: product addition start
+2018-02-17 20:14:44 INFO  ProductController:241 - addNewProduct :: validation start
+2018-02-17 20:14:44 INFO  ProductController:342 - addNewProduct :: validation end
+2018-02-17 20:14:44 INFO  ProductController:377 - addNewProduct :: begin to new product saving ### 330_PEPSI_PET_24
+2018-02-17 20:14:44 INFO  ProductServiceImpl:142 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2018-02-17 20:14:44 INFO  ProductServiceImpl:144 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2018-02-17 20:14:44 INFO  ProductServiceImpl:185 - ProductServiceImpl :: addNewBeverageProduct :: db activity end
+2018-02-17 20:14:44 INFO  ProductServiceImpl:186 - ProductServiceImpl :: addNewBeverageProduct :: new product creation
+2018-02-17 20:14:44 INFO  ProductController:379 - addNewProduct :: new product has been saved succesfully ### 330_PEPSI_PET_24
+2018-02-17 20:15:09 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: begin
+2018-02-17 20:15:09 INFO  ProductServiceImpl:229 - ProductServiceImpl :: productList :: product List count ### 37
+2018-02-17 20:15:09 INFO  ProductServiceImpl:230 - ProductServiceImpl :: productList :: end
+2018-02-17 20:15:09 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: begin
+2018-02-17 20:15:09 INFO  ProductServiceImpl:229 - ProductServiceImpl :: productList :: product List count ### 37
+2018-02-17 20:15:09 INFO  ProductServiceImpl:230 - ProductServiceImpl :: productList :: end

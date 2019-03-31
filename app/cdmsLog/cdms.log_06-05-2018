@@ -1,0 +1,566 @@
+2018-05-06 20:17:55 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-05-06 20:17:55 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-05-06 20:17:55 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-05-06 20:17:55 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-05-06 20:17:55 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-05-06 20:17:55 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-05-06 20:17:55 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-06 20:17:55 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-05-06 20:17:55 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-05-06 20:17:55 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-05-06 20:17:56 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-05-06 20:17:56 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-05-06 20:17:56 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-05-06 20:17:56 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-05-06 20:17:56 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-05-06 20:17:56 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-05-06 20:17:56 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-06 20:17:56 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-05-06 20:17:56 INFO  MLog:92 - MLog clients using log4j logging.
+2018-05-06 20:17:57 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-05-06 20:17:57 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@fd4391e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@9a96980a [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9veymkiq1n9ktcq|7378b218, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@6a48a517 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9veymkiq1n9ktcq|be07c4d, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9veymkiq1n9ktcq|79cc1780, numHelperThreads -> 3 ]
+2018-05-06 20:17:57 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@68b2a961 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@b42ba257 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9veymkiq1n9ktcq|b8e09a2, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@7e6d28c9 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9veymkiq1n9ktcq|111039b2, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9veymkiq1n9ktcq|39dc3d5, numHelperThreads -> 3 ]
+2018-05-06 20:17:59 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@7c599604 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:17:59 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@50070947 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:17:59 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@262c6e80 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:17:59 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@43253b31 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:17:59 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@72acdbe5 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:17:59 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@72acdbe5 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:17:59 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1c4d2003 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:17:59 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@43253b31 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:17:59 WARN  JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Connections could not be acquired from the underlying database!
+2018-05-06 20:17:59 WARN  JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Connections could not be acquired from the underlying database!
+2018-05-06 20:17:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-06 20:17:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-05-06 20:17:59 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-06 20:17:59 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-05-06 20:18:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-06 20:18:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-05-06 20:18:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-06 20:18:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-05-06 20:18:00 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-05-06 20:18:00 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-05-06 20:18:04 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3010b6e -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:18:04 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@43253b31 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:18:04 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@68d6cf9e -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:18:04 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5bea4bdb -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:18:04 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@43253b31 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:18:04 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@72acdbe5 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:18:04 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: null
+2018-05-06 20:18:04 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: null
+2018-05-06 20:18:04 ERROR SqlExceptionHelper:146 - Connections could not be acquired from the underlying database!
+2018-05-06 20:18:04 ERROR SqlExceptionHelper:146 - Connections could not be acquired from the underlying database!
+2018-05-06 20:18:04 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@fa039ed -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-05-06 20:18:04 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@72acdbe5 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-05-06 20:23:45 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-05-06 20:23:45 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-05-06 20:23:58 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-05-06 20:23:58 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-05-06 20:23:58 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-05-06 20:24:37 INFO  PurchaseTaxDetailController:235 - purchaseSummeryLst :: bigin
+2018-05-06 20:24:37 INFO  PurchaseTaxDetailController:238 - purchaseSummeryLst :: From Date ### 28-04-2018
+2018-05-06 20:24:37 INFO  PurchaseTaxDetailController:239 - purchaseSummeryLst :: To Date ### 06-05-2018
+2018-05-06 20:24:37 INFO  ProductServiceImpl:741 - viewPurchaseSummeryByDt :: Begin
+2018-05-06 20:24:37 INFO  ProductDaoImpl:122 - viewPurchaseSummeryByDt :: begin
+2018-05-06 20:24:38 INFO  ProductDaoImpl:128 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@1c99c4b1]
+2018-05-06 20:24:38 INFO  ProductDaoImpl:129 - viewPurchaseSummeryByDt :: End
+2018-05-06 20:24:38 INFO  ProductServiceImpl:771 - viewPurchaseSummeryByDt :: End
+2018-05-06 20:24:38 INFO  PurchaseTaxDetailController:254 - fecthingPurchsLstTask :: completed
+2018-05-06 20:25:17 INFO  PurchaseTaxDetailController:235 - purchaseSummeryLst :: bigin
+2018-05-06 20:25:17 INFO  PurchaseTaxDetailController:238 - purchaseSummeryLst :: From Date ### 28-04-2018
+2018-05-06 20:25:17 INFO  PurchaseTaxDetailController:239 - purchaseSummeryLst :: To Date ### 06-05-2018
+2018-05-06 20:25:17 INFO  ProductServiceImpl:741 - viewPurchaseSummeryByDt :: Begin
+2018-05-06 20:25:17 INFO  ProductDaoImpl:122 - viewPurchaseSummeryByDt :: begin
+2018-05-06 20:25:17 INFO  ProductDaoImpl:128 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@7b320426]
+2018-05-06 20:25:17 INFO  ProductDaoImpl:129 - viewPurchaseSummeryByDt :: End
+2018-05-06 20:25:17 INFO  ProductServiceImpl:771 - viewPurchaseSummeryByDt :: End
+2018-05-06 20:25:17 INFO  PurchaseTaxDetailController:254 - fecthingPurchsLstTask :: completed
+2018-05-06 20:26:14 INFO  PurchaseTaxDetailController:235 - purchaseSummeryLst :: bigin
+2018-05-06 20:26:14 INFO  PurchaseTaxDetailController:238 - purchaseSummeryLst :: From Date ### 01-04-2018
+2018-05-06 20:26:14 INFO  PurchaseTaxDetailController:239 - purchaseSummeryLst :: To Date ### 06-05-2018
+2018-05-06 20:26:14 INFO  ProductServiceImpl:741 - viewPurchaseSummeryByDt :: Begin
+2018-05-06 20:26:14 INFO  ProductDaoImpl:122 - viewPurchaseSummeryByDt :: begin
+2018-05-06 20:26:14 INFO  ProductDaoImpl:128 - viewPurchaseSummeryByDt:: list retrieved ### [[Ljava.lang.Object;@b1100aa, [Ljava.lang.Object;@4ed28030, [Ljava.lang.Object;@42d57883, [Ljava.lang.Object;@1382bde3, [Ljava.lang.Object;@1015eb69, [Ljava.lang.Object;@4a9c3a5b, [Ljava.lang.Object;@23e442eb, [Ljava.lang.Object;@250f8ed1, [Ljava.lang.Object;@1afe77ba, [Ljava.lang.Object;@311bd85c, [Ljava.lang.Object;@30e9278e, [Ljava.lang.Object;@69494e44, [Ljava.lang.Object;@e3a770, [Ljava.lang.Object;@6f555608, [Ljava.lang.Object;@1679c93b, [Ljava.lang.Object;@35619ede, [Ljava.lang.Object;@28246725, [Ljava.lang.Object;@6d84813f, [Ljava.lang.Object;@356cbda5, [Ljava.lang.Object;@cc242b8, [Ljava.lang.Object;@754114a, [Ljava.lang.Object;@4e10f5e6, [Ljava.lang.Object;@1ec1e814, [Ljava.lang.Object;@8bef6, [Ljava.lang.Object;@27f121fc, [Ljava.lang.Object;@6e875f21, [Ljava.lang.Object;@7f178bad, [Ljava.lang.Object;@3aad65b7, [Ljava.lang.Object;@14fd4ddf, [Ljava.lang.Object;@40576636, [Ljava.lang.Object;@35ed772]
+2018-05-06 20:26:14 INFO  ProductDaoImpl:129 - viewPurchaseSummeryByDt :: End
+2018-05-06 20:26:14 INFO  ProductServiceImpl:771 - viewPurchaseSummeryByDt :: End
+2018-05-06 20:26:14 INFO  PurchaseTaxDetailController:254 - fecthingPurchsLstTask :: completed
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020786520
+2018-05-06 20:26:41 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:26:41 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020786520
+2018-05-06 20:26:41 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:26:41 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020786520
+2018-05-06 20:26:41 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020786520
+2018-05-06 20:26:41 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:26:41 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:26:41 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@bf3ac04]
+2018-05-06 20:26:41 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:26:41 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:26:41 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@5609751b]
+2018-05-06 20:26:41 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:26:41 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:26:41 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@33989f22
+2018-05-06 20:26:41 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:26:41 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:26:41 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:26:41 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020786204
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020786204
+2018-05-06 20:26:58 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:26:58 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020786204
+2018-05-06 20:26:58 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020786204
+2018-05-06 20:26:58 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:26:58 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:26:58 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:26:58 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:26:58 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@160d8495]
+2018-05-06 20:26:58 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:26:58 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@f456633
+2018-05-06 20:26:58 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:26:58 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:26:58 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:26:58 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:26:58 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@36e7515c, [Ljava.lang.Object;@3cf7c191]
+2018-05-06 20:26:58 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:26:58 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:26:58 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020785851
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020785851
+2018-05-06 20:27:54 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:27:54 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020785851
+2018-05-06 20:27:54 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:27:54 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:27:54 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020785851
+2018-05-06 20:27:54 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:27:54 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:27:54 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@4472ab8
+2018-05-06 20:27:54 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:27:54 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@69b25ac4]
+2018-05-06 20:27:54 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:27:54 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:27:54 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:27:54 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:27:54 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### []
+2018-05-06 20:27:54 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:27:54 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:27:54 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020785836
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020785836
+2018-05-06 20:28:16 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:28:16 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:28:16 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:28:16 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020785836
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:28:16 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020785836
+2018-05-06 20:28:16 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:28:16 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:28:16 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@2c87221b
+2018-05-06 20:28:16 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@27812420, [Ljava.lang.Object;@36a718a0]
+2018-05-06 20:28:16 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:28:16 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:28:16 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:28:16 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@43948157]
+2018-05-06 20:28:16 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:28:16 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:28:16 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:28:16 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:28:16 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020785851
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020785851
+2018-05-06 20:29:01 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:01 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020785851
+2018-05-06 20:29:01 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:01 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:29:01 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020785851
+2018-05-06 20:29:01 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:29:01 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:29:01 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@4355fe43
+2018-05-06 20:29:01 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:29:01 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@4c0aee99]
+2018-05-06 20:29:01 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:29:01 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:29:01 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### []
+2018-05-06 20:29:01 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:29:01 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:29:01 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:29:01 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:29:01 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020785836
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020785836
+2018-05-06 20:29:04 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:29:04 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020785836
+2018-05-06 20:29:04 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:04 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020785836
+2018-05-06 20:29:04 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:04 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:29:04 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:29:04 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@3f4a4121]
+2018-05-06 20:29:04 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@32d4b48e
+2018-05-06 20:29:04 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:29:04 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:29:04 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:29:04 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@6d2d11d1, [Ljava.lang.Object;@4271ee3]
+2018-05-06 20:29:04 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:29:04 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:29:04 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:29:04 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:29:04 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020785851
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020785851
+2018-05-06 20:29:06 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:06 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020785851
+2018-05-06 20:29:06 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:06 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:29:06 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020785851
+2018-05-06 20:29:06 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:29:06 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:29:06 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@21766d60
+2018-05-06 20:29:06 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:29:06 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@3a4cb98a]
+2018-05-06 20:29:06 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:29:06 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:29:06 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:29:06 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### []
+2018-05-06 20:29:06 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:29:06 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:29:06 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:29:06 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020785836
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020785836
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020785836
+2018-05-06 20:29:11 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:29:11 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:29:11 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:29:11 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:11 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:29:11 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020785836
+2018-05-06 20:29:11 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:11 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@335be106, [Ljava.lang.Object;@55f58d05]
+2018-05-06 20:29:11 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:29:11 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:29:11 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@199bd7c2]
+2018-05-06 20:29:11 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:29:11 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:29:11 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@6ec7169
+2018-05-06 20:29:11 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:29:11 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:29:11 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:29:11 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020785562
+2018-05-06 20:29:16 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:29:16 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020785562
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020785562
+2018-05-06 20:29:16 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:16 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020785562
+2018-05-06 20:29:16 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:29:16 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:29:16 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:29:16 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@4c9996bf]
+2018-05-06 20:29:16 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:29:16 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@6feea8f5]
+2018-05-06 20:29:16 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:29:16 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:29:16 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:29:16 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@7181d71c
+2018-05-06 20:29:16 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:29:16 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:29:16 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:29:16 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:325 - fectchTaxCompntTask :: start
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:326 - fectchTaxCompntTask :: invoice number ### RJ0020784952
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:284 - getBillDetailTask :: start with invoice ### RJ0020784952
+2018-05-06 20:32:04 INFO  ProductServiceImpl:807 - getChallanDetailByInvoice :: begin
+2018-05-06 20:32:04 INFO  ProductServiceImpl:808 - getChallanDetailByInvoice :: Invoice Number ### RJ0020784952
+2018-05-06 20:32:04 INFO  ProductDaoImpl:158 - getChallanDetailByInvoice :: begin
+2018-05-06 20:32:04 INFO  ProductServiceImpl:776 - viewPurchaseTaxCompntByInvoice :: Begin
+2018-05-06 20:32:04 INFO  ProductDaoImpl:144 - viewPurchsTaxCmpontByInvoice :: begin
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:404 - fectchPurchaseBreakDtl :: start
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:405 - fectchPurchaseBreakDtl :: invoice number ### RJ0020784952
+2018-05-06 20:32:04 INFO  ProductServiceImpl:861 - viewPurchaseBreakByInvoice :: Begin
+2018-05-06 20:32:04 INFO  ProductDaoImpl:180 - GETPurchaseBreakLstByInvoice :: begin
+2018-05-06 20:32:04 INFO  ProductDaoImpl:162 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@6ba1c52a
+2018-05-06 20:32:04 INFO  ProductServiceImpl:813 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2018-05-06 20:32:04 INFO  ProductDaoImpl:149 - viewPurchsTaxCmpontByInvoice:: list retrieved ### [[Ljava.lang.Object;@1e221dca, [Ljava.lang.Object;@49e83e17]
+2018-05-06 20:32:04 INFO  ProductDaoImpl:150 - viewPurchsTaxCmpontByInvoice :: End
+2018-05-06 20:32:04 INFO  ProductServiceImpl:801 - viewPurchaseTaxCompntByInvoice :: End
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:335 - fectchTaxCompntTask :: completed
+2018-05-06 20:32:04 INFO  ProductServiceImpl:815 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2018-05-06 20:32:04 INFO  ProductDaoImpl:185 - GETPurchaseBreakLstByInvoice :: list retrieved ### [[Ljava.lang.Object;@63bb616a]
+2018-05-06 20:32:04 INFO  ProductDaoImpl:186 - GETPurchaseBreakLstByInvoice :: End
+2018-05-06 20:32:04 INFO  ProductServiceImpl:885 - viewPurchaseBreakByInvoice :: End
+2018-05-06 20:32:04 INFO  ProductServiceImpl:825 - getChallanDetailByInvoice :: End
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:414 - fectchPurchaseBreakDtl :: completed
+2018-05-06 20:32:04 INFO  PurchaseTaxDetailController:294 - getBillDetailTask :: completed
+2018-05-06 20:32:40 INFO  ProductServiceImpl:275 - ProductServiceImpl :: productList :: begin
+2018-05-06 20:32:40 INFO  ProductServiceImpl:284 - ProductServiceImpl :: productList :: product List count ### 47
+2018-05-06 20:32:40 INFO  ProductServiceImpl:285 - ProductServiceImpl :: productList :: end
+2018-05-06 20:51:05 INFO  AddPurchasedProductConstroller:1056 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2018-05-06 20:51:05 INFO  AddPurchasedProductConstroller:1073 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### CHEQUE
+2018-05-06 20:51:05 INFO  AddPurchasedProductConstroller:1074 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2018-05-06 20:51:05 INFO  ProductServiceImpl:291 - ProductServiceImpl :: addPurchaseDtls :: begin
+2018-05-06 20:51:05 INFO  ProductServiceImpl:311 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2018-05-06 20:51:05 INFO  ProductServiceImpl:312 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2018-05-06 20:51:06 INFO  ProductServiceImpl:315 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2018-05-06 20:51:06 INFO  ProductServiceImpl:316 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2018-05-06 20:51:06 INFO  ProductServiceImpl:336 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2018-05-06 20:51:06 INFO  ProductServiceImpl:346 - ProductServiceImpl :: addPurchaseDtls :: end
+2018-05-06 20:51:06 INFO  AddPurchasedProductConstroller:1076 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully

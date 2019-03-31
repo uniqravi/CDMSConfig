@@ -1,0 +1,274 @@
+2018-03-04 19:27:31 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-04 19:27:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-03-04 19:27:32 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-03-04 19:27:32 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-03-04 19:27:32 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-03-04 19:27:32 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-03-04 19:27:32 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-03-04 19:27:32 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-03-04 19:27:32 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-03-04 19:27:32 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-03-04 19:27:32 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-03-04 19:27:32 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-03-04 19:27:32 INFO  MLog:92 - MLog clients using log4j logging.
+2018-03-04 19:27:33 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-03-04 19:27:33 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@68237313 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e6f1f1e9 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9t1uyb76p1fhtste|e33af6c, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f9716e67 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1uyb76p1fhtste|6893b19e, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1uyb76p1fhtste|5853fad3, numHelperThreads -> 3 ]
+2018-03-04 19:27:35 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4e90d736 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-03-04 19:27:35 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@4cfd2062 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-03-04 19:27:35 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@5c879d77 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-03-04 19:27:35 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@4cfd2062 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-03-04 19:27:35 WARN  JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Connections could not be acquired from the underlying database!
+2018-03-04 19:27:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-04 19:27:35 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2018-03-04 19:27:36 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-03-04 19:27:36 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-04 19:27:36 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-03-04 19:27:39 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@79aaf7cc -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-03-04 19:27:39 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@4cfd2062 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-03-04 19:27:39 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3f52dbeb -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2018-03-04 19:27:39 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@4cfd2062 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2018-03-04 19:27:39 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: null
+2018-03-04 19:27:39 ERROR SqlExceptionHelper:146 - Connections could not be acquired from the underlying database!
+2018-03-04 19:27:39 FATAL ScreenTransitionController:120 - File not Found ### /application/cdms/fxmls/AddPurchasedProductQty.fxml
+2018-03-04 19:28:39 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-04 19:28:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-03-04 19:28:39 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-03-04 19:28:39 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-03-04 19:28:39 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-03-04 19:28:39 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-03-04 19:28:39 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-03-04 19:28:39 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-03-04 19:28:39 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-03-04 19:28:39 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-03-04 19:28:39 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-03-04 19:28:39 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-03-04 19:28:39 INFO  MLog:92 - MLog clients using log4j logging.
+2018-03-04 19:28:40 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-03-04 19:28:40 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@52313e14 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7b562ec6 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9t1uycn2ekzp34u|7a711cc4, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@23743f3d [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1uycn2ekzp34u|33ea891, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1uycn2ekzp34u|25a94970, numHelperThreads -> 3 ]
+2018-03-04 19:28:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-04 19:28:41 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-04 19:28:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-03-04 19:28:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-04 19:28:41 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-03-04 19:28:42 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-04 19:28:42 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-04 19:30:14 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-04 19:30:14 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-04 19:30:14 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-04 19:30:14 INFO  CustomerServiceImpl:68 - CustomerServiceImpl :: getAllCustomers :: begin
+2018-03-04 19:30:14 INFO  CustomerServiceImpl:69 - CustomerServiceImpl :: getAllCustomers :: db activity start
+2018-03-04 19:30:14 INFO  CustomerServiceImpl:72 - CustomerServiceImpl :: getAllCustomers :: db activity end
+2018-03-04 19:30:14 INFO  CustomerServiceImpl:77 - CustomerServiceImpl :: getAllCustomers :: customer list count ### 0
+2018-03-04 19:30:14 INFO  CustomerServiceImpl:79 - CustomerServiceImpl :: getAllCustomers :: end
+2018-03-04 19:30:14 INFO  ProductServiceImpl:535 - ProductServiceImpl :: latestAllSchemePrice :: begin
+2018-03-04 19:30:14 INFO  ProductServiceImpl:538 - ProductServiceImpl :: latestAllSchemePrice :: db activity start
+2018-03-04 19:30:14 INFO  ProductDaoImpl:100 - ProductDaoImpl :: latestAllSchemePrice :: begin
+2018-03-04 19:30:14 INFO  ProductDaoImpl:104 - ProductDaoImpl :: latestAllSchemePrice :: defined price list retrieved ### []
+2018-03-04 19:30:14 INFO  ProductDaoImpl:105 - ProductDaoImpl :: latestAllSchemePrice :: End
+2018-03-04 19:30:14 INFO  ProductServiceImpl:541 - ProductServiceImpl :: latestAllSchemePrice :: db response recieved
+2018-03-04 19:30:14 INFO  ProductServiceImpl:597 - ProductServiceImpl :: latestAllSchemePrice :: end
+2018-03-04 19:30:14 INFO  ProductServiceImpl:434 - ProductServiceImpl :: getAllProductGroup :: begin
+2018-03-04 19:30:14 INFO  ProductServiceImpl:435 - ProductServiceImpl :: getAllProductGroup :: db activity start
+2018-03-04 19:30:14 INFO  ProductServiceImpl:442 - ProductServiceImpl :: getAllProductGroup :: all product group count ### 14
+2018-03-04 19:30:45 INFO  ProductServiceImpl:449 - ProductServiceImpl :: productLstByParams :: begin
+2018-03-04 19:30:45 INFO  ProductDaoImpl:83 - ProductDaoImpl :: getProductListByParams :: begin
+2018-03-04 19:30:45 INFO  ProductDaoImpl:88 - ProductDaoImpl :: getProductListByParams :: Executed Query ### select * from cdms.beverage_product_category where group_name='300_GLASS_24' 
+2018-03-04 19:30:45 INFO  ProductDaoImpl:92 - ProductDaoImpl :: getProductListByParams :: Product list ### [application.cdms.db.entities.BeverageProductCategory@26ffca48, application.cdms.db.entities.BeverageProductCategory@473d86d0, application.cdms.db.entities.BeverageProductCategory@4fc24430, application.cdms.db.entities.BeverageProductCategory@30c03f2b]
+2018-03-04 19:30:45 INFO  ProductDaoImpl:93 - ProductDaoImpl :: getProductListByParams :: End
+2018-03-04 19:30:45 INFO  ProductServiceImpl:455 - ProductServiceImpl :: productLstByParams :: db response recieved
+2018-03-04 19:30:45 INFO  ProductServiceImpl:462 - ProductServiceImpl :: productLstByParams :: product list upon search parameter ### 4
+2018-03-04 19:30:45 INFO  ProductServiceImpl:471 - ProductServiceImpl :: productLstByParams :: end
+2018-03-04 19:34:31 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-04 19:34:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-03-04 19:34:32 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-03-04 19:34:32 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-03-04 19:34:32 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-03-04 19:34:32 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-03-04 19:34:32 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-03-04 19:34:32 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-03-04 19:34:32 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-03-04 19:34:32 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-03-04 19:34:32 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-03-04 19:34:32 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-03-04 19:34:32 INFO  MLog:92 - MLog clients using log4j logging.
+2018-03-04 19:34:33 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-03-04 19:34:33 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@553ae35f [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@7a72c46 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9t1uyk7ce1yudhb6|1473bc94, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@381ec3da [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1uyk7ce1yudhb6|50987e65, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9t1uyk7ce1yudhb6|53a730f7, numHelperThreads -> 3 ]
+2018-03-04 19:34:33 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-03-04 19:34:33 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-03-04 19:34:34 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-03-04 19:34:34 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-03-04 19:34:34 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-03-04 19:34:35 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-04 19:34:35 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-04 19:34:35 INFO  CustomerServiceImpl:68 - CustomerServiceImpl :: getAllCustomers :: begin
+2018-03-04 19:34:35 INFO  CustomerServiceImpl:69 - CustomerServiceImpl :: getAllCustomers :: db activity start
+2018-03-04 19:34:35 INFO  CustomerServiceImpl:72 - CustomerServiceImpl :: getAllCustomers :: db activity end
+2018-03-04 19:34:35 INFO  CustomerServiceImpl:77 - CustomerServiceImpl :: getAllCustomers :: customer list count ### 0
+2018-03-04 19:34:35 INFO  CustomerServiceImpl:79 - CustomerServiceImpl :: getAllCustomers :: end
+2018-03-04 19:34:35 INFO  ProductServiceImpl:535 - ProductServiceImpl :: latestAllSchemePrice :: begin
+2018-03-04 19:34:35 INFO  ProductServiceImpl:538 - ProductServiceImpl :: latestAllSchemePrice :: db activity start
+2018-03-04 19:34:35 INFO  ProductDaoImpl:100 - ProductDaoImpl :: latestAllSchemePrice :: begin
+2018-03-04 19:34:35 INFO  ProductDaoImpl:104 - ProductDaoImpl :: latestAllSchemePrice :: defined price list retrieved ### []
+2018-03-04 19:34:35 INFO  ProductDaoImpl:105 - ProductDaoImpl :: latestAllSchemePrice :: End
+2018-03-04 19:34:35 INFO  ProductServiceImpl:541 - ProductServiceImpl :: latestAllSchemePrice :: db response recieved
+2018-03-04 19:34:35 INFO  ProductServiceImpl:597 - ProductServiceImpl :: latestAllSchemePrice :: end
+2018-03-04 19:34:35 INFO  ProductServiceImpl:434 - ProductServiceImpl :: getAllProductGroup :: begin
+2018-03-04 19:34:35 INFO  ProductServiceImpl:435 - ProductServiceImpl :: getAllProductGroup :: db activity start
+2018-03-04 19:34:35 INFO  ProductServiceImpl:442 - ProductServiceImpl :: getAllProductGroup :: all product group count ### 14
+2018-03-04 19:34:52 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-04 19:34:52 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-04 19:34:52 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-04 19:35:26 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: begin
+2018-03-04 19:35:26 INFO  ProductServiceImpl:234 - ProductServiceImpl :: productList :: product List count ### 38
+2018-03-04 19:35:26 INFO  ProductServiceImpl:235 - ProductServiceImpl :: productList :: end
+2018-03-04 19:35:26 INFO  CustomerServiceImpl:68 - CustomerServiceImpl :: getAllCustomers :: begin
+2018-03-04 19:35:26 INFO  CustomerServiceImpl:69 - CustomerServiceImpl :: getAllCustomers :: db activity start
+2018-03-04 19:35:26 INFO  CustomerServiceImpl:72 - CustomerServiceImpl :: getAllCustomers :: db activity end
+2018-03-04 19:35:26 INFO  CustomerServiceImpl:77 - CustomerServiceImpl :: getAllCustomers :: customer list count ### 0
+2018-03-04 19:35:26 INFO  CustomerServiceImpl:79 - CustomerServiceImpl :: getAllCustomers :: end
+2018-03-04 19:35:26 INFO  ProductServiceImpl:535 - ProductServiceImpl :: latestAllSchemePrice :: begin
+2018-03-04 19:35:26 INFO  ProductServiceImpl:538 - ProductServiceImpl :: latestAllSchemePrice :: db activity start
+2018-03-04 19:35:26 INFO  ProductDaoImpl:100 - ProductDaoImpl :: latestAllSchemePrice :: begin
+2018-03-04 19:35:26 INFO  ProductDaoImpl:104 - ProductDaoImpl :: latestAllSchemePrice :: defined price list retrieved ### []
+2018-03-04 19:35:26 INFO  ProductDaoImpl:105 - ProductDaoImpl :: latestAllSchemePrice :: End
+2018-03-04 19:35:26 INFO  ProductServiceImpl:541 - ProductServiceImpl :: latestAllSchemePrice :: db response recieved
+2018-03-04 19:35:26 INFO  ProductServiceImpl:597 - ProductServiceImpl :: latestAllSchemePrice :: end
+2018-03-04 19:35:26 INFO  ProductServiceImpl:434 - ProductServiceImpl :: getAllProductGroup :: begin
+2018-03-04 19:35:26 INFO  ProductServiceImpl:435 - ProductServiceImpl :: getAllProductGroup :: db activity start
+2018-03-04 19:35:26 INFO  ProductServiceImpl:442 - ProductServiceImpl :: getAllProductGroup :: all product group count ### 14
+2018-03-04 19:36:40 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-03-04 19:36:40 INFO  ProductServiceImpl:81 - ProductServiceImpl :: fillingQtyList :: begin
+2018-03-04 19:36:40 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 11
+2018-03-04 19:36:40 INFO  ProductServiceImpl:90 - ProductServiceImpl :: fillingQtyList :: end
+2018-03-04 19:36:40 INFO  ProductServiceImpl:96 - ProductServiceImpl :: flavrList :: begin
+2018-03-04 19:36:40 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: flavour Name List count ### 10
+2018-03-04 19:36:40 INFO  ProductServiceImpl:105 - ProductServiceImpl :: flavrList :: end
+2018-03-04 19:36:40 INFO  ProductServiceImpl:111 - ProductServiceImpl :: packingtypeList :: begin
+2018-03-04 19:36:40 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-03-04 19:36:40 INFO  ProductServiceImpl:120 - ProductServiceImpl :: packingtypeList :: end
+2018-03-04 19:36:40 INFO  ProductServiceImpl:126 - ProductServiceImpl :: packingQtyList :: begin
+2018-03-04 19:36:40 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-03-04 19:36:40 INFO  ProductServiceImpl:135 - ProductServiceImpl :: packingQtyList :: end
+2018-03-04 19:36:40 INFO  ProductController:216 - ProductController :: Initialization end
+2018-03-04 19:36:41 INFO  ProductController:113 - ProductController :: Initialization Start ###
+2018-03-04 19:36:41 INFO  ProductServiceImpl:81 - ProductServiceImpl :: fillingQtyList :: begin
+2018-03-04 19:36:41 INFO  ProductServiceImpl:89 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 11
+2018-03-04 19:36:41 INFO  ProductServiceImpl:90 - ProductServiceImpl :: fillingQtyList :: end
+2018-03-04 19:36:41 INFO  ProductServiceImpl:96 - ProductServiceImpl :: flavrList :: begin
+2018-03-04 19:36:41 INFO  ProductServiceImpl:104 - ProductServiceImpl :: flavrList :: flavour Name List count ### 10
+2018-03-04 19:36:41 INFO  ProductServiceImpl:105 - ProductServiceImpl :: flavrList :: end
+2018-03-04 19:36:41 INFO  ProductServiceImpl:111 - ProductServiceImpl :: packingtypeList :: begin
+2018-03-04 19:36:41 INFO  ProductServiceImpl:119 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-03-04 19:36:41 INFO  ProductServiceImpl:120 - ProductServiceImpl :: packingtypeList :: end
+2018-03-04 19:36:41 INFO  ProductServiceImpl:126 - ProductServiceImpl :: packingQtyList :: begin
+2018-03-04 19:36:41 INFO  ProductServiceImpl:134 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 3
+2018-03-04 19:36:41 INFO  ProductServiceImpl:135 - ProductServiceImpl :: packingQtyList :: end
+2018-03-04 19:36:41 INFO  ProductController:216 - ProductController :: Initialization end

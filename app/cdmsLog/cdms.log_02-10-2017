@@ -1,0 +1,155 @@
+2017-10-02 07:45:10 INFO  ProductServiceImpl:213 - ProductServiceImpl :: productList :: begin
+2017-10-02 07:45:10 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-02 07:45:10 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-02 07:45:10 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-02 07:45:10 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-02 07:45:10 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-02 07:45:11 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-02 07:45:11 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-02 07:45:11 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-02 07:45:11 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-02 07:45:11 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-02 07:45:11 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-02 07:45:11 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-02 07:45:11 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-02 07:45:12 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@f308edd2 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@a22a1362 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9q1oq6t161l1gbd8|1d76a877, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@16c79b35 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oq6t161l1gbd8|7cee657b, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oq6t161l1gbd8|173bc82a, numHelperThreads -> 3 ]
+2017-10-02 07:45:12 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-02 07:45:12 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-02 07:45:13 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-02 07:45:13 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-02 07:45:13 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-02 07:45:15 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-02 07:45:15 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: end
+2017-10-02 07:47:11 INFO  ProductServiceImpl:213 - ProductServiceImpl :: productList :: begin
+2017-10-02 07:47:11 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-02 07:47:11 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-02 07:47:11 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-02 07:47:11 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-02 07:47:11 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-02 07:47:11 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-02 07:47:11 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-02 07:47:11 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-02 07:47:11 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-02 07:47:11 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-02 07:47:11 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-02 07:47:11 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-02 07:47:11 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-02 07:47:11 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9ed793b0 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@cbc564d7 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9q1oq9dkh662t9w|655b3401, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@27a6b382 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oq9dkh662t9w|4ffdbc1c, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oq9dkh662t9w|2cab0465, numHelperThreads -> 3 ]
+2017-10-02 07:47:12 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-02 07:47:12 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-02 07:47:12 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-02 07:47:12 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-02 07:47:12 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-02 07:47:13 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-02 07:47:13 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: end
+2017-10-02 07:47:58 INFO  ProductServiceImpl:213 - ProductServiceImpl :: productList :: begin
+2017-10-02 07:47:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-02 07:47:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-02 07:47:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-02 07:47:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-02 07:47:58 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-02 07:47:58 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-02 07:47:58 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-02 07:47:58 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-02 07:47:58 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-02 07:47:58 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-02 07:47:58 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-02 07:47:58 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-02 07:47:59 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-02 07:47:59 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@c9a3f04e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@e752087f [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9q1oqae2qdws91b|389e6aa0, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ba312d8a [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oqae2qdws91b|764d597d, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oqae2qdws91b|4235c58b, numHelperThreads -> 3 ]
+2017-10-02 07:47:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-02 07:47:59 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-02 07:47:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-02 07:47:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-02 07:47:59 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-02 07:48:00 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-02 07:48:00 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: end
+2017-10-02 07:55:58 INFO  ProductServiceImpl:213 - ProductServiceImpl :: productList :: begin
+2017-10-02 07:55:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-02 07:55:58 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-02 07:55:58 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-02 07:55:58 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-02 07:55:58 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-02 07:55:58 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-02 07:55:58 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-02 07:55:59 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-02 07:55:59 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-02 07:55:59 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-02 07:55:59 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-02 07:55:59 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-02 07:55:59 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-02 07:55:59 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@68c01b27 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3e996495 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9q1oqkomz13fcrdx|1f186acf, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@cf4b8448 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oqkomz13fcrdx|7f17dc36, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1oqkomz13fcrdx|42ff9773, numHelperThreads -> 3 ]
+2017-10-02 07:55:59 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-02 07:55:59 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-02 07:56:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-02 07:56:00 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-02 07:56:00 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-02 07:56:01 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-02 07:56:01 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: end
+2017-10-02 07:56:01 INFO  CustomerServiceImpl:68 - CustomerServiceImpl :: getAllCustomers :: begin
+2017-10-02 07:56:01 INFO  CustomerServiceImpl:69 - CustomerServiceImpl :: getAllCustomers :: db activity start
+2017-10-02 07:56:01 INFO  CustomerServiceImpl:72 - CustomerServiceImpl :: getAllCustomers :: db activity end
+2017-10-02 07:56:01 INFO  CustomerServiceImpl:77 - CustomerServiceImpl :: getAllCustomers :: customer list count ### 0
+2017-10-02 07:56:01 INFO  CustomerServiceImpl:79 - CustomerServiceImpl :: getAllCustomers :: end
+2017-10-02 07:56:01 INFO  ProductServiceImpl:516 - ProductServiceImpl :: latestAllSchemePrice :: begin
+2017-10-02 07:56:01 INFO  ProductServiceImpl:519 - ProductServiceImpl :: latestAllSchemePrice :: db activity start
+2017-10-02 07:56:01 INFO  ProductDaoImpl:98 - ProductDaoImpl :: latestAllSchemePrice :: begin
+2017-10-02 07:56:01 INFO  ProductDaoImpl:102 - ProductDaoImpl :: latestAllSchemePrice :: defined price list retrieved ### []
+2017-10-02 07:56:01 INFO  ProductDaoImpl:103 - ProductDaoImpl :: latestAllSchemePrice :: End
+2017-10-02 07:56:01 INFO  ProductServiceImpl:522 - ProductServiceImpl :: latestAllSchemePrice :: db response recieved
+2017-10-02 07:56:01 INFO  ProductServiceImpl:576 - ProductServiceImpl :: latestAllSchemePrice :: end
+2017-10-02 07:56:01 INFO  ProductServiceImpl:418 - ProductServiceImpl :: getAllProductGroup :: begin
+2017-10-02 07:56:01 INFO  ProductServiceImpl:419 - ProductServiceImpl :: getAllProductGroup :: db activity start
+2017-10-02 07:56:01 INFO  ProductServiceImpl:426 - ProductServiceImpl :: getAllProductGroup :: all product group count ### 8
+2017-10-02 07:56:12 INFO  ProductServiceImpl:433 - ProductServiceImpl :: productLstByParams :: begin
+2017-10-02 07:56:12 INFO  ProductDaoImpl:81 - ProductDaoImpl :: getProductListByParams :: begin
+2017-10-02 07:56:12 INFO  ProductDaoImpl:86 - ProductDaoImpl :: getProductListByParams :: Executed Query ### select * from cdms.beverage_product_category where group_name='2250_PET_9' 
+2017-10-02 07:56:12 INFO  ProductDaoImpl:90 - ProductDaoImpl :: getProductListByParams :: Product list ### [application.cdms.db.entities.BeverageProductCategory@1aa90aaf, application.cdms.db.entities.BeverageProductCategory@6c4e1294, application.cdms.db.entities.BeverageProductCategory@761da1c, application.cdms.db.entities.BeverageProductCategory@5aa10e7c]
+2017-10-02 07:56:12 INFO  ProductDaoImpl:91 - ProductDaoImpl :: getProductListByParams :: End
+2017-10-02 07:56:12 INFO  ProductServiceImpl:439 - ProductServiceImpl :: productLstByParams :: db response recieved
+2017-10-02 07:56:12 INFO  ProductServiceImpl:446 - ProductServiceImpl :: productLstByParams :: product list upon search parameter ### 4
+2017-10-02 07:56:12 INFO  ProductServiceImpl:453 - ProductServiceImpl :: productLstByParams :: end
+2017-10-02 08:13:18 INFO  ProductServiceImpl:213 - ProductServiceImpl :: productList :: begin
+2017-10-02 08:13:18 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-02 08:13:18 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-02 08:13:18 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-02 08:13:18 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-02 08:13:18 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-02 08:13:18 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-02 08:13:18 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-02 08:13:18 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-02 08:13:18 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-02 08:13:18 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-02 08:13:18 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-02 08:13:18 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-02 08:13:18 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-02 08:13:18 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@5232e711 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@6fe0ff42 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9q1or6yio18po675|389e6aa0, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@42c0244d [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1or6yio18po675|764d597d, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1or6yio18po675|4235c58b, numHelperThreads -> 3 ]
+2017-10-02 08:13:19 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-02 08:13:19 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-02 08:13:19 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-02 08:13:19 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-02 08:13:19 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-02 08:13:20 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-02 08:13:20 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: end
+2017-10-02 17:59:49 INFO  ProductServiceImpl:213 - ProductServiceImpl :: productList :: begin
+2017-10-02 17:59:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2017-10-02 17:59:50 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2017-10-02 17:59:50 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2017-10-02 17:59:50 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2017-10-02 17:59:50 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2017-10-02 17:59:50 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2017-10-02 17:59:50 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2017-10-02 17:59:51 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2017-10-02 17:59:51 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2017-10-02 17:59:51 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2017-10-02 17:59:51 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2017-10-02 17:59:51 INFO  MLog:92 - MLog clients using log4j logging.
+2017-10-02 17:59:52 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2017-10-02 17:59:53 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@50868228 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@9198bab3 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9q1pc59xb17mjmzq|293def32, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@dcee7241 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1pc59xb17mjmzq|71f73bb2, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9q1pc59xb17mjmzq|2a31154f, numHelperThreads -> 3 ]
+2017-10-02 17:59:54 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2017-10-02 17:59:54 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2017-10-02 17:59:55 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-10-02 17:59:55 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-10-02 17:59:55 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2017-10-02 17:59:57 INFO  ProductServiceImpl:221 - ProductServiceImpl :: productList :: product List count ### 22
+2017-10-02 17:59:57 INFO  ProductServiceImpl:222 - ProductServiceImpl :: productList :: end

@@ -1,0 +1,524 @@
+2019-02-12 14:02:51 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2019-02-12 14:02:51 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2019-02-12 14:02:51 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2019-02-12 14:02:51 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2019-02-12 14:02:52 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2019-02-12 14:02:52 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2019-02-12 14:02:52 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2019-02-12 14:02:53 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2019-02-12 14:02:53 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2019-02-12 14:02:53 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2019-02-12 14:02:53 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2019-02-12 14:02:53 INFO  MLog:92 - MLog clients using log4j logging.
+2019-02-12 14:02:55 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2019-02-12 14:02:56 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@1d747a75 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@9a14cb2a [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yta01qdu80ksxvcdu|1abebf24, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@f3592a89 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qdu80ksxvcdu|3edf0611, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qdu80ksxvcdu|13aa843c, numHelperThreads -> 3 ]
+2019-02-12 14:02:58 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@2de530f2 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2019-02-12 14:02:58 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@7c47a1e1 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2019-02-12 14:02:58 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@f7b7db2 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2019-02-12 14:02:58 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@7c47a1e1 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2019-02-12 14:02:58 WARN  JdbcServicesImpl:204 - HHH000342: Could not obtain connection to query metadata : Connections could not be acquired from the underlying database!
+2019-02-12 14:02:58 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-02-12 14:02:59 INFO  LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+2019-02-12 14:02:59 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-02-12 14:02:59 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-02-12 14:02:59 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2019-02-12 14:03:03 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@465fcead -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2019-02-12 14:03:03 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@7c47a1e1 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2019-02-12 14:03:03 WARN  SqlExceptionHelper:144 - SQL Error: 0, SQLState: null
+2019-02-12 14:03:03 WARN  BasicResourcePool:1851 - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@58d8a133 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (1). Last acquisition attempt exception: 
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:265)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:194)
+	at org.postgresql.Driver.makeConnection(Driver.java:431)
+	at org.postgresql.Driver.connect(Driver.java:247)
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195)
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184)
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086)
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073)
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44)
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810)
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:62)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:144)
+	... 13 more
+2019-02-12 14:03:03 ERROR SqlExceptionHelper:146 - Connections could not be acquired from the underlying database!
+2019-02-12 14:03:03 WARN  BasicResourcePool:894 - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@7c47a1e1 is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+2019-02-12 14:05:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2019-02-12 14:05:33 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2019-02-12 14:05:33 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2019-02-12 14:05:33 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2019-02-12 14:05:33 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2019-02-12 14:05:33 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2019-02-12 14:05:33 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2019-02-12 14:05:33 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2019-02-12 14:05:33 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2019-02-12 14:05:33 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2019-02-12 14:05:33 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2019-02-12 14:05:33 INFO  MLog:92 - MLog clients using log4j logging.
+2019-02-12 14:05:34 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2019-02-12 14:05:34 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@2f4253a [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@ba586985 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yta01qdxmx01crhwtk|3faa4b90, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@2dc7d074 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qdxmx01crhwtk|305e1481, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qdxmx01crhwtk|1e9eef02, numHelperThreads -> 3 ]
+2019-02-12 14:05:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-02-12 14:05:35 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-02-12 14:05:35 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-02-12 14:05:35 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-02-12 14:05:35 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2019-02-12 14:05:37 INFO  WelcomeController:93 - Welcome User ### cdms
+2019-02-12 14:05:37 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2019-02-12 14:06:02 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2019-02-12 14:06:02 INFO  ProductServiceImpl:303 - ProductServiceImpl :: productList :: product List count ### 54
+2019-02-12 14:06:02 INFO  ProductServiceImpl:304 - ProductServiceImpl :: productList :: end
+2019-02-12 14:06:02 INFO  ProductServiceImpl:968 - ProductServiceImpl :: nonBproductList :: begin
+2019-02-12 14:06:02 INFO  ProductServiceImpl:978 - ProductServiceImpl :: nonBproductList :: product List count ### 2
+2019-02-12 14:06:02 INFO  ProductServiceImpl:979 - ProductServiceImpl :: nonBproductList :: end
+2019-02-12 14:06:02 INFO  CDMSDataProviderDaoImpl:35 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: begin
+2019-02-12 14:06:02 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 14:06:02 INFO  CDMSDataProviderDaoImpl:54 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: End
+2019-02-12 14:13:55 INFO  ProductServiceImpl:1016 - getAllChallanDtlsForForRtnEmpty :: begin
+2019-02-12 14:13:56 INFO  ProductServiceImpl:1031 - getAllChallanDtlsForForRtnEmpty :: starting to get PurchaseDtl bean
+2019-02-12 14:13:56 INFO  ProductServiceImpl:1036 - getAllChallanDtlsForForRtnEmpty :: End to get PurchaseDtl bean
+2019-02-12 14:13:56 INFO  ProductServiceImpl:1047 - getAllChallanDtlsForForRtnEmpty :: End
+2019-02-12 14:14:10 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### RJ0020817734
+2019-02-12 14:14:10 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 14:14:10 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817734
+2019-02-12 14:14:10 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 14:14:10 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### null
+2019-02-12 14:14:10 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 14:14:10 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2019-02-12 14:14:34 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2019-02-12 14:14:34 INFO  ProductServiceImpl:303 - ProductServiceImpl :: productList :: product List count ### 54
+2019-02-12 14:14:34 INFO  ProductServiceImpl:304 - ProductServiceImpl :: productList :: end
+2019-02-12 14:14:34 INFO  ProductServiceImpl:968 - ProductServiceImpl :: nonBproductList :: begin
+2019-02-12 14:14:34 INFO  ProductServiceImpl:978 - ProductServiceImpl :: nonBproductList :: product List count ### 2
+2019-02-12 14:14:34 INFO  ProductServiceImpl:979 - ProductServiceImpl :: nonBproductList :: end
+2019-02-12 14:14:34 INFO  CDMSDataProviderDaoImpl:35 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: begin
+2019-02-12 14:14:34 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 14:14:34 INFO  CDMSDataProviderDaoImpl:54 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: End
+2019-02-12 14:14:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2019-02-12 14:14:59 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2019-02-12 14:14:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2019-02-12 14:14:59 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2019-02-12 14:14:59 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2019-02-12 14:14:59 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2019-02-12 14:14:59 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2019-02-12 14:15:00 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2019-02-12 14:15:00 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2019-02-12 14:15:00 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2019-02-12 14:15:00 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2019-02-12 14:15:00 INFO  MLog:92 - MLog clients using log4j logging.
+2019-02-12 14:15:00 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2019-02-12 14:15:00 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@5ed0af97 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@f85598f6 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yta01qe9rxc1gat64d|27cdfd24, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@fc0cbc76 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qe9rxc1gat64d|72c681cb, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qe9rxc1gat64d|1d7f0212, numHelperThreads -> 3 ]
+2019-02-12 14:15:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-02-12 14:15:01 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-02-12 14:15:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-02-12 14:15:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-02-12 14:15:01 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2019-02-12 14:15:02 INFO  WelcomeController:93 - Welcome User ### cdms
+2019-02-12 14:15:02 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2019-02-12 14:15:07 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2019-02-12 14:15:07 INFO  ProductServiceImpl:303 - ProductServiceImpl :: productList :: product List count ### 54
+2019-02-12 14:15:07 INFO  ProductServiceImpl:304 - ProductServiceImpl :: productList :: end
+2019-02-12 14:15:07 INFO  ProductServiceImpl:968 - ProductServiceImpl :: nonBproductList :: begin
+2019-02-12 14:15:07 INFO  ProductServiceImpl:978 - ProductServiceImpl :: nonBproductList :: product List count ### 2
+2019-02-12 14:15:07 INFO  ProductServiceImpl:979 - ProductServiceImpl :: nonBproductList :: end
+2019-02-12 14:15:07 INFO  CDMSDataProviderDaoImpl:35 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: begin
+2019-02-12 14:15:07 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 14:15:07 INFO  CDMSDataProviderDaoImpl:54 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: End
+2019-02-12 14:28:47 INFO  AddPurchasedProductConstroller:1112 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2019-02-12 14:28:47 INFO  AddPurchasedProductConstroller:1134 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### RTGS
+2019-02-12 14:28:47 INFO  AddPurchasedProductConstroller:1135 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2019-02-12 14:28:47 INFO  ProductServiceImpl:310 - ProductServiceImpl :: addPurchaseDtls :: begin
+2019-02-12 14:28:47 INFO  ProductServiceImpl:338 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2019-02-12 14:28:47 INFO  ProductServiceImpl:339 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2019-02-12 14:28:47 INFO  ProductServiceImpl:342 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2019-02-12 14:28:47 INFO  ProductServiceImpl:343 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2019-02-12 14:28:47 INFO  ProductServiceImpl:365 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2019-02-12 14:28:47 INFO  ProductServiceImpl:375 - ProductServiceImpl :: addPurchaseDtls :: end
+2019-02-12 14:28:47 INFO  AddPurchasedProductConstroller:1137 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully
+2019-02-12 14:28:53 INFO  ProductServiceImpl:1016 - getAllChallanDtlsForForRtnEmpty :: begin
+2019-02-12 14:28:53 INFO  ProductServiceImpl:1031 - getAllChallanDtlsForForRtnEmpty :: starting to get PurchaseDtl bean
+2019-02-12 14:28:53 INFO  ProductServiceImpl:1036 - getAllChallanDtlsForForRtnEmpty :: End to get PurchaseDtl bean
+2019-02-12 14:28:53 INFO  ProductServiceImpl:1047 - getAllChallanDtlsForForRtnEmpty :: End
+2019-02-12 14:29:03 INFO  ReturnEmptyInvoiceController:227 - getChallanInfoTask :: start with invoice ### RJ0020817734
+2019-02-12 14:29:03 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 14:29:03 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817734
+2019-02-12 14:29:03 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 14:29:03 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@d750e15
+2019-02-12 14:29:03 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 14:29:03 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 14:29:03 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 14:29:03 INFO  ReturnEmptyInvoiceController:236 - getChallanInfoTask :: completed
+2019-02-12 14:29:05 INFO  CDMSDataProviderDaoImpl:35 - viewNonBeveragePurchaseDtlByInvoice[,RJ0020817734]:: getCDMSDataList :: begin
+2019-02-12 14:29:05 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 14:29:05 INFO  CDMSDataProviderDaoImpl:54 - viewNonBeveragePurchaseDtlByInvoice[,RJ0020817734]:: getCDMSDataList :: End
+2019-02-12 14:29:13 INFO  ProductServiceImpl:985 - ProductServiceImpl :: returnEmptyInvoice :: begin
+2019-02-12 14:29:13 INFO  ProductServiceImpl:988 - ProductServiceImpl :: returnEmptyInvoice :: non beverage sale saving start
+2019-02-12 14:29:14 INFO  ProductServiceImpl:993 - ProductServiceImpl :: returnEmptyInvoice :: non beverage sale saving End
+2019-02-12 14:29:14 INFO  ProductServiceImpl:1008 - ProductServiceImpl :: updateRtnPurchaseInvoiceNumber :: begin
+2019-02-12 14:29:14 INFO  ProductServiceImpl:1010 - ProductServiceImpl :: updateRtnPurchaseInvoiceNumber :: db Activity Start
+2019-02-12 14:29:14 INFO  ProductDaoImpl:144 - ProductDaoImpl :: updateRtnEmtpyInvoiceNumber :: begin
+2019-02-12 14:29:14 INFO  ProductDaoImpl:150 - ProductDaoImpl :: updateRtnEmtpyInvoiceNumber :: updated Row count ### 1
+2019-02-12 15:13:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2019-02-12 15:13:43 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2019-02-12 15:13:43 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2019-02-12 15:13:43 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2019-02-12 15:13:43 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2019-02-12 15:13:43 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2019-02-12 15:13:43 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2019-02-12 15:13:44 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2019-02-12 15:13:44 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2019-02-12 15:13:44 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2019-02-12 15:13:44 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2019-02-12 15:13:44 INFO  MLog:92 - MLog clients using log4j logging.
+2019-02-12 15:13:44 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2019-02-12 15:13:44 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@9500f459 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@62759b7a [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge0yta01qgdb0xjgji79|c38c710, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@ee288428 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qgdb0xjgji79|8f7c4e8, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge0yta01qgdb0xjgji79|4dcdbbfe, numHelperThreads -> 3 ]
+2019-02-12 15:13:45 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-02-12 15:13:45 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-02-12 15:13:45 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-02-12 15:13:45 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-02-12 15:13:45 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2019-02-12 15:13:47 INFO  WelcomeController:93 - Welcome User ### cdms
+2019-02-12 15:13:47 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2019-02-12 15:14:03 INFO  ProductServiceImpl:795 - getAllChallanDetail :: begin
+2019-02-12 15:14:03 INFO  ProductServiceImpl:808 - getAllChallanDetail :: starting to get PurchaseDtl bean
+2019-02-12 15:14:03 INFO  ProductServiceImpl:813 - getAllChallanDetail :: End to get PurchaseDtl bean
+2019-02-12 15:14:03 INFO  ProductServiceImpl:824 - getAllChallanDetail :: End
+2019-02-12 15:15:28 INFO  SideNavigationController:120 - getChallanInfoTask :: start with invoice ### RJ0020817108
+2019-02-12 15:15:28 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:15:28 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817108
+2019-02-12 15:15:28 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:15:28 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@1b9de307
+2019-02-12 15:15:28 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:15:28 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:15:28 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:15:28 INFO  SideNavigationController:129 - getChallanInfoTask :: completed
+2019-02-12 15:17:12 INFO  SideNavigationController:179 - updatePaymentDetail :: Inside Update Action
+2019-02-12 15:17:12 INFO  SideNavigationController:233 - found purchase seq from table ### BUY0000278
+2019-02-12 15:17:12 INFO  SideNavigationController:241 - updatePurchasepayDtlTask :: start
+2019-02-12 15:17:12 INFO  ProductServiceImpl:830 - updatePurchasePaymentDtl :: begin
+2019-02-12 15:17:12 INFO  ProductServiceImpl:831 - updatePurchasePaymentDtl :: purchaseSeq ### BUY0000278
+2019-02-12 15:17:12 INFO  ProductServiceImpl:832 - updatePurchasePaymentDtl :: paidAmt ### 200000.0
+2019-02-12 15:17:12 INFO  ProductServiceImpl:833 - updatePurchasePaymentDtl :: payMethod ### RTGS
+2019-02-12 15:17:12 INFO  ProductServiceImpl:834 - updatePurchasePaymentDtl :: payDate  ### 04-02-2019
+2019-02-12 15:17:12 INFO  ProductServiceImpl:835 - updatePurchasePaymentDtl :: pay Id  ### PUNBR52019020415637855
+2019-02-12 15:17:12 INFO  SideNavigationController:255 - updatePurchasepayDtlTask :: completed
+2019-02-12 15:18:30 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2019-02-12 15:18:30 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2019-02-12 15:18:30 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2019-02-12 15:18:30 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2019-02-12 15:18:30 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2019-02-12 15:18:30 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2019-02-12 15:18:30 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2019-02-12 15:18:30 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2019-02-12 15:18:30 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2019-02-12 15:18:30 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2019-02-12 15:18:30 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2019-02-12 15:18:30 INFO  MLog:92 - MLog clients using log4j logging.
+2019-02-12 15:18:31 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2019-02-12 15:18:31 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@ede3a8e8 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@eed8e277 [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge9ima01qgjg7e1iaz3bf|48e8b03e, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@3639b76e [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> 1hge9ima01qgjg7e1iaz3bf|13a2148b, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> 1hge9ima01qgjg7e1iaz3bf|77d86e69, numHelperThreads -> 3 ]
+2019-02-12 15:18:31 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2019-02-12 15:18:31 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2019-02-12 15:18:32 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2019-02-12 15:18:32 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-02-12 15:18:32 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2019-02-12 15:18:33 INFO  WelcomeController:93 - Welcome User ### cdms
+2019-02-12 15:18:33 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2019-02-12 15:18:42 INFO  ProductServiceImpl:795 - getAllChallanDetail :: begin
+2019-02-12 15:18:42 INFO  ProductServiceImpl:808 - getAllChallanDetail :: starting to get PurchaseDtl bean
+2019-02-12 15:18:42 INFO  ProductServiceImpl:813 - getAllChallanDetail :: End to get PurchaseDtl bean
+2019-02-12 15:18:42 INFO  ProductServiceImpl:824 - getAllChallanDetail :: End
+2019-02-12 15:19:16 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2019-02-12 15:19:16 INFO  ProductServiceImpl:303 - ProductServiceImpl :: productList :: product List count ### 54
+2019-02-12 15:19:16 INFO  ProductServiceImpl:304 - ProductServiceImpl :: productList :: end
+2019-02-12 15:19:16 INFO  ProductServiceImpl:968 - ProductServiceImpl :: nonBproductList :: begin
+2019-02-12 15:19:16 INFO  ProductServiceImpl:978 - ProductServiceImpl :: nonBproductList :: product List count ### 2
+2019-02-12 15:19:16 INFO  ProductServiceImpl:979 - ProductServiceImpl :: nonBproductList :: end
+2019-02-12 15:19:16 INFO  CDMSDataProviderDaoImpl:35 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: begin
+2019-02-12 15:19:16 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 15:19:16 INFO  CDMSDataProviderDaoImpl:54 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: End
+2019-02-12 15:19:37 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: begin
+2019-02-12 15:19:37 INFO  CDMSDataProviderDaoImpl:53 - 273
+2019-02-12 15:19:37 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: End
+2019-02-12 15:19:50 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: begin
+2019-02-12 15:19:50 INFO  CDMSDataProviderDaoImpl:53 - 273
+2019-02-12 15:19:50 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: End
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### RJ0020817108
+2019-02-12 15:21:00 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,RJ0020817108]:: getCDMSDataList :: begin
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### RJ0020817108
+2019-02-12 15:21:00 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:00 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817108
+2019-02-12 15:21:00 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### RJ0020817108
+2019-02-12 15:21:00 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,RJ0020817108]:: getCDMSDataList :: begin
+2019-02-12 15:21:00 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:00 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,RJ0020817108]:: getCDMSDataList :: End
+2019-02-12 15:21:00 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 15:21:00 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,RJ0020817108]:: getCDMSDataList :: End
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2019-02-12 15:21:00 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@4b68b2a6
+2019-02-12 15:21:00 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:21:00 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:21:00 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:21:00 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### RJ0020817440
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### RJ0020817440
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### RJ0020817440
+2019-02-12 15:21:13 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:13 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817440
+2019-02-12 15:21:13 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,RJ0020817440]:: getCDMSDataList :: begin
+2019-02-12 15:21:13 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,RJ0020817440]:: getCDMSDataList :: begin
+2019-02-12 15:21:13 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:13 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:13 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,RJ0020817440]:: getCDMSDataList :: End
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2019-02-12 15:21:13 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:13 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,RJ0020817440]:: getCDMSDataList :: End
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2019-02-12 15:21:13 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@63732c34
+2019-02-12 15:21:13 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:21:13 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:21:13 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:21:13 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### RJ0020817108
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### RJ0020817108
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2019-02-12 15:21:38 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,RJ0020817108]:: getCDMSDataList :: begin
+2019-02-12 15:21:38 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:38 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817108
+2019-02-12 15:21:38 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### RJ0020817108
+2019-02-12 15:21:38 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,RJ0020817108]:: getCDMSDataList :: begin
+2019-02-12 15:21:38 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:38 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,RJ0020817108]:: getCDMSDataList :: End
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2019-02-12 15:21:38 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 15:21:38 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,RJ0020817108]:: getCDMSDataList :: End
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2019-02-12 15:21:38 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@314bb4c6
+2019-02-12 15:21:38 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:21:38 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:21:38 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:21:38 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### RJ0020817440
+2019-02-12 15:21:42 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:42 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817440
+2019-02-12 15:21:42 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### RJ0020817440
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### RJ0020817440
+2019-02-12 15:21:42 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,RJ0020817440]:: getCDMSDataList :: begin
+2019-02-12 15:21:42 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,RJ0020817440]:: getCDMSDataList :: begin
+2019-02-12 15:21:42 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:42 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,RJ0020817440]:: getCDMSDataList :: End
+2019-02-12 15:21:42 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:42 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,RJ0020817440]:: getCDMSDataList :: End
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2019-02-12 15:21:42 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@7e169ee2
+2019-02-12 15:21:42 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:21:42 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:21:42 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:21:42 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### RJ0020817734
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### RJ0020817734
+2019-02-12 15:21:48 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:48 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817734
+2019-02-12 15:21:48 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### RJ0020817734
+2019-02-12 15:21:48 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,RJ0020817734]:: getCDMSDataList :: begin
+2019-02-12 15:21:48 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,RJ0020817734]:: getCDMSDataList :: begin
+2019-02-12 15:21:48 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:48 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,RJ0020817734]:: getCDMSDataList :: End
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2019-02-12 15:21:48 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:21:48 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,RJ0020817734]:: getCDMSDataList :: End
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2019-02-12 15:21:48 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@6a076b89
+2019-02-12 15:21:48 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:21:48 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:21:48 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:21:48 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:338 - fectchTaxCompntTask :: start
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:297 - getBillDetailTask :: start with invoice ### RJ0020817440
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:418 - fectchPurchaseBreakDtl :: start
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:339 - fectchTaxCompntTask :: invoice number ### RJ0020817440
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:419 - fectchPurchaseBreakDtl :: invoice number ### RJ0020817440
+2019-02-12 15:22:02 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:22:02 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817440
+2019-02-12 15:22:02 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:22:02 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseBreakByInvoice[,RJ0020817440]:: getCDMSDataList :: begin
+2019-02-12 15:22:02 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseTaxCompntByInvoice[,RJ0020817440]:: getCDMSDataList :: begin
+2019-02-12 15:22:02 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:22:02 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseTaxCompntByInvoice[,RJ0020817440]:: getCDMSDataList :: End
+2019-02-12 15:22:02 INFO  CDMSDataProviderDaoImpl:53 - 1
+2019-02-12 15:22:02 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseBreakByInvoice[,RJ0020817440]:: getCDMSDataList :: End
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:349 - fectchTaxCompntTask :: completed
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:429 - fectchPurchaseBreakDtl :: completed
+2019-02-12 15:22:02 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@11a8af86
+2019-02-12 15:22:02 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:22:02 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:22:02 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:22:02 INFO  PurchaseTaxDetailController:307 - getBillDetailTask :: completed
+2019-02-12 15:22:12 INFO  ProductServiceImpl:795 - getAllChallanDetail :: begin
+2019-02-12 15:22:12 INFO  ProductServiceImpl:808 - getAllChallanDetail :: starting to get PurchaseDtl bean
+2019-02-12 15:22:12 INFO  ProductServiceImpl:813 - getAllChallanDetail :: End to get PurchaseDtl bean
+2019-02-12 15:22:12 INFO  ProductServiceImpl:824 - getAllChallanDetail :: End
+2019-02-12 15:23:07 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: begin
+2019-02-12 15:23:07 INFO  CDMSDataProviderDaoImpl:53 - 273
+2019-02-12 15:23:07 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: End
+2019-02-12 15:23:41 INFO  ProductServiceImpl:795 - getAllChallanDetail :: begin
+2019-02-12 15:23:41 INFO  ProductServiceImpl:808 - getAllChallanDetail :: starting to get PurchaseDtl bean
+2019-02-12 15:23:41 INFO  ProductServiceImpl:813 - getAllChallanDetail :: End to get PurchaseDtl bean
+2019-02-12 15:23:41 INFO  ProductServiceImpl:824 - getAllChallanDetail :: End
+2019-02-12 15:24:22 INFO  SideNavigationController:120 - getChallanInfoTask :: start with invoice ### RJ0020817440
+2019-02-12 15:24:22 INFO  ProductServiceImpl:771 - getChallanDetailByInvoice :: begin
+2019-02-12 15:24:22 INFO  ProductServiceImpl:772 - getChallanDetailByInvoice :: Invoice Number ### RJ0020817440
+2019-02-12 15:24:22 INFO  ProductDaoImpl:117 - getChallanDetailByInvoice :: begin
+2019-02-12 15:24:22 INFO  ProductDaoImpl:123 - getChallanDetailByInvoice :: recived purchaseDtl ### application.cdms.db.entities.PurchaseDtl@11edd66b
+2019-02-12 15:24:22 INFO  ProductServiceImpl:777 - getChallanDetailByInvoice :: starting to get PurchaseDtl bean
+2019-02-12 15:24:22 INFO  ProductServiceImpl:779 - getChallanDetailByInvoice :: End to get PurchaseDtl bean
+2019-02-12 15:24:22 INFO  ProductServiceImpl:789 - getChallanDetailByInvoice :: End
+2019-02-12 15:24:22 INFO  SideNavigationController:129 - getChallanInfoTask :: completed
+2019-02-12 15:25:55 INFO  SideNavigationController:179 - updatePaymentDetail :: Inside Update Action
+2019-02-12 15:25:55 INFO  SideNavigationController:233 - found purchase seq from table ### BUY0000279
+2019-02-12 15:25:55 INFO  SideNavigationController:241 - updatePurchasepayDtlTask :: start
+2019-02-12 15:25:55 INFO  ProductServiceImpl:830 - updatePurchasePaymentDtl :: begin
+2019-02-12 15:25:55 INFO  ProductServiceImpl:831 - updatePurchasePaymentDtl :: purchaseSeq ### BUY0000279
+2019-02-12 15:25:55 INFO  ProductServiceImpl:832 - updatePurchasePaymentDtl :: paidAmt ### 200000.0
+2019-02-12 15:25:55 INFO  ProductServiceImpl:833 - updatePurchasePaymentDtl :: payMethod ### RTGS
+2019-02-12 15:25:55 INFO  ProductServiceImpl:834 - updatePurchasePaymentDtl :: payDate  ### 07-02-2019
+2019-02-12 15:25:55 INFO  ProductServiceImpl:835 - updatePurchasePaymentDtl :: pay Id  ### PUNBR52019020715692745
+2019-02-12 15:25:55 INFO  SideNavigationController:255 - updatePurchasepayDtlTask :: completed
+2019-02-12 15:26:03 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2019-02-12 15:26:03 INFO  ProductServiceImpl:303 - ProductServiceImpl :: productList :: product List count ### 54
+2019-02-12 15:26:03 INFO  ProductServiceImpl:304 - ProductServiceImpl :: productList :: end
+2019-02-12 15:26:03 INFO  ProductServiceImpl:968 - ProductServiceImpl :: nonBproductList :: begin
+2019-02-12 15:26:03 INFO  ProductServiceImpl:978 - ProductServiceImpl :: nonBproductList :: product List count ### 2
+2019-02-12 15:26:03 INFO  ProductServiceImpl:979 - ProductServiceImpl :: nonBproductList :: end
+2019-02-12 15:26:03 INFO  CDMSDataProviderDaoImpl:35 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: begin
+2019-02-12 15:26:03 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 15:26:03 INFO  CDMSDataProviderDaoImpl:54 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: End
+2019-02-12 15:27:28 INFO  CDMSDataProviderDaoImpl:35 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: begin
+2019-02-12 15:27:28 INFO  CDMSDataProviderDaoImpl:53 - 273
+2019-02-12 15:27:28 INFO  CDMSDataProviderDaoImpl:54 - viewPurchaseSummeryWithoutCriteria[]:: getCDMSDataList :: End
+2019-02-12 15:27:56 INFO  ProductServiceImpl:286 - ProductServiceImpl :: productList :: begin
+2019-02-12 15:27:56 INFO  ProductServiceImpl:303 - ProductServiceImpl :: productList :: product List count ### 54
+2019-02-12 15:27:56 INFO  ProductServiceImpl:304 - ProductServiceImpl :: productList :: end
+2019-02-12 15:27:56 INFO  ProductServiceImpl:968 - ProductServiceImpl :: nonBproductList :: begin
+2019-02-12 15:27:56 INFO  ProductServiceImpl:978 - ProductServiceImpl :: nonBproductList :: product List count ### 2
+2019-02-12 15:27:56 INFO  ProductServiceImpl:979 - ProductServiceImpl :: nonBproductList :: end
+2019-02-12 15:27:56 INFO  CDMSDataProviderDaoImpl:35 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: begin
+2019-02-12 15:27:56 INFO  CDMSDataProviderDaoImpl:53 - 2
+2019-02-12 15:27:56 INFO  CDMSDataProviderDaoImpl:54 - getNonBeveragePrdctsPrice[]:: getCDMSDataList :: End
+2019-02-12 15:39:10 INFO  AddPurchasedProductConstroller:1112 - AddPurchasedProductConstroller :: addPurchaseddtls :: No input error found and all input are correct.
+2019-02-12 15:39:10 INFO  AddPurchasedProductConstroller:1134 - AddPurchasedProductConstroller :: addPurchaseddtls :: Payment Method ### null
+2019-02-12 15:39:10 INFO  AddPurchasedProductConstroller:1135 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details start
+2019-02-12 15:39:10 INFO  ProductServiceImpl:310 - ProductServiceImpl :: addPurchaseDtls :: begin
+2019-02-12 15:39:10 INFO  ProductServiceImpl:338 - ProductServiceImpl :: addPurchaseDtls :: db activity start
+2019-02-12 15:39:10 INFO  ProductServiceImpl:339 - ProductServiceImpl :: addPurchaseDtls :: saving purchase detail start
+2019-02-12 15:39:10 INFO  ProductServiceImpl:342 - ProductServiceImpl :: addPurchaseDtls :: saving purchase end
+2019-02-12 15:39:10 INFO  ProductServiceImpl:343 - ProductServiceImpl :: addPurchaseDtls :: instant product stock saving
+2019-02-12 15:39:10 INFO  ProductServiceImpl:365 - ProductServiceImpl :: addPurchaseDtls :: instant product stock end
+2019-02-12 15:39:10 INFO  ProductServiceImpl:375 - ProductServiceImpl :: addPurchaseDtls :: end
+2019-02-12 15:39:10 INFO  AddPurchasedProductConstroller:1137 - AddPurchasedProductConstroller :: addPurchaseddtls :: saving purchase details succesfully

@@ -1,0 +1,53 @@
+2018-04-14 23:52:35 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2018-04-14 23:52:35 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2018-04-14 23:52:36 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2018-04-14 23:52:36 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2018-04-14 23:52:36 INFO  Configuration:2131 - HHH000042: Configuring from file: kcd-hibernate.cfg.xml
+2018-04-14 23:52:36 INFO  Configuration:2214 - HHH000041: Configured SessionFactory: null
+2018-04-14 23:52:36 INFO  Configuration:757 - HHH000221: Reading mappings from resource: KCD_Namedquery.hbm.xml
+2018-04-14 23:52:36 INFO  ConnectionProviderInitiator:190 - HHH000130: Instantiating explicit connection provider: org.hibernate.connection.C3P0ConnectionProvider
+2018-04-14 23:52:36 INFO  C3P0ConnectionProvider:133 - HHH010002: C3P0 using driver: org.postgresql.Driver at URL: jdbc:postgresql://localhost:5432/cdms
+2018-04-14 23:52:36 INFO  C3P0ConnectionProvider:134 - HHH000046: Connection properties: {user=postgres, password=****, release_mode=auto}
+2018-04-14 23:52:36 INFO  C3P0ConnectionProvider:137 - HHH000006: Autocommit mode: false
+2018-04-14 23:52:37 INFO  MLog:92 - MLog clients using log4j logging.
+2018-04-14 23:52:38 INFO  C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2018-04-14 23:52:39 INFO  AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@538d6948 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@aa10494d [ acquireIncrement -> 1, acquireRetryAttempts -> 1, acquireRetryDelay -> 250, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kflt9u1irpyszv8v4hn|6b17bdc8, idleConnectionTestPeriod -> 60, initialPoolSize -> 1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 2, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 1, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@e72113c0 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kflt9u1irpyszv8v4hn|4980fb96, jdbcUrl -> jdbc:postgresql://localhost:5432/cdms, properties -> {user=******, password=******, release_mode=auto} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kflt9u1irpyszv8v4hn|2fcefc3, numHelperThreads -> 3 ]
+2018-04-14 23:52:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-04-14 23:52:41 INFO  LobCreatorBuilder:123 - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2018-04-14 23:52:42 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2018-04-14 23:52:42 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2018-04-14 23:52:42 WARN  SettingsFactory:367 - Unrecognized value for "hibernate.hbm2ddl.auto": none
+2018-04-14 23:52:45 INFO  WelcomeController:93 - Welcome User ### cdms
+2018-04-14 23:52:45 INFO  WelcomeController:94 - Role ### CDMS_ADMIN
+2018-04-14 23:52:56 INFO  ProductController:114 - ProductController :: Initialization Start ###
+2018-04-14 23:52:56 INFO  ProductServiceImpl:101 - ProductServiceImpl :: fillingQtyList :: begin
+2018-04-14 23:52:56 INFO  ProductServiceImpl:110 - ProductServiceImpl :: fillingQtyList :: Filling Qty List count ### 11
+2018-04-14 23:52:56 INFO  ProductServiceImpl:111 - ProductServiceImpl :: fillingQtyList :: end
+2018-04-14 23:52:56 INFO  ProductServiceImpl:117 - ProductServiceImpl :: flavrList :: begin
+2018-04-14 23:52:56 INFO  ProductServiceImpl:126 - ProductServiceImpl :: flavrList :: flavour Name List count ### 15
+2018-04-14 23:52:56 INFO  ProductServiceImpl:127 - ProductServiceImpl :: flavrList :: end
+2018-04-14 23:52:56 INFO  ProductServiceImpl:133 - ProductServiceImpl :: packingtypeList :: begin
+2018-04-14 23:52:56 INFO  ProductServiceImpl:142 - ProductServiceImpl :: packingtypeList :: Packing Name List count ### 4
+2018-04-14 23:52:56 INFO  ProductServiceImpl:143 - ProductServiceImpl :: packingtypeList :: end
+2018-04-14 23:52:56 INFO  ProductServiceImpl:149 - ProductServiceImpl :: packingQtyList :: begin
+2018-04-14 23:52:56 INFO  ProductServiceImpl:158 - ProductServiceImpl :: packingQtyList :: Packing Qty List count ### 4
+2018-04-14 23:52:56 INFO  ProductServiceImpl:159 - ProductServiceImpl :: packingQtyList :: end
+2018-04-14 23:52:56 INFO  ProductController:217 - ProductController :: Initialization end
+2018-04-14 23:57:39 INFO  ProductServiceImpl:250 - ProductServiceImpl :: groupNmLstByParameters :: begin
+2018-04-14 23:57:39 INFO  ProductDaoImpl:35 - ProductDaoImpl :: groupNmLstByParameters :: begin
+2018-04-14 23:57:39 INFO  ProductDaoImpl:36 - ProductDaoImpl :: groupNmLstByParameters :: ml Qty ### ML00000004
+2018-04-14 23:57:39 INFO  ProductDaoImpl:37 - ProductDaoImpl :: groupNmLstByParameters :: packingn cd ### TYPE000001
+2018-04-14 23:57:39 INFO  ProductDaoImpl:38 - ProductDaoImpl :: groupNmLstByParameters :: packingQty Cd ### PQTY000001
+2018-04-14 23:57:39 INFO  ProductDaoImpl:46 - ProductDaoImpl :: groupNmLstByParameters :: group name list [200_GLASS_24]
+2018-04-14 23:57:39 INFO  ProductDaoImpl:47 - ProductDaoImpl :: groupNmLstByParameters :: End
+2018-04-14 23:57:39 INFO  ProductServiceImpl:254 - ProductServiceImpl :: groupNmLstByParameters :: response recieved from db
+2018-04-14 23:57:39 INFO  ProductServiceImpl:264 - ProductServiceImpl :: groupNmLstByParameters :: end
+2018-04-14 23:59:02 INFO  ProductController:222 - addNewProduct :: product addition start
+2018-04-14 23:59:02 INFO  ProductController:242 - addNewProduct :: validation start
+2018-04-14 23:59:02 INFO  ProductController:342 - addNewProduct :: validation end
+2018-04-14 23:59:02 INFO  ProductController:382 - addNewProduct :: begin to new product saving ### 200_NIMOOZ MASALA SODA_GLASS_24
+2018-04-14 23:59:02 INFO  ProductServiceImpl:167 - ProductServiceImpl :: addNewBeverageProduct :: begin
+2018-04-14 23:59:02 INFO  ProductServiceImpl:169 - ProductServiceImpl :: addNewBeverageProduct :: db activity start
+2018-04-14 23:59:02 INFO  ProductServiceImpl:179 - ProductServiceImpl :: addNewBeverageProduct ::  new flavour 
+2018-04-14 23:59:02 INFO  ProductServiceImpl:209 - ProductServiceImpl :: addNewBeverageProduct ::  checking Group Name is already Present
+2018-04-14 23:59:02 FATAL ProductController:411 - addNewProduct :: exception ### null
